@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://smc-ohana-api-test.herokuapp.com/api/search?kind=Parks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"c8105054cb1c6ee812d2c0c767a882b6"
+      Link:
+      - <http://smc-ohana-api-test.herokuapp.com/api/search?page=15>; rel="last",
+        <http://smc-ohana-api-test.herokuapp.com/api/search?page=2>; rel="next"
+      X-Total-Count:
+      - '15'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 23 Jun 2022 02:32:41 GMT
+      Cache-Control:
+      - max-age=0, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - ec1b1e82-5266-4682-a1f0-e011b6b6b581
+      X-Runtime:
+      - '0.021954'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":1528,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[],"description":"Crystal
+        Springs Trail County Park consists of two multi-use recreational trails, Sawyer
+        Camp Trail and San Andreas Trail, located adjacent to the Crystal Springs
+        and San Andreas reservoirs. Sawyer Camp Trail is a six-mile asphalt-surfaced
+        trail for bicyclists, hikers, joggers and equestrians. Located between the
+        west end of Hillcrest Blvd. in Millbrae and the west end of Crystal Springs
+        Road in San Mateo. The trail is wheelchair accessible at the south gate in
+        San Mateo. The San Andreas Trail is located between the west end of Hillcrest
+        Blvd in Millbrae and Skyline Blvd in San Bruno. It consists of a 0.6-mile-long
+        dirt section between Hillcrest Blvd and Larkspur Drive in Millbrae and a 1.5-mile-long
+        paved section between Larkspur Drive and Skyline Blvd in San Bruno. The only
+        source of water on the trail is 1/10 mile from the north gate of Sawyer Camp
+        trail, located at the west end of Hillcrest Blvd.","kind":"Parks","latitude":null,"longitude":null,"name":"Crystal
+        Springs Trail County Park","short_desc":"Recreational area consisting of two
+        multi-use trails.","slug":"crystal-springs-trail-county-park","updated_at":"2019-06-04T06:49:34.757-07:00","website":null,"url":"http://smc-ohana-api-test.herokuapp.com/api/locations/crystal-springs-trail-county-park","address":null,"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/san-mateo-county-parks-department","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2131,"department":null,"extension":null,"number":"650
+        589-4294","number_type":null,"vanity_number":null}]}]'
+  recorded_at: Thu, 23 Jun 2022 02:32:41 GMT
+recorded_with: VCR 6.1.0
