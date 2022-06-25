@@ -14,5 +14,5 @@ Ohanakapa.configure do |config|
   config.api_token = ENV.fetch('OHANA_API_TOKEN', nil)
   config.api_endpoint = ENV.fetch('OHANA_API_ENDPOINT', nil)
 
-  config.middleware = stack unless Rails.env.test?
+  config.middleware = stack
 end
