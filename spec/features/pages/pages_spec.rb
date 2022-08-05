@@ -8,7 +8,7 @@ feature 'Site Pages' do
     expect(page).to have_content 'Anselm Bradford'
     expect(page).to have_content 'Moncef Belyamani'
     expect(page).to have_content 'Sophia Parafina'
-    expect(page).to have_selector '#feedback-box .feedback-form'
+    expect(page).to have_selector '#feedback-box'
   end
 
   scenario 'when visiting results page directly', :vcr do

@@ -5,21 +5,4 @@
       Want to get in touch?
     %p
       = link_to t('views.feedback.issue_link'), t('views.feedback.issue_link_url'), target: '_blank', rel: 'noopener'
-
-    %section.feedback-form
-      = form_tag('/feedback', method: :post) do
-        %p
-          = label_tag 'message', t('views.feedback.submit_comment_label')
-          = text_area_tag('message',
-                          nil,
-                          placeholder: 'enter your comment, question, etc.',
-                          rows: '4',
-                          required: 'true',
-                          class: 'comment')
-        %p
-          = label_tag 'from', 'Email:'
-          = email_field_tag 'from', nil, placeholder: 'your email address (optional)', class: 'email'
-          = hidden_field_tag 'agent', user_agent
-          = recaptcha_tags nonce: true
-        %p
-          = button_tag 'Send!', class: 'button-feedback-send'
+      = t('views.feedback.submit_comment_label')
