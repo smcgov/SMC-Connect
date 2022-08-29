@@ -87,14 +87,14 @@
               %span
                 = render 'component/detail/mail_address', location: location
 
-    - if @categories.present?
+    - if categories.present?
       %aside.location-sidebar
         %section.location-sidebar-section.service-categories-box
           %h1 Service Categories
           %section.location-sidebar-content
             %section.service-categories{ itemscope: '', itemtype: 'http://schema.org/Service' }
               %ul{ itemscope: '', itemtype: 'http://schema.org/serviceType' }
-                - @categories.each do |category|
+                - categories.each do |category|
                   %li{ class: "hierarchy-depth-#{category.depth}" }
                     %span{ itemprop: 'serviceType' }
                       = category.name
@@ -144,7 +144,7 @@
     - if location.kind == "Farmers' Markets"
       %section.payment-box
         %h1 Payment & Products
-        = render 'component/detail/farmers_markets'
+        = render 'component/detail/farmers_markets', location: location
 
     - if location.services.present?
       %section.services-box

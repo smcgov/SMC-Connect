@@ -1,11 +1,11 @@
 %div
-  - if @location.key?(:payments) || @location.key?(:market_match)
+  - if location.key?(:payments) || location.key?(:market_match)
     %section.payments-accepted
       %i.fa.fa-money
       %h1 Payment methods accepted:
       %ul
-        - if @location[:payments].present?
-          - @location.payments.each do |payment|
+        - if location[:payments].present?
+          - location.payments.each do |payment|
             %li
               %span.term-popup-container
                 %span.popup.hide
@@ -14,7 +14,7 @@
                     .corner
                 %span.popup-term
                   = payment
-        - if @location[:market_match]
+        - if location[:market_match]
           %li
             %span.term-popup-container
               %span.popup.hide
@@ -23,12 +23,12 @@
                   .corner
               %span.market-match.popup-term
                 Market Match
-    - if @location.key?(:products)
+    - if location.key?(:products)
       %section.products-sold
         %i.fa.fa-shopping-cart
         %h1 Products sold:
         %ul
-          - @location.products.sort.each do |product|
+          - location.products.sort.each do |product|
             %li
               %span
                 = product
