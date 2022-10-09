@@ -13,6 +13,7 @@ gem 'kaminari-core', git: 'https://github.com/monfresh/kaminari.git', branch: 'm
 gem 'mail', '~> 2.8.0.rc1'
 gem 'ohanakapa', '~> 1.1.1'
 gem 'puma'
+gem 'rack-cache', '~> 1.13'
 gem 'rack-rewrite', '~> 1.5.0'
 gem 'railties', '~> 6.1.5'
 gem 'recaptcha'
