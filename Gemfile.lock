@@ -202,7 +202,7 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.4)
-    rack-cache (1.8.0)
+    rack-cache (1.13.0)
       rack (>= 0.4)
     rack-mini-profiler (3.0.0)
       rack (>= 1.2.0)
@@ -377,6 +377,7 @@ DEPENDENCIES
   mail (~> 2.8.0.rc1)
   ohanakapa (~> 1.1.1)
   puma
+  rack-cache (~> 1.13)
   rack-mini-profiler
   rack-rewrite (~> 1.5.0)
   rails-controller-testing
