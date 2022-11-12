@@ -302,7 +302,7 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
-    skylight (5.3.3)
+    skylight (5.3.4)
       activesupport (>= 5.2.0)
     sorted_set (1.0.3)
       rbtree
