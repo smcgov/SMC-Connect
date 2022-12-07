@@ -1,7 +1,7 @@
-= render 'component/locations/results/header', search: search
+= render 'component/locations/results/header', search:
 %section#results-entries
   - unless search.map_data.empty?
-    = render 'component/locations/results/map_view', search: search
+    = render 'component/locations/results/map_view', search:
 
   - if info_box_key_corresponding_to_keyword.present?
     %section#terminology-box-container
@@ -15,7 +15,7 @@
         = render 'component/locations/results/organization_detail',
           organization: search.locations.first.organization
 
-    = render 'component/locations/results/list_view', search: search
+    = render 'component/locations/results/list_view', search:
   - else
     %section.no-results
       .message

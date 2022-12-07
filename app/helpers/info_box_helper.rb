@@ -28,7 +28,7 @@ module InfoBoxHelper
   #
   # @return [Array]
   def synonyms
-    info_box_hash.values.map { |hash| hash['synonyms'] }.flatten
+    info_box_hash.values.pluck('synonyms').flatten
   end
 
   # If the search keyword matches a synonym in the info_box_hash,
