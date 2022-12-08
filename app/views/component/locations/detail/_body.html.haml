@@ -48,7 +48,7 @@
             - if location.phones.present?
               %section.phones.location-sidebar-content-group
                 - location.phones.each do |phone|
-                  = render 'component/detail/phone', phone: phone, show_phone_type_and_department: true
+                  = render 'component/detail/phone', phone:, show_phone_type_and_department: true
 
       - if location.contacts.present?
         - location.contacts.each do |contact|
@@ -67,7 +67,7 @@
               - if contact.phones.present?
                 %section.phones.location-sidebar-content-group
                   - contact.phones.each do |phone|
-                    = render 'component/detail/phone', phone: phone, show_phone_type_and_department: true
+                    = render 'component/detail/phone', phone:, show_phone_type_and_department: true
 
       - if location.address.present?
         %section.address-box.location-sidebar-section
@@ -76,7 +76,7 @@
             %section.address.icon-text-block
               %i.fa.fa-map-marker
               %span
-                = render 'component/detail/address', location: location, lines: 2
+                = render 'component/detail/address', location:, lines: 2
 
       - if location.mail_address.present?
         %section.address-box.location-sidebar-section
@@ -85,7 +85,7 @@
             %section.mail-address.icon-text-block
               %i.fa.fa-envelope
               %span
-                = render 'component/detail/mail_address', location: location
+                = render 'component/detail/mail_address', location:
 
     - if categories.present?
       %aside.location-sidebar
@@ -177,7 +177,7 @@
                 - if service.phones.present?
                   %section.phones
                     - service.phones.each do |phone|
-                      = render 'component/detail/phone', phone: phone, show_phone_type_and_department: true
+                      = render 'component/detail/phone', phone:, show_phone_type_and_department: true
             = render 'component/detail/service_description', service: service
             = render 'component/detail/service_fees', service: service
             = render 'component/detail/service_audience', service: service

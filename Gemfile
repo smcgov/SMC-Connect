@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '3.1.2'
+ruby File.read('.ruby-version').strip
 gem 'actionmailer', '~> 6.1.5'
 gem 'compass-rails'
 gem 'faraday', '~> 0.8'
