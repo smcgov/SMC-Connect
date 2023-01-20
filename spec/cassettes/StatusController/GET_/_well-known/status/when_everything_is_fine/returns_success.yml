@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://smc-ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic
+    uri: https://api-staging.smc-connect.org/locations/redwood-city-free-medical-clinic
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -21,36 +21,44 @@ http_interactions:
       Server:
       - Cowboy
       Connection:
-      - close
-      Date:
-      - Fri, 05 Dec 2014 21:05:44 GMT
-      Status:
-      - 200 OK
+      - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Etag:
-      - '"539aa8c025e4ba15132cc641580f4709"'
+      - W/"921d6913ba350a30b70f1d41450f2d84"
       Last-Modified:
-      - Mon, 01 Dec 2014 03:05:12 GMT
+      - Wed, 26 Nov 2014 01:22:17 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Thu, 19 Jan 2023 21:42:17 GMT
       Cache-Control:
-      - max-age=0, public
+      - max-age=300, public
+      Vary:
+      - Origin
       X-Request-Id:
-      - 431c3149-3491-43d0-b79e-5b85c01dee5e
+      - 7f16f090-2de4-4160-9efa-12c2e9008e13
       X-Runtime:
-      - '0.046145'
-      X-Rack-Cache:
-      - pass
+      - '0.035969'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":1389,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.207057,37.468678],"description":"Primary
+      string: '{"id":1389,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.207057,37.468678],"description":"Primary
         and specialty medical and dental services to uninsured, low-income residents.
         Who is Treated? Patients of our clinics are the working poor. They tend to
         earn just enough income to be ineligible for Medi-Cal coverage, yet do not
@@ -67,35 +75,33 @@ http_interactions:
         practicing medicine and dentistry, want to serve their community in their
         limited spare time.","kind":"Human Services","latitude":37.468678,"longitude":-122.207057,"name":"Redwood
         City Free Medical Clinic","short_desc":"Provides free medical care to those
-        in need.","slug":"redwood-city-free-medical-clinic","updated_at":"2014-11-30T19:05:12.142-08:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic","accessibility":["Disabled
-        Restroom","Wheelchair"],"email":null,"emails":["info@samaritanhousesanmateo.org"],"hours":"Monday-Friday,
+        in need.","slug":"redwood-city-free-medical-clinic","updated_at":"2014-11-25T17:22:17.626-08:00","website":"http://www.samaritanhousesanmateo.org","url":"https://api-staging.smc-connect.org/locations/redwood-city-free-medical-clinic","accessibility":["Disabled
+        Restroom","Wheelchair"],"email":"info@samaritanhousesanmateo.org","hours":"Monday-Friday,
         9-12, 2-5","languages":["Spanish"],"transportation":"SAMTRANS stops within
-        2 blocks.","urls":["http://www.samaritanhousesanmateo.org"],"website":null,"address":{"id":1129,"street":"114
-        Fifth Avenue","street_1":"114 Fifth Avenue","street_2":null,"city":"Redwood
-        City","state":"CA","state_province":"CA","postal_code":"94063","zip":"94063"},"organization":{"id":1301,"alternate_name":null,"name":"Samaritan
-        House","slug":"samaritan-house-57cf15eb-09cd-498e-a0e8-b2f154a07bec","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/samaritan-house-57cf15eb-09cd-498e-a0e8-b2f154a07bec"},"phones":[{"id":1903,"department":null,"extension":null,"number":"650
-        839-1447","number_type":null,"vanity_number":null}],"contacts":[{"id":1620,"department":null,"email":null,"name":"Sharon
-        Petersen","title":"Operations Director","extension":null,"fax":null,"phone":null,"phones":[]}],"faxes":[{"id":882,"number":"650
-        839-1457","department":null}],"mail_address":{"id":1386,"attention":"Redwood
-        City Free Medical Clinic","street":"114 Fifth Avenue","street_1":"114 Fifth
-        Avenue","street_2":null,"city":"Redwood City","state":"CA","state_province":"CA","postal_code":"94063","zip":"94063"},"regular_schedules":[],"holiday_schedules":[],"services":[{"id":1389,"accepted_payments":[],"alternate_name":null,"audience":null,"description":"Provides
+        2 blocks.","address":{"id":1129,"address_1":"114 Fifth Avenue","address_2":null,"city":"Redwood
+        City","state_province":"CA","postal_code":"94063"},"organization":{"id":498,"alternate_name":null,"name":"Samaritan
+        House","slug":"samaritan-house","url":"https://api-staging.smc-connect.org/organizations/samaritan-house"},"phones":[{"id":1903,"department":null,"extension":null,"number":"650
+        839-1447","number_type":"voice","vanity_number":null},{"id":3364,"department":null,"extension":null,"number":"650
+        839-1457","number_type":"fax","vanity_number":null}],"contacts":[{"id":1620,"department":null,"email":null,"name":"Sharon
+        Petersen","title":"Operations Director","phones":[]}],"mail_address":{"id":1386,"attention":"Redwood
+        City Free Medical Clinic","address_1":"114 Fifth Avenue","address_2":null,"city":"Redwood
+        City","state_province":"CA","postal_code":"94063"},"regular_schedules":[],"holiday_schedules":[],"services":[{"id":1389,"accepted_payments":[],"alternate_name":null,"application_process":"Call
+        for screening appointment. Medical visits are by appointment only.","audience":null,"description":"Provides
         free medical care to those in need. Offers basic medical exams for adults
         and tuberculosis screening. Assists the individual to access other services
         in the community. By appointment only, Project Smile provides a free dental
         exam, dental cleaning and oral hygiene instruction for children, age 3-12,
         of Samaritan House clients.","eligibility":"Low-income person without access
-        to health care","email":null,"fees":"None.","funding_sources":["Donations","Grants"],"how_to_apply":"Call
-        for screening appointment. Medical visits are by appointment only.","keywords":["HEALTH
+        to health care","email":null,"fees":"None.","funding_sources":["Donations","Grants"],"interpretation_services":null,"keywords":["HEALTH
         SERVICES","Outpatient Care","Community Clinics","Free Medical Care-Redwood
         City","Free Dental Exam"],"languages":[],"name":null,"required_documents":[],"service_areas":["Atherton","East
-        Palo Alto","Menlo Park","Redwood City","San Carlos"],"status":"active","website":null,"wait_time":"Varies.","updated_at":"2014-05-24T14:07:51.877-07:00","urls":[],"wait":"Varies.","categories":[{"id":1,"depth":0,"oe_id":"101","name":"Emergency","parent_id":null},{"id":78,"depth":0,"oe_id":"106","name":"Health","parent_id":null},{"id":86,"depth":1,"oe_id":"106-02","name":"Dental
-        Care","parent_id":78},{"id":109,"depth":1,"oe_id":"106-06","name":"Medical
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"status":"active","website":null,"wait_time":"Varies.","updated_at":"2014-05-24T14:07:51.877-07:00","categories":[{"id":1,"depth":0,"taxonomy_id":"101","name":"Emergency","parent_id":null},{"id":78,"depth":0,"taxonomy_id":"106","name":"Health","parent_id":null},{"id":86,"depth":1,"taxonomy_id":"106-02","name":"Dental
+        Care","parent_id":78},{"id":109,"depth":1,"taxonomy_id":"106-06","name":"Medical
         Care","parent_id":78}],"contacts":[],"phones":[],"regular_schedules":[],"holiday_schedules":[]}]}'
-    http_version: 
-  recorded_at: Fri, 05 Dec 2014 21:05:44 GMT
+  recorded_at: Thu, 19 Jan 2023 21:42:17 GMT
 - request:
     method: get
-    uri: http://smc-ohana-api-test.herokuapp.com/api/search?keyword=ymca&kind=Human%20Services&service_area=smc
+    uri: https://api-staging.smc-connect.org/search?keyword=ymca&kind=Human%20Services&service_area=smc
     body:
       encoding: US-ASCII
       string: ''
@@ -103,7 +109,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -114,55 +120,78 @@ http_interactions:
       Server:
       - Cowboy
       Connection:
-      - close
-      Date:
-      - Fri, 05 Dec 2014 21:05:45 GMT
-      Status:
-      - 200 OK
+      - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Etag:
-      - '"f0786272c5321053b6c3e29292beba07"'
+      - W/"ef2e4b14b8f6142d6bdb3f84f9c4ea28"
       X-Total-Count:
       - '1'
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Thu, 19 Jan 2023 21:42:17 GMT
       Cache-Control:
-      - max-age=0, public
+      - max-age=300, public
+      Vary:
+      - Origin
       X-Request-Id:
-      - 08647e20-3f60-4892-8068-204c9608676c
+      - 9c5c3300-0d9c-4da7-bec6-b4e490410751
       X-Runtime:
-      - '0.026115'
-      X-Rack-Cache:
-      - pass
+      - '0.022840'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":1687,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.3022248,37.5591732],"description":"The
-        Youth Service Bureau (YSB) of the YMCA offers individual, family, couples
-        and group counseling. Offers services to families of children age 3-18 who
-        may be struggling with a variety of issues including emotional and behavioral
-        problems, drugs and alcohol, anger management, sexual identity, abuse and
-        neglect, parenting and school and social problems. Serves as a juvenile diversion
-        and risk prevention program for youth referred by the Probation Department,
-        police departments, or other community agencies. Also houses Building Futures
-        which is a therapeutic mentoring program for youth ages 6-14. YSB on-campus
-        couseling services are offered at 19 schools throughout San Mateo County.
-        Programs include Violence Prevention, School Safety Advocates, Girls United,
-        case management and individual and group counseling. Formerly known as Project
-        FOCYS.","kind":"Human Services","latitude":37.5591732,"longitude":-122.3022248,"name":"San
-        Mateo","short_desc":"Counseling program offering services to families of children
-        who are having behavior problems in the community. Also individual and couples
-        counseling.","slug":"san-mateo","updated_at":"2014-11-30T19:05:18.201-08:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/san-mateo","address":{"id":1411,"street":"1670
-        South Amphlett Blvd, Suite 115","street_1":"1670 South Amphlett Blvd, Suite
-        115","street_2":null,"city":"San Mateo","state":"CA","state_province":"CA","postal_code":"94402","zip":"94402"},"organization":{"id":1343,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Youth
-        Service Bureaus of the YMCA","website":null,"slug":"youth-service-bureaus-of-the-ymca","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/youth-service-bureaus-of-the-ymca","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/youth-service-bureaus-of-the-ymca/locations"},"phones":[{"id":2463,"department":null,"extension":null,"number":"650
-        349-7969","number_type":null,"vanity_number":null}]}]'
-    http_version: 
-  recorded_at: Fri, 05 Dec 2014 21:05:44 GMT
-recorded_with: VCR 2.9.3
+      string: '[{"id":1687,"active":true,"admin_emails":[],"alternate_name":"Youth
+        Service Bureau of San Mateo","coordinates":[-122.3021838,37.5591284],"description":"The
+        Youth Service Bureau in San Mateo offers outpatient mental health counseling
+        to youth, families, and couples addressing parenting and co-parenting issues.
+        We help people address a variety of issues including emotional and behavioral
+        problems, anger management, adolescent behavior, sexual identity, abuse and
+        neglect, drugs and alcohol, parenting, school and social problems. Other focused
+        programs include: Juvenile Justice Diversion, First STOP adolescent drug \u0026
+        alcohol groups, Girls United, case management and group counseling. Also run
+        all school-based programs in the San Mateo Union High School and San Mateo
+        Foster City school districts, including on-campus counseling, School Safety
+        Advocates, Guided Studies, and Alternatives to Suspension.","kind":"Human
+        Services","latitude":37.5591284,"longitude":-122.3021838,"name":"San Mateo","short_desc":"Counseling
+        program offering services to youth, families, and couples who are having emotional
+        and behavior challenges.","slug":"san-mateo","updated_at":"2018-02-15T19:57:47.027-08:00","website":"http://youthservicebureaus.org","url":"https://api-staging.smc-connect.org/locations/san-mateo","address":{"id":1411,"address_1":"1670
+        South Amphlett Blvd","address_2":"Suite 115","city":"San Mateo","state_province":"CA","postal_code":"94402"},"organization":{"id":1343,"accreditations":[],"alternate_name":"Pacifica
+        Youth Service Bureau, Youth Service Bureau of South San Francisco, Youth Service
+        Bureau of San Mateo","date_incorporated":null,"description":"The YSB’s mission
+        is to support and nurture families in developing connected, productive, and
+        healthy youth who can navigate the future and contribute to their communities.
+        Established in 1969 to provide diversion services for first-time youth offenders,
+        we now offer outpatient mental health services in our three clinics (Youth
+        Service Bureaus) and school-based counseling and support in over 50 schools
+        throughout San Mateo County. We are partners with the San Mateo County of
+        Education, eight school districts, five police departments, and County Departments
+        of Behavioral Health and Recovery Services, Human Services, and Juvenile Probation.
+        We specialize in counseling for youth and families, nurturing safe school
+        environments, delivering prevention programs for at-risk youth, and parent
+        support. Our programs help individuals and families cope with life challenges,
+        such as traumatic experiences, depression, school related issues, high-risk
+        adolescent behaviors, and mental illness. The YSBs became a part of the YMCA
+        Association of San Francisco 20 year ago and operate fiscally under their
+        nonprofit tax ID status.","email":"ysbinfo@ymcasf.org","funding_sources":[],"licenses":[],"name":"Youth
+        Service Bureaus of the YMCA","website":null,"slug":"youth-service-bureaus-of-the-ymca","url":"https://api-staging.smc-connect.org/organizations/youth-service-bureaus-of-the-ymca","locations_url":"https://api-staging.smc-connect.org/organizations/youth-service-bureaus-of-the-ymca/locations"},"phones":[{"id":2463,"department":null,"extension":null,"number":"650
+        349-7969","number_type":"voice","vanity_number":null},{"id":3570,"department":null,"extension":null,"number":"650
+        349-1103","number_type":"fax","vanity_number":null}]}]'
+  recorded_at: Thu, 19 Jan 2023 21:42:17 GMT
+recorded_with: VCR 6.1.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://smc-ohana-api-test.herokuapp.com/api/search?action=index&controller=locations&keyword=zoo
+    uri: https://api-staging.smc-connect.org/search?action=index&controller=locations&keyword=zoo
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -21,38 +21,50 @@ http_interactions:
       Server:
       - Cowboy
       Connection:
-      - close
-      Date:
-      - Fri, 05 Dec 2014 21:05:20 GMT
-      Status:
-      - 200 OK
+      - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Etag:
-      - '"e9a08afedec861fff647170656df464c"'
-      Link:
-      - <http://smc-ohana-api-test.herokuapp.com/api/search?keyword=zoo&page=0>; rel="last"
+      - W/"28091c81a56f40ad57a905356740db9a"
       X-Total-Count:
-      - '0'
+      - '1'
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Fri, 20 Jan 2023 02:37:24 GMT
       Cache-Control:
-      - max-age=0, public
+      - max-age=60, public
+      Vary:
+      - Origin
       X-Request-Id:
-      - ca8b4361-5471-4fac-b6bb-47d67fb1d010
+      - b4292cb0-39b6-4240-9776-2324a8ca3f3c
       X-Runtime:
-      - '0.015291'
-      X-Rack-Cache:
-      - pass
+      - '0.016077'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: "[]"
-    http_version: 
-  recorded_at: Fri, 05 Dec 2014 21:05:19 GMT
-recorded_with: VCR 2.9.3
+      string: '[{"id":875,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.1449698,37.4432868],"description":"A
+        children''s museum and zoo. Offers science classes, after-school programs
+        and summer camps.","kind":"Museums","latitude":37.4432868,"longitude":-122.1449698,"name":"Palo
+        Alto Junior Museum and Zoo","short_desc":"A children''s museum and zoo.","slug":"palo-alto-junior-museum-and-zoo","updated_at":"2014-12-04T11:08:53.742-08:00","website":"http://www.cityofpaloalto.org/jmz","url":"https://api-staging.smc-connect.org/locations/palo-alto-junior-museum-and-zoo","address":{"id":703,"address_1":"1451
+        Middlefield Road","address_2":null,"city":"Palo Alto","state_province":"CA","postal_code":"94301"},"organization":{"id":875,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Palo
+        Alto Junior Museum and Zoo","website":null,"slug":"palo-alto-junior-museum-and-zoo","url":"https://api-staging.smc-connect.org/organizations/palo-alto-junior-museum-and-zoo","locations_url":"https://api-staging.smc-connect.org/organizations/palo-alto-junior-museum-and-zoo/locations"},"phones":[{"id":1159,"department":null,"extension":null,"number":"650
+        329-2111","number_type":"voice","vanity_number":null},{"id":3036,"department":null,"extension":null,"number":"650
+        473-1965","number_type":"fax","vanity_number":null}]}]'
+  recorded_at: Fri, 20 Jan 2023 02:37:24 GMT
+recorded_with: VCR 6.1.0

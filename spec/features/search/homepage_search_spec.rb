@@ -4,7 +4,7 @@ feature 'homepage search' do
   scenario 'with keyword that returns results', :vcr do
     search_for_example
     looks_like_results
-    expect(find_field('keyword').value).to eq('example location')
+    expect(find_field('keyword').value).to eq('alpha app')
     expect(page).not_to have_content('1 result located!')
   end
 
@@ -17,6 +17,6 @@ feature 'homepage search' do
   scenario 'when clicking a general link', :vcr do
     visit('/')
     click_link('Health Insurance')
-    expect(page).to have_content('Health Insurance TeleCenter')
+    expect(page).to have_content('Puente')
   end
 end

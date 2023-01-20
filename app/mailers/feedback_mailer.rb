@@ -8,6 +8,6 @@ class FeedbackMailer < ApplicationMailer
     @submitter = params[:from].presence || '[no email entered]'
     @user_agent = params[:agent] || '[no user agent recorded]'
 
-    mail(from: from, subject: "[#{SETTINGS[:site_title]} Feedback]")
+    mail(from:, subject: "[#{SETTINGS[:site_title]} Feedback]")
   end
 end

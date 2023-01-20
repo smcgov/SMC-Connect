@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://smc-ohana-api-test.herokuapp.com/api/search?action=index&controller=locations&keyword=CalFresh
+    uri: https://api-staging.smc-connect.org/search?action=index&controller=locations&keyword=CalFresh
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -28,57 +28,214 @@ http_interactions:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Etag:
-      - '"604e8871b637dc49f8d5332893696975"'
-      Link:
-      - <http://smc-ohana-api-test.herokuapp.com/api/search?keyword=CalFresh&page=6>;
-        rel="last", <http://smc-ohana-api-test.herokuapp.com/api/search?keyword=CalFresh&page=2>;
-        rel="next"
+      - W/"d5a2b7bcf6fb4cb92666c0c16d1e63ab"
       X-Total-Count:
-      - '6'
+      - '10'
       Content-Type:
       - application/json; charset=utf-8
-      Cache-Control:
-      - max-age=0, public
-      X-Request-Id:
-      - 2d67bf6c-2cab-4c10-8664-395379dec7ef
-      X-Runtime:
-      - '0.095624'
-      X-Content-Digest:
-      - db1f25a4944f3dddf66ad9c8bd5e67e12d51c786
       Date:
-      - Sat, 28 Nov 2015 05:29:36 GMT
-      Age:
-      - '0'
-      X-Rack-Cache:
-      - stale, valid, store
-      Content-Length:
-      - '2367'
+      - Fri, 20 Jan 2023 02:38:03 GMT
+      Cache-Control:
+      - max-age=60, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 59c5f702-ea1f-4b51-a444-0f3085397dc5
+      X-Runtime:
+      - '0.030723'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":1499,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4741901,37.6896347],"description":"Offers
-        comprehensive employment services for job seekers and employers. Employer
-        services include screening and referral of job-ready workers, up to 50% reimbursement
-        of wages for new employees during the on-the-job training period, and space
-        and resources necessary for recruitment. Offers a job bank to persons age
-        16 or over. Offers information on job openings, company profiles and training
-        information in government, nonprofit agencies, corporations and private industry.
-        Offers access to the Internet and the use of computers, phones and fax machines.
-        Also offers information and referral services to other community resources
-        as needed by clients. Accepts applications for public assistance programs:
-        CalWorks, CalFresh, General Assistance and Medi-Cal. Determines eligibility
-        of needy individuals and families seeking public assistance benefits. Serves
-        low-income clients in need of health insurance (Medi-Cal), nutritional food
-        supplements (CalFresh), and temporary financial assistance (CalWorks and General
-        Assistance).","kind":"Human Services","latitude":37.6896347,"longitude":-122.4741901,"name":"Northern
-        Region., PeninsulaWorks Daly City","short_desc":"Offers comprehensive employment
-        services for job seekers and employers.","slug":"northern-region-peninsulaworks-daly-city","updated_at":"2014-11-30T19:05:14.478-08:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/northern-region-peninsulaworks-daly-city","address":{"id":1238,"address_1":"271
-        - 92nd Street","address_2":null,"street_1":"271 - 92nd Street","street_2":null,"city":"Daly
-        City","state_province":"CA","postal_code":"94015"},"organization":{"id":1310,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
-        Mateo County Human Services Agency","website":null,"slug":"san-mateo-county-human-services-agency","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/san-mateo-county-human-services-agency","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/san-mateo-county-human-services-agency/locations"},"phones":[{"id":2093,"department":null,"extension":null,"number":"650
-        301-8440","number_type":null,"vanity_number":null}]}]'
-    http_version: 
-  recorded_at: Sat, 28 Nov 2015 05:29:36 GMT
-recorded_with: VCR 2.9.3
+      string: '[{"id":1250,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.3926748,37.7901873],"description":"Provides
+        the 211 regional information and referral service to anyone needing information
+        about nonprofit health and human services in Marin, Napa, San Francisco San
+        Mateo, Santa Cruz and Solano counties. 211 is an easy to remember three digit
+        telephone number that is free, confidential, multi-lingual and available 24
+        hours a day. Following an assessment, referrals are given and follow-up calls
+        are made to determine if the problem was resolved. Information is available
+        for a wide variety of issues including basic needs (clothing, food and shelter),
+        childcare, disaster-related services, employment services, foster care, healthcare,
+        legal assistance, mental health services, substance abuse and support groups.
+        Along with other 211 providers in California, provides assessment and screening
+        for CalFresh (formerly known as Food Stamps) as well as screening and technology-related
+        referrals, in partnership with the California Emerging Technologies Fund (CETF).
+        La Linea provides information and referral services to Spanish-speaking individuals.
+        The Immigrant Assistance Line assists immigrants with basic immigration/naturalization
+        questions and links them to direct service providers. Welcomes information
+        requests from other agencies, doctors, schools, social workers and corporations.
+        Periodically publishes publishes a variety of resource guides including \"Help
+        for Hard Times,\" a regional resource guide for people impacted by a lay-off
+        or reduced income.","kind":"Human Services","latitude":37.7901873,"longitude":-122.3926748,"name":"HELPLINK
+        - 211 San Francisco","short_desc":"Comprehensive information and referral
+        service.","slug":"helplink-211-san-francisco","updated_at":"2014-12-04T11:17:22.959-08:00","website":"http://www.211bayarea.org","url":"https://api-staging.smc-connect.org/locations/helplink-211-san-francisco","address":{"id":1002,"address_1":"221
+        Main Street, Suite 300","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94105"},"organization":{"id":220,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"United
+        Way of the Bay Area","website":null,"slug":"united-way-of-the-bay-area","url":"https://api-staging.smc-connect.org/organizations/united-way-of-the-bay-area","locations_url":"https://api-staging.smc-connect.org/organizations/united-way-of-the-bay-area/locations"},"phones":[{"id":1648,"department":null,"extension":null,"number":"800
+        273-6222","number_type":"voice","vanity_number":null},{"id":1649,"department":null,"extension":null,"number":"415
+        808-4357","number_type":"voice","vanity_number":"415 808-HELP"},{"id":1650,"department":"Spanish","extension":null,"number":"415
+        808-4444","number_type":"voice","vanity_number":null},{"id":1651,"department":"Chinese","extension":null,"number":"415
+        808-7339","number_type":"voice","vanity_number":null},{"id":1652,"department":null,"extension":null,"number":"415
+        808-4440","number_type":"tty","vanity_number":null}]},{"id":1154,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.146449,37.475949],"description":"Provides
+        job training to economically disadvantaged, unemployed or underemployed adults
+        and independent youth residing in San Mateo, Santa Clara, San Francisco or
+        Alameda counties. Programs include training in office occupations, clerical
+        skills, computers and word processing. Training in electronics, certified
+        nurse assistant, acute care nurse, home health aide, culinary arts, building
+        trades and solar installation. Participants receive employment success and
+        self-directed job search classes. A tutorial program offers classes for applicants
+        who are illiterate or low academic achievers as well as an English as a Second
+        Language (ESL) class. A Child Development Center is available for children
+        of trainees as well as to residents of the community who meet similar requirements
+        as center trainees. Mentor volunteers are needed for both adult and youth
+        programs. Serves as a site for PeninsulaWorks, offering comprehensive employer
+        services for job seekers and employers in the community. Additional supportive
+        services includes a Single Stop site, where individuals can apply for CalFresh
+        and Medi-Cal, and also receive free financial and legal counseling as well
+        as tax help. Also, serves as a satellite center for Canada College. Formerly
+        known as Opportunities Industrialization Center West (OICW).","kind":"Human
+        Services","latitude":37.475949,"longitude":-122.146449,"name":"Job Training
+        and Placement Program","short_desc":"Provides job training to economically
+        disadvantaged, unemployed or underemployed adults and youth in San Mateo,
+        Santa Clara, San Francisco and Alameda counties.","slug":"job-training-and-placement-program","updated_at":"2014-11-25T17:22:12.200-08:00","website":"http://www.jobtrainworks.org","url":"https://api-staging.smc-connect.org/locations/job-training-and-placement-program","address":{"id":920,"address_1":"1200
+        O''Brien Drive","address_2":null,"city":"Menlo Park","state_province":"CA","postal_code":"94025"},"organization":{"id":1154,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"JobTrain","website":null,"slug":"jobtrain","url":"https://api-staging.smc-connect.org/organizations/jobtrain","locations_url":"https://api-staging.smc-connect.org/organizations/jobtrain/locations"},"phones":[{"id":1513,"department":null,"extension":null,"number":"650
+        330-6429","number_type":"voice","vanity_number":null},{"id":3211,"department":null,"extension":null,"number":"650
+        330-6401","number_type":"fax","vanity_number":null}]},{"id":1187,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.491878,37.635091],"description":"Provides
+        crisis intervention services and emergency material assistance, preliminary
+        casework and counseling, and comprehensive information and referral. Emergency
+        assistance includes providing gift certificates for food and an emergency
+        food pantry stocked by Second Harvest Food Bank and food donated by the community.
+        Assists with enrollment in CalFresh, California''s food stamps program. Limited
+        funds are available to eligible families who need help with first and last
+        month rental deposits and delinquent rent. Confidential crisis intervention
+        services are provided in the areas of financial, emotional and family violence
+        situations. Assists with low-cost health insurance for children. Offers Earn
+        It, Keep It, Save It, a free tax preparation service from February to April
+        15. Funds are available to eligible low-income people to maintain or restore
+        energy services when a 48-hour or 15-day shut-off notice has been received
+        by PG\u0026E. La Raza Centro Legal is available by appointment to provide
+        legal representation to low-income Spanish-speaking residents in the areas
+        of employment, housing and immigration law (call 415-575-3500 for an appointment).
+        The site is part of the core network of community service agencies of San
+        Mateo County.","kind":"Human Services","latitude":37.635091,"longitude":-122.491878,"name":"A
+        project of the Tides Center","short_desc":"A community center offering a wide
+        variety of services to local residents.","slug":"a-project-of-the-tides-center","updated_at":"2014-11-25T17:22:12.826-08:00","website":"http://www.pacresourcecenter.org","url":"https://api-staging.smc-connect.org/locations/a-project-of-the-tides-center","address":{"id":947,"address_1":"1809
+        Palmetto Avenue","address_2":null,"city":"Pacifica","state_province":"CA","postal_code":"94044"},"organization":{"id":1187,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":"Core
+        Service Agency serving Pacifica.","email":null,"funding_sources":[],"licenses":[],"name":"Pacifica
+        Resource Center","website":"https://www.paresourcecenter.org","slug":"pacifica-resource-center","url":"https://api-staging.smc-connect.org/organizations/pacifica-resource-center","locations_url":"https://api-staging.smc-connect.org/organizations/pacifica-resource-center/locations"},"phones":[{"id":1557,"department":null,"extension":null,"number":"650
+        738-7470","number_type":"voice","vanity_number":null},{"id":3231,"department":null,"extension":null,"number":"650
+        359-2053","number_type":"fax","vanity_number":null}]},{"id":1574,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.0776193,37.3966257],"description":"CalWORKs
+        is the name in California for the federal cash assistance Temporary Assistance
+        for Needy Families (TANF) Program. It is a time-limited public assistance
+        program to help meet the needs of families and/or children when the child
+        is deprived of parental support because one or both of the child''s parents
+        are absent, deceased, incapacitated or unemployed. The program helps parents
+        prepare for work and find jobs. Its goal is to strengthen the access of low-income
+        parents to the resources necessary to support their children and become self-sufficient
+        by providing employment and supportive services including child care, transportation,
+        payment for work- or training-related expenses, job referral, retention and
+        advancement assistance. Income and resource limits must be met to be eligible.
+        The Food Stamp Program is for low-income and public assistance households
+        that meet an established-need standard for Food Stamp eligibility. SSI/SSP
+        recipients are not eligible receive Food Stamps but elderly immigrants who
+        receive CAPI are eligible for Food Stamps. The Medi-Cal program pays for health
+        care for eligible and needy low-income residents of California: families meeting
+        the CalWORKs deprivation criteria, pregnant women, children age 21 or under,
+        refugees in their first eight months of residence in the U.S., severely disabled
+        persons and persons age 65 or over. The Refugee Resettlement Program and Refugee
+        Cash Assistance program provides cash and medical assistance and funds for
+        refugees. It also funds employment and training services. Refugee families
+        with children who meet the income and property limits may be eligible for
+        CalWORKs. Adult refugees without children may be eligible to receive Refugee
+        Cash Assistance during their first eight months of residence in the U.S.","kind":"Human
+        Services","latitude":37.3966257,"longitude":-122.0776193,"name":"Department
+        of Employment and Benefit Services., North County District Office","short_desc":"Public
+        assistance programs for Calworks, Medi-Cal, Food Stamps and Refugee Cash Assistance.","slug":"department-of-employment-and-benefit-services-north-county-district-office","updated_at":"2014-11-25T17:22:20.669-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/department-of-employment-and-benefit-services-north-county-district-office","address":{"id":1310,"address_1":"100
+        Moffett Blvd.","address_2":null,"city":"Mountain View","state_province":"CA","postal_code":"94043"},"organization":{"id":1320,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Santa
+        Clara County Social Services Agency","website":null,"slug":"santa-clara-county-social-services-agency","url":"https://api-staging.smc-connect.org/organizations/santa-clara-county-social-services-agency","locations_url":"https://api-staging.smc-connect.org/organizations/santa-clara-county-social-services-agency/locations"},"phones":[{"id":2257,"department":null,"extension":null,"number":"650
+        988-6100","number_type":"voice","vanity_number":null},{"id":2258,"department":null,"extension":null,"number":"650
+        988-6193","number_type":"tty","vanity_number":null},{"id":3504,"department":null,"extension":null,"number":"650
+        940-1831","number_type":"fax","vanity_number":null}]},{"id":1497,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.421524,37.644686],"description":"This
+        regional HSA office offers social services eligibility determination and assistance
+        for: Health Coverage (Medi-Cal), Food Assistance (CalFresh), Financial Assistance
+        (CalWORKs) and General Assistance, and Children and Family Services. Child
+        welfare services such as family maintenance, family reunification and long-term
+        placement programs are available at this office.","kind":"Human Services","latitude":37.644686,"longitude":-122.421524,"name":"Northern
+        Region., Human Services Agency, South San Francisco Office","short_desc":"Provides
+        social services eligibility determination and assistance for Health Coverage,
+        CalFresh, CalWORKs and General Assistance and Children and Family Services.","slug":"northern-region-human-services-agency-south-san-francisco-office","updated_at":"2017-11-30T06:22:57.299-08:00","website":"http://www.smchsa.org","url":"https://api-staging.smc-connect.org/locations/northern-region-human-services-agency-south-san-francisco-office","address":{"id":1236,"address_1":"1487
+        Huntington Avenue","address_2":null,"city":"South San Francisco","state_province":"CA","postal_code":"94080"},"organization":{"id":1310,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Human Services Agency","website":null,"slug":"san-mateo-county-human-services-agency","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-human-services-agency","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-human-services-agency/locations"},"phones":[{"id":2091,"department":null,"extension":null,"number":"650
+        877-5608","number_type":"voice","vanity_number":null},{"id":3442,"department":null,"extension":null,"number":"650
+        877-5606","number_type":"fax","vanity_number":null}]},{"id":1494,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.2691685,37.5203214],"description":"This
+        regional HSA office offers social services eligibility determination and assistance
+        for: Health Coverage (Medi-Cal), Food Assistance (CalFresh), Financial Assistance
+        (CalWORKs), CAPI, and General Assistance, and Employment Services. This location
+        also offers a Job Information Center to help clients find jobs and with employment
+        services and the Veterans Services Office is located here.","kind":"Human
+        Services","latitude":37.5203214,"longitude":-122.2691685,"name":"Central Region.,
+        Human Services Agency, Belmont Harbor Campus","short_desc":"Provides social
+        services eligibility determination and assistance for Health Coverage, CalFresh,
+        CalWORKs, CAPI, and General Assistance, and Employment Services","slug":"central-region-human-services-agency-belmont-harbor-campus","updated_at":"2017-11-30T06:22:57.100-08:00","website":"http://www.smchsa.org","url":"https://api-staging.smc-connect.org/locations/central-region-human-services-agency-belmont-harbor-campus","address":{"id":1233,"address_1":"400
+        Harbor Blvd., Bldg. B","address_2":null,"city":"Belmont","state_province":"CA","postal_code":"94002-4047"},"organization":{"id":1310,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Human Services Agency","website":null,"slug":"san-mateo-county-human-services-agency","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-human-services-agency","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-human-services-agency/locations"},"phones":[{"id":2083,"department":null,"extension":null,"number":"650-802-6470","number_type":"voice","vanity_number":null}]},{"id":1499,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.4738042,37.6894381],"description":"This
+        regional HSA office offers social services eligibility determination and assistance
+        for: Health Coverage (Medi-Cal), Food Assistance (CalFresh), Financial Assistance
+        (CalWORKs) and General Assistance, and Employment Services. This location
+        also offers a Job Information Center to help clients find jobs and with employment
+        services.","kind":"Human Services","latitude":37.6894381,"longitude":-122.4738042,"name":"Northern
+        Region., Human Services Agency, Daly City Office","short_desc":"Provides social
+        services eligibility determination and assistance for Health Coverage, CalFresh,
+        CalWORKs and General Assistance and Employment Services.","slug":"northern-region-human-services-agency-daly-city-office","updated_at":"2017-11-30T06:22:56.591-08:00","website":"http://www.smchsa.org","url":"https://api-staging.smc-connect.org/locations/northern-region-human-services-agency-daly-city-office","address":{"id":1238,"address_1":"271
+        - 92nd Street","address_2":null,"city":"Daly City","state_province":"CA","postal_code":"94015"},"organization":{"id":1310,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Human Services Agency","website":null,"slug":"san-mateo-county-human-services-agency","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-human-services-agency","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-human-services-agency/locations"},"phones":[{"id":2093,"department":null,"extension":null,"number":"650
+        301-8440","number_type":"voice","vanity_number":null},{"id":3444,"department":null,"extension":null,"number":"650
+        301-8455","number_type":"fax","vanity_number":null}]},{"id":1496,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.1402122,37.4723535],"description":"This
+        regional HSA office offers social services eligibility determination and assistance
+        for: Health Coverage (Medi-Cal), Food Assistance (CalFresh), Financial Assistance
+        (CalWORKs) and General Assistance, and Children and Family Services. Child
+        welfare services such as family maintenance, family reunification and long-term
+        placement programs are available at this office.","kind":"Human Services","latitude":37.4723535,"longitude":-122.1402122,"name":"Southern
+        Region., Human Services Agency, East Palo Alto Office","short_desc":"Provides
+        social services eligibility determination and assistance for Health Coverage,
+        CalFresh, CalWORKs and General Assistance and Children and Family Services.","slug":"southern-region-human-services-agency-east-palo-alto-office","updated_at":"2017-11-30T06:22:56.500-08:00","website":"http://www.smchsa.org","url":"https://api-staging.smc-connect.org/locations/southern-region-human-services-agency-east-palo-alto-office","address":{"id":1235,"address_1":"2415
+        University Avenue, 3rd Floor","address_2":null,"city":"East Palo Alto","state_province":"CA","postal_code":"94303"},"organization":{"id":1310,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Human Services Agency","website":null,"slug":"san-mateo-county-human-services-agency","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-human-services-agency","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-human-services-agency/locations"},"phones":[{"id":2090,"department":null,"extension":null,"number":"650
+        363-4218","number_type":"voice","vanity_number":null},{"id":3441,"department":null,"extension":null,"number":"650
+        325-5327","number_type":"fax","vanity_number":null}]},{"id":1713,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.2141324,37.4773738],"description":"This
+        regional HSA office offers social services eligibility determination and assistance
+        for: Health Coverage (Medi-Cal), Food Assistance (CalFresh), Financial Assistance
+        (CalWORKs) and General Assistance, and Children and Family Services and Employment
+        Services. This location also offers a Job Information Center to help clients
+        find jobs and with employment services.","kind":"Human Services","latitude":37.4773738,"longitude":-122.2141324,"name":"Southern
+        Region., Human Services Agency, Redwood City Office","short_desc":"Provides
+        social services eligibility determination and assistance for Health Coverage,
+        CalFresh, CalWORKs and General Assistance, Children and Family Services, and
+        Employment Services","slug":"southern-region-human-services-agency-redwood-city-office","updated_at":"2017-11-30T06:22:56.746-08:00","website":"http://www.smchsa.org","url":"https://api-staging.smc-connect.org/locations/southern-region-human-services-agency-redwood-city-office","address":{"id":1436,"address_1":"2500
+        Middlefield Rd.","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94063"},"organization":{"id":1310,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Human Services Agency","website":null,"slug":"san-mateo-county-human-services-agency","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-human-services-agency","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-human-services-agency/locations"},"phones":[{"id":2470,"department":"Main
+        Number","extension":null,"number":"650-599-3811","number_type":"voice","vanity_number":null},{"id":2471,"department":"Children
+        and Family Services","extension":null,"number":"650-802-7922","number_type":"voice","vanity_number":null},{"id":3572,"department":"Economic
+        Self Sufficiency","extension":null,"number":"650 364-5684","number_type":"fax","vanity_number":null},{"id":3626,"department":"Economic
+        Self Sufficiency","extension":null,"number":"800-223-8383","number_type":"voice","vanity_number":null}]},{"id":1503,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.2691685,37.5203214],"description":"The
+        Call Center responds to the toll-free number (1-800-223-8383) to report Medi-Cal
+        changes/renewals, answer questions about health coverage, Covered CA, and
+        other public assistance program and services.","kind":"Human Services","latitude":37.5203214,"longitude":-122.2691685,"name":"HSA
+        Call Center","short_desc":"Offers a toll-free number to report Medi-Cal changes,
+        ask questions about health coverage and other services.","slug":"hsa-call-center","updated_at":"2017-11-30T06:22:56.961-08:00","website":"http://www.smchsa.org","url":"https://api-staging.smc-connect.org/locations/hsa-call-center","address":{"id":1242,"address_1":"400
+        Harbor Boulevard, Building B","address_2":null,"city":"Belmont","state_province":"CA","postal_code":"94002"},"organization":{"id":1310,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Human Services Agency","website":null,"slug":"san-mateo-county-human-services-agency","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-human-services-agency","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-human-services-agency/locations"},"phones":[{"id":2102,"department":null,"extension":null,"number":"800
+        223-8383","number_type":"voice","vanity_number":null},{"id":3447,"department":null,"extension":null,"number":"650
+        620-9732","number_type":"fax","vanity_number":null}]}]'
+  recorded_at: Fri, 20 Jan 2023 02:38:03 GMT
+recorded_with: VCR 6.1.0

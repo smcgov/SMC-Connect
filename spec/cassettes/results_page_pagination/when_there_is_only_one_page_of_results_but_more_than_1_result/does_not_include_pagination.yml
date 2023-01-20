@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://smc-ohana-api-test.herokuapp.com/api/search?action=index&controller=locations&keyword=yoga&per_page=5
+    uri: https://api-staging.smc-connect.org/search?action=index&controller=locations&keyword=yoga&per_page=11
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -21,36 +21,64 @@ http_interactions:
       Server:
       - Cowboy
       Connection:
-      - close
-      Date:
-      - Fri, 05 Dec 2014 21:06:02 GMT
-      Status:
-      - 200 OK
+      - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Etag:
-      - '"a726bf7a97411433cfae2577f84ccca5"'
+      - W/"a7d2632e5baca34665da021cc718d5fd"
       X-Total-Count:
-      - '5'
+      - '11'
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Fri, 20 Jan 2023 02:38:01 GMT
       Cache-Control:
-      - max-age=0, public
+      - max-age=60, public
+      Vary:
+      - Origin
       X-Request-Id:
-      - a1f24c8a-028d-4eda-a0c4-3ae222663430
+      - 76a85445-cc90-41ff-a4e0-e2248b9dc133
       X-Runtime:
-      - '0.033117'
-      X-Rack-Cache:
-      - pass
+      - '0.031865'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":1372,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.213221,37.477227],"description":"A
+      string: '[{"id":1611,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4198725,37.657129],"description":"A
+        drop-in multipurpose center open to any senior 50 or over, but primarily serving
+        those in South San Francisco. Social, recreational, educational and special
+        activities include bingo, bridge, billiards, knitting and crafts, cooking
+        demonstrations, casino trips, sightseeing opportunities and dining outings.
+        The Alzheimer''s Support Group and blood pressure screenings are scheduled
+        on a regular basis. Tax assistance is available from Februrary to April. HICAP
+        (Health Insurance Counseling and Advocacy Program, the Medicare Counseling
+        Program) is available by appointment. Exercise, American Line Dancing, and
+        ESL (English as a Second Language) are offered at this site by the Parks and
+        Recreation Department and Adult Education. Senior social dancing, bead stringing/knotting
+        class, yoga classes, Coping with Change support group, Tai Chi, the 55 Alive
+        Safety Driving Courses (registration at Magnolia Center), knitting for beginnners,
+        and stretching and flexibility are all offered under the umbrella of Senior
+        Services and the Parks and Recreation Department at the Municipal Services
+        Building at 33 Arroyo Drive, South San Francisco. There is a yearly health
+        fair in March and a holiday boutique in November.","kind":"Human Services","latitude":37.657129,"longitude":-122.4198725,"name":"Magnolia
+        Center","short_desc":"A multipurpose senior citizens'' center.","slug":"magnolia-center","updated_at":"2017-07-21T16:35:57.263-07:00","website":"http://www.ssf.net","url":"https://api-staging.smc-connect.org/locations/magnolia-center","address":{"id":1344,"address_1":"601
+        Grand Avenue, 3rd Floor","address_2":null,"city":"South San Francisco","state_province":"CA","postal_code":"94080"},"organization":{"id":1330,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"South
+        San Francisco Senior Services","website":null,"slug":"south-san-francisco-senior-services","url":"https://api-staging.smc-connect.org/organizations/south-san-francisco-senior-services","locations_url":"https://api-staging.smc-connect.org/organizations/south-san-francisco-senior-services/locations"},"phones":[{"id":2316,"department":null,"extension":null,"number":"650
+        829-3820","number_type":"voice","vanity_number":null}]},{"id":1372,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.2131702,37.4773149],"description":"A
         walk-in center for older adults that provides social services, wellness, recreational,
         educational and creative activities including arts and crafts, computer classes
         and gardening classes. Coffee and healthy breakfasts are available daily.
@@ -70,13 +98,39 @@ http_interactions:
         Formerly known as Peninsula Family Service, Fair Oaks Intergenerational Center.
         Formerly known as the Fair Oaks Senior Center. Formerly known as Family Service
         Agency of San Mateo County, Fair Oaks Intergenerational Center.","kind":"Human
-        Services","latitude":37.477227,"longitude":-122.213221,"name":"Fair Oaks Adult
-        Activity Center","short_desc":"A multipurpose senior citizens'' center serving
-        the Redwood City area.","slug":"fair-oaks-adult-activity-center","updated_at":"2014-11-30T19:05:11.708-08:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/fair-oaks-adult-activity-center","address":{"id":1112,"street":"2600
-        Middlefield Road","street_1":"2600 Middlefield Road","street_2":null,"city":"Redwood
-        City","state":"CA","state_province":"CA","postal_code":"94063","zip":"94063"},"organization":{"id":1297,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Peninsula
-        Family Service","website":null,"slug":"peninsula-family-service-f8e82538-5878-414f-9ba9-6ded2c15d731","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/peninsula-family-service-f8e82538-5878-414f-9ba9-6ded2c15d731","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/peninsula-family-service-f8e82538-5878-414f-9ba9-6ded2c15d731/locations"},"phones":[{"id":1850,"department":null,"extension":null,"number":"650
-        780-7525","number_type":null,"vanity_number":null}]},{"id":1377,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.1805905,37.4480204],"description":"A
+        Services","latitude":37.4773149,"longitude":-122.2131702,"name":"Fair Oaks
+        Adult Activity Center","short_desc":"A multipurpose senior citizens'' center
+        serving the Redwood City area.","slug":"fair-oaks-adult-activity-center","updated_at":"2017-07-21T16:27:19.221-07:00","website":"http://www.peninsulafamilyservice.org","url":"https://api-staging.smc-connect.org/locations/fair-oaks-adult-activity-center","address":{"id":1112,"address_1":"2600
+        Middlefield Road","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94063"},"organization":{"id":19,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Peninsula
+        Family Service","website":null,"slug":"peninsula-family-service","url":"https://api-staging.smc-connect.org/organizations/peninsula-family-service","locations_url":"https://api-staging.smc-connect.org/organizations/peninsula-family-service/locations"},"phones":[{"id":1850,"department":null,"extension":null,"number":"650
+        780-7525","number_type":"voice","vanity_number":null},{"id":3347,"department":null,"extension":null,"number":"650
+        701-0856","number_type":"fax","vanity_number":null}]},{"id":15,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4991919,37.5987994],"description":"A
+        multipurpose senior center offering a variety of recreation and education
+        programs such as physical fitness, crafts, support groups, bridge, ceramics
+        and yoga. Publishes a newsletter of activities and information of interest
+        to seniors in Pacifica. Staff provide information about community services
+        to persons age 60 or over and their families. Appointments can be made with
+        appropriate agencies and transportation can be located if needed. Assistance
+        is available for questions related to housing, employment, household help
+        and repairs, recreation and social activities, financial assistance, health
+        and counseling services, services to the homebound, home delivered meals and
+        more. Maintains information about special discounts for seniors. Tax assistance
+        is offered by AARP. Keeps a file of housing available. Health insurance counseling
+        is available by appointment. Serves a hot meal at noon five days a week for
+        persons age 60 or over. Arranges to deliver meals to the homes of residents
+        unable to prepare their own food and who have no one to cook for them (call
+        650-738-7350). Other services offered regularly include podiatry service,
+        and nutrition and health lectures. Volunteer participation is needed in the
+        areas of delivering Meals on Wheels, teaching, staffing the gift shop, food
+        services, reception and in the SASH (Shopping Assistance for Seniors who are
+        Homebound) program. Free movies shown every Friday. SIA members 60 or over
+        can make an appointment on the first and third Monday of each month for a
+        $10 haircut.","kind":"Human Services","latitude":37.5987994,"longitude":-122.4991919,"name":"Pacifica
+        Senior Services","short_desc":"A multipurpose senior citizens'' center.","slug":"pacifica-senior-services","updated_at":"2017-07-21T16:26:41.451-07:00","website":"http://www.cityofpacifica.org/depts/senior_services/","url":"https://api-staging.smc-connect.org/locations/pacifica-senior-services","address":{"id":15,"address_1":"540
+        Crespi Drive","address_2":null,"city":"Pacifica","state_province":"CA","postal_code":"94044"},"organization":{"id":15,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Pacifica
+        Senior Services","website":null,"slug":"pacifica-senior-services","url":"https://api-staging.smc-connect.org/organizations/pacifica-senior-services","locations_url":"https://api-staging.smc-connect.org/organizations/pacifica-senior-services/locations"},"phones":[{"id":20,"department":null,"extension":null,"number":"650
+        738-7384","number_type":"voice","vanity_number":null},{"id":2499,"department":null,"extension":null,"number":"650
+        738-0564","number_type":"fax","vanity_number":null}]},{"id":1377,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.1805905,37.4480204],"description":"A
         multipurpose center offering a wide variety of recreational, education and
         cultural activities. Lifelong learning courses cover topics such as music,
         art, languages, etc., are hosted at this location. Little House offers a large
@@ -93,52 +147,95 @@ http_interactions:
         counseling, and estate planning. Massage, podiatry, and acupuncture are available
         by appointment. Lunch is served Monday-Friday, 11:30 am-1:00 pm. Prices vary
         according to selection.","kind":"Human Services","latitude":37.4480204,"longitude":-122.1805905,"name":"Little
-        House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","updated_at":"2014-11-30T19:05:11.829-08:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":1117,"street":"800
-        Middle Avenue","street_1":"800 Middle Avenue","street_2":null,"city":"Menlo
-        Park","state":"CA","state_province":"CA","postal_code":"94025-9881","zip":"94025-9881"},"organization":{"id":1298,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Peninsula
-        Volunteers","website":null,"slug":"peninsula-volunteers","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"},"phones":[{"id":1887,"department":null,"extension":null,"number":"650
-        326-2025","number_type":null,"vanity_number":null},{"id":1888,"department":"Peninsula
-        Volunteers","extension":null,"number":"650 326-0665","number_type":null,"vanity_number":null}]},{"id":1611,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4198725,37.657129],"description":"A
-        drop-in multipurpose center open to any senior 50 or over, but primarily serving
-        those in South San Francisco. Social, recreational, educational and special
-        activities include bingo, bridge, billiards, knitting and crafts, cooking
-        demonstrations, casino trips, sightseeing opportunities and dining outings.
-        The Alzheimer''s Support Group and blood pressure screenings are scheduled
-        on a regular basis. Tax assistance is available from Februrary to April. HICAP
-        (Health Insurance Counseling and Advocacy Program, the Medicare Counseling
-        Program) is available by appointment. Exercise, American Line Dancing, and
-        ESL (English as a Second Language) are offered at this site by the Parks and
-        Recreation Department and Adult Education. Senior social dancing, bead stringing/knotting
-        class, yoga classes, Coping with Change support group, Tai Chi, the 55 Alive
-        Safety Driving Courses (registration at Magnolia Center), knitting for beginnners,
-        and stretching and flexibility are all offered under the umbrella of Senior
-        Services and the Parks and Recreation Department at the Municipal Services
-        Building at 33 Arroyo Drive, South San Francisco. There is a yearly health
-        fair in March and a holiday boutique in November.","kind":"Human Services","latitude":37.657129,"longitude":-122.4198725,"name":"Magnolia
-        Center","short_desc":"A multipurpose senior citizens'' center.","slug":"magnolia-center","updated_at":"2014-11-30T19:05:16.646-08:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/magnolia-center","address":{"id":1344,"street":"601
-        Grand Avenue, 3rd Floor","street_1":"601 Grand Avenue, 3rd Floor","street_2":null,"city":"South
-        San Francisco","state":"CA","state_province":"CA","postal_code":"94080","zip":"94080"},"organization":{"id":1330,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"South
-        San Francisco Senior Services","website":null,"slug":"south-san-francisco-senior-services","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/south-san-francisco-senior-services","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/south-san-francisco-senior-services/locations"},"phones":[{"id":2316,"department":null,"extension":null,"number":"650
-        829-3820","number_type":null,"vanity_number":null}]},{"id":1673,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4766884,37.730927],"description":"Offers
-        licensed elementary school-age childcare at several sites, preschool, youth
-        activities, residential camp, day camp and special interest activities including
-        programming for children of single parents and family nights. Also offers
-        mentoring, counseling and tutoring services. The Seniors Drop-In Center provides
-        information and referral, recreational and cultural activities, health screening,
-        blood pressure check-ups, adaptive exercise for stroke survivors, travel program,
-        annual tax preparation assistance, Christmas Day party and companionship for
-        single seniors, and hot lunch served weekdays at 11:45 am. The Senior Program
-        is at 3150 - 20th Avenue, San Francisco. The branch is also a full facility
-        fitness center with an approach to total wellness offering aerobics, swimming,
-        youth sports, stretching and toning, strength training, basketball, martial
-        arts, yoga, tai chi, water aerobics, pilates, dance, youth dance and soccer.
-        Childcare is available for parents while they workout.","kind":"Other","latitude":37.730927,"longitude":-122.4766884,"name":"Stonestown
-        Family YMCA","short_desc":"Athletic/fitness programs for youth/adults, drop-in
-        senior center, meal site, day camp, after school care for children.","slug":"stonestown-family-ymca","updated_at":"2014-11-30T19:05:17.883-08:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/stonestown-family-ymca","address":{"id":1397,"street":"333
-        Eucalyptus Drive","street_1":"333 Eucalyptus Drive","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94132","zip":"94132"},"organization":{"id":1341,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"YMCA
-        of San Francisco","website":null,"slug":"ymca-of-san-francisco","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/ymca-of-san-francisco","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/ymca-of-san-francisco/locations"},"phones":[{"id":2449,"department":null,"extension":null,"number":"415
-        242-7100","number_type":null,"vanity_number":null}]},{"id":1674,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.2268014,37.4702031],"description":"Provides
+        House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","updated_at":"2017-07-21T16:24:18.526-07:00","website":"http://www.penvol.org/littlehouse","url":"https://api-staging.smc-connect.org/locations/little-house","address":{"id":1117,"address_1":"800
+        Middle Avenue","address_2":null,"city":"Menlo Park","state_province":"CA","postal_code":"94025-9881"},"organization":{"id":1298,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Peninsula
+        Volunteers","website":null,"slug":"peninsula-volunteers","url":"https://api-staging.smc-connect.org/organizations/peninsula-volunteers","locations_url":"https://api-staging.smc-connect.org/organizations/peninsula-volunteers/locations"},"phones":[{"id":1887,"department":null,"extension":null,"number":"650
+        326-2025","number_type":"voice","vanity_number":null},{"id":1888,"department":"Peninsula
+        Volunteers","extension":null,"number":"650 326-0665","number_type":"voice","vanity_number":null},{"id":3352,"department":null,"extension":null,"number":"650
+        326-9547","number_type":"fax","vanity_number":null}]},{"id":19,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.3263232,37.5639394],"description":"Offers
+        programs in self-sufficiency to children, families and older adults in the
+        community. Services include child development and education programs in multiple
+        locations, as well as subsidized child care in numerous day care homes as
+        part of the Neighborhood Child Care Program. Visitation Services help families
+        in crisis receive the counseling and guidance they need to create healthier
+        relationships between parents and children. Supervised visits, child exchanges
+        and parent education workshops are part of the Visitation Services. Financial
+        Empowerment programs offer services to adults who wish to improve their financial
+        situation and create stability for themselves and their families. Services
+        include low-interest car loans for parents of dependent children and an emergency
+        savings program with financial education classes. Older adults also receive
+        help with job searches as part of the Second Careers Program. Older Adult
+        Services provide participants with case management, physical and social activities,
+        referrals and emotional support to continue to be active. The Fair Oaks Adult
+        Activity Center in Redwood City provides hot lunches and English as a Second
+        Language classes, as well as yoga and other activities.","kind":"Human Services","latitude":37.5639394,"longitude":-122.3263232,"name":"Peninsula
+        Family Service","short_desc":"Provides a variety of services to individuals
+        and families including counseling and child care.","slug":"peninsula-family-service","updated_at":"2016-08-23T16:16:05.560-07:00","website":"http://www.peninsulafamilyservice.org","url":"https://api-staging.smc-connect.org/locations/peninsula-family-service","address":{"id":19,"address_1":"24
+        Second Avenue","address_2":null,"city":"San Mateo","state_province":"CA","postal_code":"94401"},"organization":{"id":19,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Peninsula
+        Family Service","website":null,"slug":"peninsula-family-service","url":"https://api-staging.smc-connect.org/organizations/peninsula-family-service","locations_url":"https://api-staging.smc-connect.org/organizations/peninsula-family-service/locations"},"phones":[{"id":26,"department":null,"extension":null,"number":"650
+        403-4300","number_type":"voice","vanity_number":null},{"id":2502,"department":null,"extension":null,"number":"650
+        403-4303","number_type":"fax","vanity_number":null}]},{"id":310,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.202258,37.808736],"description":"Provides
+        services to maximize the independent living skills and communication skills
+        of persons with cerebral palsy, physical, intellectual and/or other developmental
+        disability. The Adult Development Program offers gross and fine motor skill
+        training, self-care instruction (personal hygiene, toileting and feeding),
+        cognitive development, instruction in independent living, prevocational skills
+        training and opportunities for social development. Other services include
+        individual and group counseling, exercise classes, ceramics and drama. The
+        community integration program is offered at an alternate site in Oakland and
+        teaches people how to access and navigate services and social amenities of
+        the community. Other programs include Wellness and Aging offering classes
+        on various health, exercise and diet topics, including adaptive yoga, Feldenkrais,
+        massage, accupressure and crainal sacral. Computer Learning Lab provides customized
+        assistance with assistive technology and adaptive equipment. Cornerstone Small
+        Business Incubator assists those with severe physical limitations interested
+        in learning to open a business how to start, structure and run a business.","kind":"Human
+        Services","latitude":37.808736,"longitude":-122.202258,"name":"Cerebral Palsy
+        Center for the Bay Area, Inc.","short_desc":"Gross and fine motor skill training,
+        self-care, cognitive development, independent living skills, counseling, recreation
+        and social activities.","slug":"cerebral-palsy-center-for-the-bay-area-inc","updated_at":"2014-11-25T17:21:59.818-08:00","website":"http://cpcoak.org","url":"https://api-staging.smc-connect.org/locations/cerebral-palsy-center-for-the-bay-area-inc","address":{"id":260,"address_1":"4500
+        Lincoln Avenue","address_2":null,"city":"Oakland","state_province":"CA","postal_code":"94602"},"organization":{"id":310,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Cerebral
+        Palsy Center for the Bay Area, Inc.","website":null,"slug":"cerebral-palsy-center-for-the-bay-area-inc","url":"https://api-staging.smc-connect.org/organizations/cerebral-palsy-center-for-the-bay-area-inc","locations_url":"https://api-staging.smc-connect.org/organizations/cerebral-palsy-center-for-the-bay-area-inc/locations"},"phones":[{"id":413,"department":null,"extension":null,"number":"510
+        531-3323","number_type":"voice","vanity_number":null},{"id":2682,"department":null,"extension":null,"number":"510
+        531-2990","number_type":"fax","vanity_number":null}]},{"id":211,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.334584,37.572526],"description":"Russell
+        Bede School serves students in grades one through six with average to above-average
+        ability who are challenged by language-related learning differences or have
+        alternative learning styles. Parent conferences are held 3 times yearly and
+        written progress reports are provided quarterly. Classes are held from 8:30-2:30
+        during the school year, and 9:00-12:00 during summer school. Classes have
+        a maximum of six students. Although focus is on academics, PE, music, drama,
+        art and gardening and computer lab are also provided during the school day
+        and after-school programs in yoga are available. Speech and language, occupational
+        therapy and social group therapy are available on site. Students are returned
+        to maintream schools when they have the capabilities required to be successful.","kind":"Human
+        Services","latitude":37.572526,"longitude":-122.334584,"name":"Russell Bede
+        School","short_desc":"Offers tutorial service for learning disabled children
+        and for any child experiencing difficulty in one or more academic areas.","slug":"russell-bede-school","updated_at":"2014-11-25T17:21:58.898-08:00","website":"http://www.russelbedeschool.com","url":"https://api-staging.smc-connect.org/locations/russell-bede-school","address":{"id":195,"address_1":"446
+        Turner Terrace","address_2":null,"city":"San Mateo","state_province":"CA","postal_code":"94401-2414"},"organization":{"id":211,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Russell
+        Bede School","website":null,"slug":"russell-bede-school","url":"https://api-staging.smc-connect.org/organizations/russell-bede-school","locations_url":"https://api-staging.smc-connect.org/organizations/russell-bede-school/locations"},"phones":[{"id":280,"department":null,"extension":null,"number":"650
+        579-4400","number_type":"voice","vanity_number":null},{"id":2638,"department":null,"extension":null,"number":"650
+        579-4402","number_type":"fax","vanity_number":null}]},{"id":522,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.1079974,37.4182184],"description":"Ta
+        Enna Nursery School offers a preschool and extended day care program for children.
+        Both programs provide day camps for children including swimming, nature study,
+        arts and crafts and non-competitive athletics. Participatory Recreation Program
+        offers a holistic health and fitness program for preschool age children through
+        seniors that includes leagues, sports skills, health education, special events,
+        wellness and personal health and nutrition counseling. Social Development
+        is provided to seniors through lectures, classes, trips, fitness activities,
+        workshops and social events. An outreach program is also available. Classes
+        and group discussions are offered to promote cultural awareness and intercultural
+        relations. Educational and cultural enrichment classes are also provided for
+        adults in the areas of art, history, Hebrew, yoga, creative writing and religious
+        influence on world culture. Soviet Emigres Program provides English language
+        classes, cultural and social events, plus pairing with American partners for
+        assistance with integration into society.","kind":"Education","latitude":37.4182184,"longitude":-122.1079974,"name":"Albert
+        L. Schultz Jewish Community Center","short_desc":"Provides nursery school,
+        day camping, recreation, social development for teens and seniors, and educational
+        and cultural awareness and enrichment classes.","slug":"albert-l-schultz-jewish-community-center","updated_at":"2014-12-04T11:19:24.409-08:00","website":"http://www.paloaltojcc.org","url":"https://api-staging.smc-connect.org/locations/albert-l-schultz-jewish-community-center","address":{"id":434,"address_1":"4000
+        Middlefield Road, Bldg. R","address_2":null,"city":"Palo Alto","state_province":"CA","postal_code":"94303"},"organization":{"id":522,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Albert
+        L. Schultz Jewish Community Center","website":null,"slug":"albert-l-schultz-jewish-community-center","url":"https://api-staging.smc-connect.org/organizations/albert-l-schultz-jewish-community-center","locations_url":"https://api-staging.smc-connect.org/organizations/albert-l-schultz-jewish-community-center/locations"},"phones":[{"id":682,"department":null,"extension":null,"number":"650
+        493-9400","number_type":"voice","vanity_number":null},{"id":2814,"department":null,"extension":null,"number":"650
+        493-1187","number_type":"fax","vanity_number":null}]},{"id":1674,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2268014,37.47020310000001],"description":"Provides
         social and recreational services for persons age three months or over. Services
         include a full aquatic program (in an indoor heated pool), fitness activities,
         active older adults programs and community programs. The Aspire Adaptive Swim
@@ -151,12 +248,31 @@ http_interactions:
         classes and more. Youth leadership opportunities are available as well as
         adult and youth volunteer opportunities. Offers summer and intersessions day
         camp for children age 5-14, Monday-Friday, 7:30-6. Call for dates. Offers
-        a free program for cancer survivors, \"Living Strong, Living Well\".","kind":"Other","latitude":37.4702031,"longitude":-122.2268014,"name":"Sequoia
-        Branch","short_desc":"Provides social and recreational programs for all ages.","slug":"sequoia-branch","updated_at":"2014-11-30T19:05:17.905-08:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/sequoia-branch","address":{"id":1398,"street":"1445
-        Hudson Street","street_1":"1445 Hudson Street","street_2":null,"city":"Redwood
-        City","state":"CA","state_province":"CA","postal_code":"94061","zip":"94061"},"organization":{"id":1342,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"YMCA
-        of Silicon Valley","website":null,"slug":"ymca-of-silicon-valley","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/ymca-of-silicon-valley","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/ymca-of-silicon-valley/locations"},"phones":[{"id":2450,"department":null,"extension":null,"number":"650
-        368-4168","number_type":null,"vanity_number":null}]}]'
-    http_version: 
-  recorded_at: Fri, 05 Dec 2014 21:06:02 GMT
-recorded_with: VCR 2.9.3
+        a free program for cancer survivors, \"Living Strong, Living Well\".","kind":"Other","latitude":37.47020310000001,"longitude":-122.2268014,"name":"Sequoia
+        Branch","short_desc":"Provides social and recreational programs for all ages.","slug":"sequoia-branch","updated_at":"2014-11-25T17:22:22.475-08:00","website":"http://www.ymcasv.org","url":"https://api-staging.smc-connect.org/locations/sequoia-branch","address":{"id":1398,"address_1":"1445
+        Hudson Street","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94061"},"organization":{"id":1342,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"YMCA
+        of Silicon Valley","website":null,"slug":"ymca-of-silicon-valley","url":"https://api-staging.smc-connect.org/organizations/ymca-of-silicon-valley","locations_url":"https://api-staging.smc-connect.org/organizations/ymca-of-silicon-valley/locations"},"phones":[{"id":2450,"department":null,"extension":null,"number":"650
+        368-4168","number_type":"voice","vanity_number":null},{"id":3561,"department":null,"extension":null,"number":"650
+        368-1140","number_type":"fax","vanity_number":null}]},{"id":97,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4027692,37.6868639],"description":"Provides
+        recreation and community services including special-interest classes and athletic
+        programs. Some of the classes offered are dance, yoga, guitar, crafts and
+        exercise. Athletic programs for youth and adults consist of basketball, baseball,
+        softball, wrestling and volleyball. Also available are a senior citizens''
+        club, an after-school youth activity club, preschool classes and community
+        events.","kind":"Other","latitude":37.6868639,"longitude":-122.4027692,"name":"Brisbane
+        Recreation Department","short_desc":"Provides recreation, athletic events
+        and facilities and meeting places for clubs.","slug":"brisbane-recreation-department","updated_at":"2014-11-25T17:21:56.697-08:00","website":"http://www.ci.brisbane.ca.us","url":"https://api-staging.smc-connect.org/locations/brisbane-recreation-department","address":{"id":92,"address_1":"50
+        Park Place","address_2":null,"city":"Brisbane","state_province":"CA","postal_code":"94005"},"organization":{"id":97,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Brisbane
+        Recreation Department","website":null,"slug":"brisbane-recreation-department","url":"https://api-staging.smc-connect.org/organizations/brisbane-recreation-department","locations_url":"https://api-staging.smc-connect.org/organizations/brisbane-recreation-department/locations"},"phones":[{"id":125,"department":null,"extension":null,"number":"415
+        508-2140","number_type":"voice","vanity_number":null},{"id":2555,"department":null,"extension":null,"number":"415
+        467-4989","number_type":"fax","vanity_number":null}]},{"id":85,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.1913702,37.4651509],"description":"Holds
+        classes including arts and crafts, ballet, aerobics, yoga, dog training, etc.
+        Offers a playground for small children. Facilities are available for rent
+        for meetings, weddings and private parties.","kind":"Other","latitude":37.4651509,"longitude":-122.1913702,"name":"Atherton-Holbrook
+        Palmer Park","short_desc":null,"slug":"atherton-holbrook-palmer-park","updated_at":"2014-11-25T17:21:56.522-08:00","website":"http://www.herecomestheguide.com","url":"https://api-staging.smc-connect.org/locations/atherton-holbrook-palmer-park","address":{"id":81,"address_1":"150
+        Watkins Avenue","address_2":null,"city":"Atherton","state_province":"CA","postal_code":"94027"},"organization":{"id":85,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Atherton-Holbrook
+        Palmer Park","website":null,"slug":"atherton-holbrook-palmer-park","url":"https://api-staging.smc-connect.org/organizations/atherton-holbrook-palmer-park","locations_url":"https://api-staging.smc-connect.org/organizations/atherton-holbrook-palmer-park/locations"},"phones":[{"id":111,"department":null,"extension":null,"number":"650
+        752-0534","number_type":"voice","vanity_number":null},{"id":2544,"department":null,"extension":null,"number":"650
+        688-6548","number_type":"fax","vanity_number":null}]}]'
+  recorded_at: Fri, 20 Jan 2023 02:38:01 GMT
+recorded_with: VCR 6.1.0

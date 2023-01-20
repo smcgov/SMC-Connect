@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://smc-ohana-api-test.herokuapp.com/api/search?action=index&controller=locations
+    uri: https://api-staging.smc-connect.org/search?action=index&controller=locations
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -28,132 +28,369 @@ http_interactions:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Etag:
-      - '"c464f727ed8f9567e522a8adc6f024ef"'
+      - W/"05fd1194a4355ce6e13292992206a722"
       Link:
-      - <http://smc-ohana-api-test.herokuapp.com/api/search?page=343>; rel="last",
-        <http://smc-ohana-api-test.herokuapp.com/api/search?page=2>; rel="next"
-      X-Total-Count:
-      - '343'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - max-age=0, public
-      X-Request-Id:
-      - e3488257-b727-40fb-a971-0547b2f550b7
-      X-Runtime:
-      - '3.222846'
-      X-Content-Digest:
-      - a315da6510efa7aac563b1f949dd53cda88db56a
-      Date:
-      - Sat, 15 Aug 2015 18:04:22 GMT
-      Age:
-      - '0'
-      X-Rack-Cache:
-      - stale, valid, store
-      Content-Length:
-      - '1500'
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '[{"id":1371,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.138615,37.444609],"description":"A
-        collection of 132,000 items including large print and foreign language books,
-        magazines and newspapers, DVDs, audio and video cassettes, compact discs,
-        paperbacks, talking books and telephone directories. Business as well as research
-        reference is available. Also offers consumer information, photocopiers, bus
-        schedules and the files of the Palo Alto Historical Association and Internet
-        PCs.","kind":"Libraries","latitude":37.444609,"longitude":-122.138615,"name":"Main
-        Library","short_desc":null,"slug":"main-library","updated_at":"2014-11-30T19:05:11.640-08:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/main-library","address":{"id":1111,"address_1":"1213
-        Newell Road","address_2":null,"street_1":"1213 Newell Road","street_2":null,"city":"Palo
-        Alto","state_province":"CA","postal_code":"94303"},"organization":{"id":1296,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Palo
-        Alto City Library","website":null,"slug":"palo-alto-city-library","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/palo-alto-city-library","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/palo-alto-city-library/locations"},"phones":[{"id":1849,"department":null,"extension":null,"number":"650
-        329-2436","number_type":null,"vanity_number":null}]}]'
-    http_version: 
-  recorded_at: Sat, 15 Aug 2015 18:04:22 GMT
-- request:
-    method: get
-    uri: http://smc-ohana-api-test.herokuapp.com/api/search?action=index&controller=locations&keyword=soccer
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Connection:
-      - keep-alive
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Etag:
-      - '"740ab8723daa14137498c7490c15fad9"'
-      Link:
-      - <http://smc-ohana-api-test.herokuapp.com/api/search?keyword=soccer&page=3>;
-        rel="last", <http://smc-ohana-api-test.herokuapp.com/api/search?keyword=soccer&page=2>;
+      - <https://api-staging.smc-connect.org/search?page=60>; rel="last", <https://api-staging.smc-connect.org/search?page=2>;
         rel="next"
       X-Total-Count:
-      - '3'
+      - '1799'
       Content-Type:
       - application/json; charset=utf-8
-      Cache-Control:
-      - max-age=0, public
-      X-Request-Id:
-      - b337e08b-b6f7-4540-acc4-4f528a5fff1d
-      X-Runtime:
-      - '0.076311'
-      X-Content-Digest:
-      - cceb0a4e91c64072e4df071e81f91b35fabee359
       Date:
-      - Sat, 15 Aug 2015 18:04:22 GMT
-      Age:
-      - '0'
-      X-Rack-Cache:
-      - stale, valid, store
-      Content-Length:
-      - '2260'
+      - Fri, 20 Jan 2023 02:37:40 GMT
+      Cache-Control:
+      - max-age=60, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 75c62eab-7006-40d5-9dea-1cfca343b702
+      X-Runtime:
+      - '0.053525'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":1673,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4766884,37.730927],"description":"Offers
-        licensed elementary school-age childcare at several sites, preschool, youth
-        activities, residential camp, day camp and special interest activities including
-        programming for children of single parents and family nights. Also offers
-        mentoring, counseling and tutoring services. The Seniors Drop-In Center provides
-        information and referral, recreational and cultural activities, health screening,
-        blood pressure check-ups, adaptive exercise for stroke survivors, travel program,
-        annual tax preparation assistance, Christmas Day party and companionship for
-        single seniors, and hot lunch served weekdays at 11:45 am. The Senior Program
-        is at 3150 - 20th Avenue, San Francisco. The branch is also a full facility
-        fitness center with an approach to total wellness offering aerobics, swimming,
-        youth sports, stretching and toning, strength training, basketball, martial
-        arts, yoga, tai chi, water aerobics, pilates, dance, youth dance and soccer.
-        Childcare is available for parents while they workout.","kind":"Other","latitude":37.730927,"longitude":-122.4766884,"name":"Stonestown
-        Family YMCA","short_desc":"Athletic/fitness programs for youth/adults, drop-in
-        senior center, meal site, day camp, after school care for children.","slug":"stonestown-family-ymca","updated_at":"2014-11-30T19:05:17.883-08:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/stonestown-family-ymca","address":{"id":1397,"address_1":"333
-        Eucalyptus Drive","address_2":null,"street_1":"333 Eucalyptus Drive","street_2":null,"city":"San
-        Francisco","state_province":"CA","postal_code":"94132"},"organization":{"id":1341,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"YMCA
-        of San Francisco","website":null,"slug":"ymca-of-san-francisco","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/ymca-of-san-francisco","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/ymca-of-san-francisco/locations"},"phones":[{"id":2449,"department":null,"extension":null,"number":"415
-        242-7100","number_type":null,"vanity_number":null}]}]'
-    http_version: 
-  recorded_at: Sat, 15 Aug 2015 18:04:22 GMT
+      string: '[{"id":4,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.332764,37.513351],"description":"The
+        coroner is required by law to investigate accidental, traumatic and certain
+        other types of deaths. In these cases, the office takes charge of the body,
+        determines the cause of death and establishes the identity of the dead person
+        if necessary. Accepts and considers requests for cremation for indigent county
+        residents.","kind":"Government","latitude":37.513351,"longitude":-122.332764,"name":"San
+        Mateo County Coroner","short_desc":"Investigates certain types of deaths,
+        handles requests for county burials for people without funds.","slug":"san-mateo-county-coroner","updated_at":"2014-11-25T17:21:54.977-08:00","website":"http://www.co.sanmateo.ca.us","url":"https://api-staging.smc-connect.org/locations/san-mateo-county-coroner","address":{"id":4,"address_1":"50
+        Tower Road","address_2":null,"city":"San Mateo","state_province":"CA","postal_code":"94402"},"organization":{"id":4,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Coroner","website":null,"slug":"san-mateo-county-coroner","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-coroner","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-coroner/locations"},"phones":[{"id":5,"department":"24
+        hours daily","extension":null,"number":"650 312-5562","number_type":"voice","vanity_number":null},{"id":2489,"department":null,"extension":null,"number":"650
+        571-6258","number_type":"fax","vanity_number":null}]},{"id":1596,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2220981,37.4935958],"description":"IVSN’s
+        Maple Street Shelter provides emergency and transitional housing for 75 single
+        men and women. For access to Maple Street Shelter, individuals must be referred
+        by one of IVSN''s partner referral agency. Visit IVSN''s website for a list
+        of referral agencies: http://www.ivsn.org/get-help/san-mateo-county/","kind":"Human
+        Services","latitude":37.4935958,"longitude":-122.2220981,"name":"IVSN''s Maple
+        Street Shelter","short_desc":"A year-round 24-hour emergency and transitional
+        shelter for homeless single men and women in San Mateo County.","slug":"ivsn-s-maple-street-shelter","updated_at":"2015-12-02T10:00:27.589-08:00","website":"http://www.ivsn.org","url":"https://api-staging.smc-connect.org/locations/ivsn-s-maple-street-shelter","address":{"id":1332,"address_1":"1580
+        A Maple Street","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94063"},"organization":{"id":595,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"InnVision
+        Shelter Network","website":null,"slug":"innvision-shelter-network","url":"https://api-staging.smc-connect.org/organizations/innvision-shelter-network","locations_url":"https://api-staging.smc-connect.org/organizations/innvision-shelter-network/locations"},"phones":[{"id":2289,"department":null,"extension":null,"number":"650
+        364-1150","number_type":"voice","vanity_number":null}]},{"id":1833,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.1717101,37.4476457],"description":"Menlo
+        College is a small, private, non-profit Silicon Valley school that focuses
+        on business education with a strong liberal arts emphasis.","kind":"Education","latitude":37.4476457,"longitude":-122.1717101,"name":"Menlo
+        College","short_desc":"Menlo College is a small, private, non-profit Silicon
+        Valley school that focuses on business education with a strong liberal arts
+        emphasis.","slug":"menlo-college","updated_at":"2017-07-03T14:32:35.588-07:00","website":"https://menlo.edu","url":"https://api-staging.smc-connect.org/locations/menlo-college","address":{"id":1559,"address_1":"100
+        El Camino Real","address_2":null,"city":"Atherton","state_province":"CA","postal_code":"94027"},"organization":{"id":1385,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":"Menlo
+        College is a small, private, non-profit Silicon Valley school that focuses
+        on business education with a strong liberal arts emphasis.","email":null,"funding_sources":[],"licenses":[],"name":"Menlo
+        College","website":"https://menlo.edu","slug":"menlo-college","url":"https://api-staging.smc-connect.org/organizations/menlo-college","locations_url":"https://api-staging.smc-connect.org/organizations/menlo-college/locations"},"phones":[{"id":3690,"department":null,"extension":null,"number":"800-556-3656","number_type":"voice","vanity_number":"800-55-MENLO"}]},{"id":1629,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.230319,37.493448],"description":"Offers
+        a variety of adult outpatient treatment services. Provides the First Offender
+        program for persons arrested driving under the influence. Length of the program
+        is determined by the blood alcohol concentration at the time of the arrest.
+        Also, provides outpatient services for alcohol and drug treatment. Serves
+        clients with referrals from probation and parole (Prop 36, DEJ, Drug Diversion),
+        as well as self-referred clients. Offers a certified 52-week adult domestic
+        intervention program. Also, offers a 16-week anger management program. Referrals
+        can be court-mandated or self-referred. All programs are licensed through
+        the State of California and monitored both by the State of California and
+        the County of San Mateo. Formerly known as Youth and Family Enrichment Services
+        (YFES).","kind":"Human Services","latitude":37.493448,"longitude":-122.230319,"name":"Archway","short_desc":"Offers
+        counseling and support for children from chemically dependent families, and
+        First Offender, Drug Diversion and Domestic Non-Violence programs.","slug":"archway","updated_at":"2014-11-25T17:22:21.917-08:00","website":"http://www.star-vista.org","url":"https://api-staging.smc-connect.org/locations/archway","address":{"id":1360,"address_1":"609
+        Price Avenue, Suite 201","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94063"},"organization":{"id":58,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"StarVista","website":null,"slug":"starvista","url":"https://api-staging.smc-connect.org/organizations/starvista","locations_url":"https://api-staging.smc-connect.org/organizations/starvista/locations"},"phones":[{"id":2355,"department":null,"extension":null,"number":"650
+        366-8433","number_type":"voice","vanity_number":null},{"id":3533,"department":null,"extension":null,"number":"650
+        366-8455","number_type":"fax","vanity_number":null}]},{"id":1650,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.16023,37.466287],"description":"Offers
+        evaluation for and follow-up of psychotropic medication, limited individual
+        therapy and group psychotherapy, crisis intervention and case management.
+        A multi-disciplinary team evaluates patients for services and refers to non-VA
+        services when appropriate. VA services to which veterans may be referred include
+        day treatment, post traumatic stress disorder (PTSD), drug and alcohol programs
+        and inpatient psychiatry programs. Veterans may call directly but referral
+        from an agency is preferred. When openings are limited, preference is given
+        to veterans whose illnesses are service-connected.","kind":"Clinics","latitude":37.466287,"longitude":-122.16023,"name":"Veterans
+        Affairs Palo Alto Health Care System., Menlo Park Division., Mental Health
+        Clinic","short_desc":"Primary provider of psychiatric and mental health services
+        for veterans.","slug":"veterans-affairs-palo-alto-health-care-system-menlo-park-division-mental-health-clinic","updated_at":"2014-11-25T17:22:22.092-08:00","website":"http://www.paloalto.va.gov","url":"https://api-staging.smc-connect.org/locations/veterans-affairs-palo-alto-health-care-system-menlo-park-division-mental-health-clinic","address":{"id":1375,"address_1":"795
+        Willow Road","address_2":null,"city":"Menlo Park","state_province":"CA","postal_code":"94025"},"organization":{"id":1337,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"United
+        States Government","website":null,"slug":"united-states-government","url":"https://api-staging.smc-connect.org/organizations/united-states-government","locations_url":"https://api-staging.smc-connect.org/organizations/united-states-government/locations"},"phones":[{"id":2410,"department":null,"extension":"22175","number":"650
+        493-5000","number_type":"voice","vanity_number":null},{"id":2411,"department":null,"extension":"22234","number":"650
+        493-5000","number_type":"voice","vanity_number":null},{"id":2412,"department":null,"extension":null,"number":"866
+        717-1978","number_type":"voice","vanity_number":null},{"id":2413,"department":null,"extension":"22305","number":"650
+        493-5000","number_type":"voice","vanity_number":null},{"id":3541,"department":null,"extension":null,"number":"650
+        617-2710","number_type":"fax","vanity_number":null}]},{"id":1339,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.133737,37.479854],"description":"IVSN’s
+        Veterans Hoptel provides 1-3 nights of shelter, along with case management
+        and transportation, to low-income Veterans from out-of-town coming to receive
+        medical care and/or assessment from the local Veterans hospital.","kind":"Human
+        Services","latitude":37.479854,"longitude":-122.133737,"name":"IVSN''s Veterans
+        Hoptel","short_desc":"Provides services to Veterans receiving medical care
+        at the local Veterans hospital.","slug":"ivsn-s-veterans-hoptel","updated_at":"2014-11-25T18:36:56.753-08:00","website":"http://www.ivsn.org","url":"https://api-staging.smc-connect.org/locations/ivsn-s-veterans-hoptel","address":{"id":1079,"address_1":"2800
+        Illinois Street","address_2":null,"city":"East Palo Alto","state_province":"CA","postal_code":"94303"},"organization":{"id":595,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"InnVision
+        Shelter Network","website":null,"slug":"innvision-shelter-network","url":"https://api-staging.smc-connect.org/organizations/innvision-shelter-network","locations_url":"https://api-staging.smc-connect.org/organizations/innvision-shelter-network/locations"},"phones":[{"id":1784,"department":null,"extension":null,"number":"650-364-1150","number_type":"voice","vanity_number":null}]},{"id":1822,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.4164616,37.6552161],"description":"Residential
+        and day treatment for severely behaviorally and emotionally disturbed children
+        ages 6-25.","kind":"Human Services","latitude":37.6552161,"longitude":-122.4164616,"name":"Kinship
+        Support Services Program","short_desc":null,"slug":"kinship-support-services-program","updated_at":"2017-07-03T11:44:48.941-07:00","website":null,"url":"https://api-staging.smc-connect.org/locations/kinship-support-services-program","address":{"id":1549,"address_1":"170
+        Spruce Ave, Ste. #200","address_2":null,"city":"South San Francisco","state_province":"CA","postal_code":"94080"},"organization":{"id":338,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Edgewood
+        Center for Children and Families","website":null,"slug":"edgewood-center-for-children-and-families","url":"https://api-staging.smc-connect.org/organizations/edgewood-center-for-children-and-families","locations_url":"https://api-staging.smc-connect.org/organizations/edgewood-center-for-children-and-families/locations"},"phones":[{"id":3676,"department":null,"extension":null,"number":"650-832-6722","number_type":"voice","vanity_number":null}]},{"id":351,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4095396,37.7718328],"description":"Promotes
+        the safe and effective use of alternatives to incarceration.","kind":"Human
+        Services","latitude":37.7718328,"longitude":-122.4095396,"name":"Center on
+        Juvenile and Criminal Justice (CJCJ)","short_desc":"Promotes the safe and
+        effective use of alternatives to incarceration.","slug":"center-on-juvenile-and-criminal-justice-cjcj","updated_at":"2014-11-25T17:22:00.640-08:00","website":"http://cjcj.org","url":"https://api-staging.smc-connect.org/locations/center-on-juvenile-and-criminal-justice-cjcj","address":{"id":295,"address_1":"440
+        Ninth Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":351,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Center
+        on Juvenile and Criminal Justice (CJCJ)","website":null,"slug":"center-on-juvenile-and-criminal-justice-cjcj","url":"https://api-staging.smc-connect.org/organizations/center-on-juvenile-and-criminal-justice-cjcj","locations_url":"https://api-staging.smc-connect.org/organizations/center-on-juvenile-and-criminal-justice-cjcj/locations"},"phones":[{"id":468,"department":null,"extension":null,"number":"415
+        621-5661","number_type":"voice","vanity_number":null},{"id":2713,"department":null,"extension":null,"number":"415
+        621-5466","number_type":"fax","vanity_number":null}]},{"id":787,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.398463,37.60567899999999],"description":"Retirement
+        housing for individuals age 50 or over and capable of self care. Facilities
+        include apartments with dishwasher, disposal and refrigerator, carpet and
+        outdoor deck for some apartments. A laundry room, lounge area, garage and
+        social activities are available.","kind":"Human Services","latitude":37.60567899999999,"longitude":-122.398463,"name":"Broadway
+        Manor","short_desc":"An apartment complex for persons age 50 or over.","slug":"broadway-manor","updated_at":"2014-11-25T17:22:06.652-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/broadway-manor","address":{"id":644,"address_1":"1051
+        Broadway","address_2":null,"city":"Millbrae","state_province":"CA","postal_code":"94030"},"organization":{"id":787,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Broadway
+        Manor","website":null,"slug":"broadway-manor","url":"https://api-staging.smc-connect.org/organizations/broadway-manor","locations_url":"https://api-staging.smc-connect.org/organizations/broadway-manor/locations"},"phones":[{"id":1054,"department":null,"extension":null,"number":"650
+        697-1848","number_type":"voice","vanity_number":null},{"id":2982,"department":null,"extension":null,"number":"650
+        697-4636","number_type":"fax","vanity_number":null}]},{"id":1390,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2931271,37.5326926],"description":"Provides
+        free primary and specialty medical and dental services to uninsured, low-income
+        residents. Who is Treated? Patients of our clinics are the working poor. They
+        tend to earn just enough income to be ineligible for Medi-Cal coverage, yet
+        do not receive health insurance through their employers and cannot afford
+        to pay for “out-of-pocket” health insurance. Often these residents are forced
+        to seek treatment at local emergency rooms and become saddled with medical
+        bills that they are unable to pay. Samaritan House’s Free Medical Clinics
+        fill this gap in healthcare access for the uninsured and save emergency room
+        resources for emergencies. Professional Medical \u0026 Dental Volunteers Thanks
+        to its innovative volunteer-based model of service, Samaritan House’s clinics
+        are able to treat such a large number of patients with a very small paid staff.
+        Almost all of the medical and dental doctors and assistants are volunteering
+        their time free of charge. These individuals, either retired or currently
+        practicing medicine and dentistry, want to serve their community in their
+        limited spare time.","kind":"Human Services","latitude":37.5326926,"longitude":-122.2931271,"name":"San
+        Mateo Free Medical Clinic","short_desc":"Provides free medical and dental
+        care to those in need. Offers basic medical care for adults.","slug":"san-mateo-free-medical-clinic","updated_at":"2014-11-25T17:22:17.654-08:00","website":"http://www.samaritanhousesanmateo.org","url":"https://api-staging.smc-connect.org/locations/san-mateo-free-medical-clinic","address":{"id":1130,"address_1":"19
+        West 39th Avenue","address_2":null,"city":"San Mateo","state_province":"CA","postal_code":"94403"},"organization":{"id":498,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Samaritan
+        House","website":null,"slug":"samaritan-house","url":"https://api-staging.smc-connect.org/organizations/samaritan-house","locations_url":"https://api-staging.smc-connect.org/organizations/samaritan-house/locations"},"phones":[{"id":1904,"department":null,"extension":null,"number":"650
+        578-0400","number_type":"voice","vanity_number":null},{"id":3365,"department":null,"extension":null,"number":"650
+        578-0440","number_type":"fax","vanity_number":null}]},{"id":1046,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.119603,37.44994],"description":"A
+        California state certified outpatient substance abuse program providing assessment,
+        education, treatment, family therapy and recovery treatment for youth age
+        12-18.","kind":"Human Services","latitude":37.44994,"longitude":-122.119603,"name":"Adolescent
+        Substance Abuse Treatment Program","short_desc":"Outpatient substance abuse
+        treatment for youth age 12-18.","slug":"adolescent-substance-abuse-treatment-program","updated_at":"2014-11-25T17:22:10.681-08:00","website":"http://www.acs-teens.org","url":"https://api-staging.smc-connect.org/locations/adolescent-substance-abuse-treatment-program","address":{"id":835,"address_1":"1717
+        Embarcadero Road, Suite 4000","address_2":null,"city":"Palo Alto","state_province":"CA","postal_code":"94303"},"organization":{"id":578,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Adolescent
+        Counseling Services","website":null,"slug":"adolescent-counseling-services","url":"https://api-staging.smc-connect.org/organizations/adolescent-counseling-services","locations_url":"https://api-staging.smc-connect.org/organizations/adolescent-counseling-services/locations"},"phones":[{"id":1359,"department":"Main
+        Office","extension":null,"number":"650 424-0852","number_type":"voice","vanity_number":null},{"id":1360,"department":"Office
+        Manager","extension":"200","number":"650 424-0852","number_type":"voice","vanity_number":null},{"id":1361,"department":"Adolescent
+        Substance Abuse Treatment Program","extension":"104","number":"650 424-0852","number_type":"voice","vanity_number":null},{"id":1362,"department":"After-School
+        Counseling Program","extension":"104","number":"650 424-0852","number_type":"voice","vanity_number":null},{"id":3147,"department":null,"extension":null,"number":"650
+        329-9630","number_type":"fax","vanity_number":null}]},{"id":1441,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2309704,37.4881077],"description":"Provides
+        counseling and support to victims of domestic violence. Assists prosecuting
+        attorneys with contacting domestic violence victims. Interviews clients and
+        evaluates the problems presented. Offers resource and referral assistance.
+        Interprets the rules, regulations and policies of the District Attorney''s
+        Office to clients. Another office is located in the Northern Court Building,
+        1050 Mission Road, South San Francisco, 94080.","kind":"Other","latitude":37.4881077,"longitude":-122.2309704,"name":"Domestic
+        Violence Victim Advocate","short_desc":"Assists victims of domestic violence.","slug":"domestic-violence-victim-advocate","updated_at":"2014-11-25T17:15:43.582-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/domestic-violence-victim-advocate","address":{"id":1181,"address_1":"400
+        County Center, 4th Floor","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94063"},"organization":{"id":171,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County District Attorney","website":null,"slug":"san-mateo-county-district-attorney","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-district-attorney","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-district-attorney/locations"},"phones":[{"id":1970,"department":"Redwood
+        City","extension":null,"number":"650 599-7330","number_type":"voice","vanity_number":null},{"id":1971,"department":"South
+        San Francisco","extension":null,"number":"650 877-5797","number_type":"voice","vanity_number":null}]},{"id":9,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.3196377,37.5906292],"description":"Offers
+        environmental education through exhibits and wildlife habitats. The wildlife
+        habitats feature live animals (100) native to the Bay Area. All animals -
+        bobcats, raccoons, river otters, ring-tail cat, badger, snakes, reptiles and
+        birds - are in naturalistic habits and are unreleasable. The museum also has
+        science-based exhibits, educational classes, children''s activities, volunteer-docent
+        training programs, wildlife shows and animal talks. Formerly known as Coyote
+        Point Museum for Environmental Education.","kind":"Museums","latitude":37.5906292,"longitude":-122.3196377,"name":"CuriOdyssey","short_desc":null,"slug":"curiodyssey","updated_at":"2014-11-25T17:21:55.024-08:00","website":"http://www.curiodyssey.org","url":"https://api-staging.smc-connect.org/locations/curiodyssey","address":{"id":9,"address_1":"1651
+        Coyote Point Drive","address_2":null,"city":"San Mateo","state_province":"CA","postal_code":"94401-1097"},"organization":{"id":9,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"CuriOdyssey","website":null,"slug":"curiodyssey","url":"https://api-staging.smc-connect.org/organizations/curiodyssey","locations_url":"https://api-staging.smc-connect.org/organizations/curiodyssey/locations"},"phones":[{"id":14,"department":null,"extension":null,"number":"650
+        342-7755","number_type":"voice","vanity_number":null},{"id":2493,"department":null,"extension":null,"number":"650
+        342-7853","number_type":"fax","vanity_number":null}]},{"id":864,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4298169,37.6457651],"description":"Retirement
+        residence for seniors age 60 or over, disabled persons, and low-income persons.
+        The complex contains 75 units.","kind":"Human Services","latitude":37.6457651,"longitude":-122.4298169,"name":"Alida
+        Manor","short_desc":"75-unit retirement residence for seniors, disabled and
+        low-income persons.","slug":"alida-manor","updated_at":"2014-11-25T17:15:23.964-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/alida-manor","address":{"id":693,"address_1":"416
+        Alida Way","address_2":null,"city":"South San Francisco","state_province":"CA","postal_code":"94080"},"organization":{"id":864,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Alida
+        Manor","website":null,"slug":"alida-manor","url":"https://api-staging.smc-connect.org/organizations/alida-manor","locations_url":"https://api-staging.smc-connect.org/organizations/alida-manor/locations"},"phones":[{"id":1146,"department":null,"extension":null,"number":"650
+        873-6029","number_type":"voice","vanity_number":null}]},{"id":1823,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.2090422,37.4778954],"description":"The
+        Multicultural Institute (MI) is a 501(c)3 nonprofit founded in 1991. Our mission
+        is to be a stepping stone that helps society transition immigrants from poverty
+        and isolation to prosperity and participation.","kind":"Human Services","latitude":37.4778954,"longitude":-122.2090422,"name":"Multicultural
+        Institute","short_desc":"Mentoring for academic success program for 3rd to
+        5th graders.","slug":"multicultural-institute","updated_at":"2017-07-03T11:50:27.500-07:00","website":null,"url":"https://api-staging.smc-connect.org/locations/multicultural-institute","address":{"id":1550,"address_1":"533
+        Warrington Avenue","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94063"},"organization":{"id":1169,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Multicultural
+        Institute","website":null,"slug":"multicultural-institute","url":"https://api-staging.smc-connect.org/organizations/multicultural-institute","locations_url":"https://api-staging.smc-connect.org/organizations/multicultural-institute/locations"},"phones":[{"id":3677,"department":null,"extension":null,"number":"650-339-2794","number_type":"voice","vanity_number":null}]},{"id":1653,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-121.8740501,36.5964368],"description":"Information
+        over the phone regarding current forecasts up to seven days in advance across
+        the United States, outlook to 90 days. Functional questions on weather, climatology
+        (e.g., vacation information) will be answered. A few pamphlets on hurricanes,
+        etc. No technical information available.","kind":"Government","latitude":36.5964368,"longitude":-121.8740501,"name":"Department
+        of Commerce., National Oceanic and Atmospheric Administration (NOAA)., National
+        Weather Service (NWS)","short_desc":null,"slug":"department-of-commerce-national-oceanic-and-atmospheric-administration-noaa-national-weather-service-nws","updated_at":"2014-11-25T17:15:54.489-08:00","website":"http://weather.gov/sanfranciso","url":"https://api-staging.smc-connect.org/locations/department-of-commerce-national-oceanic-and-atmospheric-administration-noaa-national-weather-service-nws","address":{"id":1378,"address_1":"21
+        Grace Hopper Avenue, Stop 5","address_2":null,"city":"Monterey","state_province":"CA","postal_code":"93943-5505"},"organization":{"id":1337,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"United
+        States Government","website":null,"slug":"united-states-government","url":"https://api-staging.smc-connect.org/organizations/united-states-government","locations_url":"https://api-staging.smc-connect.org/organizations/united-states-government/locations"},"phones":[{"id":2417,"department":"24
+        hours daily","extension":null,"number":"831 656-1725","number_type":"voice","vanity_number":null}]},{"id":1231,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-121.942057,37.37948],"description":"Provides
+        a community-based behavioral treatment and supported employment training and
+        placement program for developmentally disabled adults. Also provides a day
+        program of training in various skills such as behavior management, supported
+        employment and adult development. Another office is located at 124 Blossom
+        Hill Road, San Jose. Corporate South office is located at 3555 Torrance Blvd.,
+        Torrance, CA 90503 (310-944-3303), FAX (310-944-3304).","kind":"Human Services","latitude":37.37948,"longitude":-121.942057,"name":"Employ
+        America","short_desc":"Provides a community based supported employment, training
+        and placement program for developmentally disabled adults.","slug":"employ-america","updated_at":"2014-11-25T17:22:14.120-08:00","website":"http://www.socialvocationalservices.org","url":"https://api-staging.smc-connect.org/locations/employ-america","address":{"id":988,"address_1":"471
+        Gianni Street","address_2":null,"city":"Santa Clara","state_province":"CA","postal_code":"95054"},"organization":{"id":295,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Social
+        Vocational Services","website":null,"slug":"social-vocational-services","url":"https://api-staging.smc-connect.org/organizations/social-vocational-services","locations_url":"https://api-staging.smc-connect.org/organizations/social-vocational-services/locations"},"phones":[{"id":1617,"department":"Santa
+        Clara","extension":null,"number":"408 727-3370","number_type":"voice","vanity_number":null},{"id":1618,"department":"Blossom
+        Hill Road","extension":null,"number":"408 574-3950","number_type":"voice","vanity_number":null},{"id":3267,"department":null,"extension":null,"number":"408
+        727-3593","number_type":"fax","vanity_number":null},{"id":3268,"department":null,"extension":null,"number":"408
+        574-3954","number_type":"fax","vanity_number":null}]},{"id":1433,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.43267,37.464756],"description":"Offers
+        a support service for full-time students who need additional services to successfully
+        pursue their educational and vocational goals. Services include priority registration,
+        counseling, book service, transportation, tutoring, application fee waivers
+        and peer advising.","kind":"Human Services","latitude":37.464756,"longitude":-122.43267,"name":"College
+        of San Mateo (CSM)., Coastside","short_desc":"Offers support to current and
+        potential multicultural students.","slug":"college-of-san-mateo-csm-coastside","updated_at":"2014-12-04T11:12:08.380-08:00","website":"http://collegeofsanmateo.edu","url":"https://api-staging.smc-connect.org/locations/college-of-san-mateo-csm-coastside","address":{"id":1173,"address_1":"225
+        Cabrillo Highway S.","address_2":null,"city":"San Mateo","state_province":"CA","postal_code":"94019"},"organization":{"id":1306,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Community College District (SMCCCD)","website":null,"slug":"san-mateo-county-community-college-district-smcccd","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-community-college-district-smcccd","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-community-college-district-smcccd/locations"},"phones":[{"id":1961,"department":null,"extension":null,"number":"650
+        726-6444","number_type":"voice","vanity_number":null},{"id":3391,"department":null,"extension":null,"number":"650
+        726-6443","number_type":"fax","vanity_number":null}]},{"id":1288,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4085058,37.6633777],"description":"Offers
+        social, educational, vocational and character development activities to boys
+        and girls age 6-18. Program activities include physical education, social
+        education, athletic teams, table games, arts and crafts, special interest
+        group clubs, special events, day camps and summer camp. Tutoring is also available.
+        Early-hour and extended-hour programs are available during summer months and
+        school vacations for an extra fee.","kind":"Human Services","latitude":37.6633777,"longitude":-122.4085058,"name":"Boys
+        and Girls Club Paradise Valley","short_desc":"Promotes the social, educational,
+        vocational and character development of boys and girls age 6-18. Activities
+        include games and recreation, a summer camp and trips.","slug":"boys-and-girls-club-paradise-valley","updated_at":"2014-12-04T11:17:19.976-08:00","website":"http://www.theclubs.org","url":"https://api-staging.smc-connect.org/locations/boys-and-girls-club-paradise-valley","address":{"id":1030,"address_1":"291
+        Hillside Blvd.","address_2":null,"city":"South San Francisco","state_province":"CA","postal_code":"94080"},"organization":{"id":1271,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Boys
+        and Girls Club of North San Mateo County","website":null,"slug":"boys-and-girls-club-of-north-san-mateo-county","url":"https://api-staging.smc-connect.org/organizations/boys-and-girls-club-of-north-san-mateo-county","locations_url":"https://api-staging.smc-connect.org/organizations/boys-and-girls-club-of-north-san-mateo-county/locations"},"phones":[{"id":1702,"department":null,"extension":null,"number":"650
+        583-2348","number_type":"voice","vanity_number":null}]},{"id":1044,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.200978,37.738467],"description":"Provides
+        no-fee adoption and foster care supportive family services. Prepares, trains
+        and performs home studies for children waiting in the state foster care system.
+        Also has a complete Fostercare program.","kind":"Human Services","latitude":37.738467,"longitude":-122.200978,"name":"Adopt
+        a Special Kid., Adoption/Foster Care","short_desc":"Licensed adoption agency
+        for children with special needs, siblings and older children.","slug":"adopt-a-special-kid-adoption-foster-care","updated_at":"2014-11-25T17:22:10.658-08:00","website":"http://www.aask.org","url":"https://api-staging.smc-connect.org/locations/adopt-a-special-kid-adoption-foster-care","address":{"id":833,"address_1":"8201
+        Edgewater Drive, Suite 103","address_2":null,"city":"Oakland","state_province":"CA","postal_code":"94621"},"organization":{"id":1044,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"AASK
+        America","website":null,"slug":"aask-america","url":"https://api-staging.smc-connect.org/organizations/aask-america","locations_url":"https://api-staging.smc-connect.org/organizations/aask-america/locations"},"phones":[{"id":1356,"department":null,"extension":"12","number":"510
+        553-1748","number_type":"voice","vanity_number":null},{"id":3146,"department":null,"extension":null,"number":"510
+        553-1747","number_type":"fax","vanity_number":null}]},{"id":29,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2371832,37.4708135],"description":"Provides
+        all forms of recreational services for the citizens of Redwood City and provides
+        maintenance of city parks and recreational facilities. The programmed activities
+        include municipal sports and recreational swimming, community leisure services
+        including day camps, after-school programs at schools and special interest
+        classes including teen activities, arts and crafts, dance and many others.
+        The Little Learners Preschool Program provides supervised recreation activities
+        for children age 3-5. Activities include arts and crafts, outdoor play and
+        games. Programs run approximately ten weeks and the children participate two
+        hours a day, twice or three times a week. Programs are available for disabled
+        persons and senior citizens. Five recreational buildings are available for
+        rental for weddings, parties and organizational meetings.","kind":"Government","latitude":37.4708135,"longitude":-122.2371832,"name":"Redwood
+        City Parks, Recreation and Community Services Department","short_desc":"Provides
+        recreational services and maintenance of city parks and recreational facilities.","slug":"redwood-city-parks-recreation-and-community-services-department","updated_at":"2014-11-25T17:21:55.631-08:00","website":"http://www.redwoodcity.org","url":"https://api-staging.smc-connect.org/locations/redwood-city-parks-recreation-and-community-services-department","address":{"id":28,"address_1":"1400
+        Roosevelt Avenue","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94061-1499"},"organization":{"id":29,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Redwood
+        City Parks, Recreation and Community Services Department","website":null,"slug":"redwood-city-parks-recreation-and-community-services-department","url":"https://api-staging.smc-connect.org/organizations/redwood-city-parks-recreation-and-community-services-department","locations_url":"https://api-staging.smc-connect.org/organizations/redwood-city-parks-recreation-and-community-services-department/locations"},"phones":[{"id":44,"department":null,"extension":null,"number":"650
+        780-7250","number_type":"voice","vanity_number":null},{"id":2508,"department":null,"extension":null,"number":"650
+        368-5087","number_type":"fax","vanity_number":null}]},{"id":1654,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"Provides
+        primary care to homebound veterans. Interdisciplinary team approach, composed
+        of a physician, nurse practitioner, social worker, dietitian, psychologist
+        and occupational therapist, works with the individual and his/her caregiver
+        to provide primary medical care and other services in the home to veterans
+        who are convalescing or have acute chronic or terminal illness. Services include
+        case management, skilled nursing care, rehabilitation, palliative care, emergency
+        and long-term planning, individual and family counseling, health education,
+        nutrition and diet consultation, evaluation for adaptive equipment and home
+        safety, referrals to VA and community resources.","kind":"Human Services","latitude":null,"longitude":null,"name":"Veterans
+        Affairs Palo Alto Health Care System., Home Based Primary Care (HBPC)","short_desc":"Provides
+        medical and social services to homebound veterans.","slug":"veterans-affairs-palo-alto-health-care-system-home-based-primary-care-hbpc","updated_at":"2014-11-25T17:22:22.178-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/veterans-affairs-palo-alto-health-care-system-home-based-primary-care-hbpc","address":null,"organization":{"id":1337,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"United
+        States Government","website":null,"slug":"united-states-government","url":"https://api-staging.smc-connect.org/organizations/united-states-government","locations_url":"https://api-staging.smc-connect.org/organizations/united-states-government/locations"},"phones":[{"id":2418,"department":null,"extension":null,"number":"650
+        849-0102","number_type":"voice","vanity_number":null},{"id":3544,"department":null,"extension":null,"number":"650
+        849-0103","number_type":"fax","vanity_number":null}]},{"id":687,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.174863,37.451574],"description":"The
+        principal technical society serving the artificial intelligence community.
+        The association was founded to encourage basic knowledge of what constitutes
+        intelligent thought and behavior and how it can be expressed in computers.
+        Membership is open to anyone with an interest in the field. Formerly known
+        as American Association for Artificial Intelligence (AAAI).","kind":"Other","latitude":37.451574,"longitude":-122.174863,"name":"Association
+        for the Advancement of Artificial Intelligence (AAAI)","short_desc":"A technical
+        society serving the artificial intelligence community.","slug":"association-for-the-advancement-of-artificial-intelligence-aaai","updated_at":"2014-11-25T17:22:05.957-08:00","website":"http://www.aaai.org","url":"https://api-staging.smc-connect.org/locations/association-for-the-advancement-of-artificial-intelligence-aaai","address":{"id":576,"address_1":"445
+        Burgess Drive, Suite 100","address_2":null,"city":"Menlo Park","state_province":"CA","postal_code":"94025"},"organization":{"id":687,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Association
+        for the Advancement of Artificial Intelligence (AAAI)","website":null,"slug":"association-for-the-advancement-of-artificial-intelligence-aaai","url":"https://api-staging.smc-connect.org/organizations/association-for-the-advancement-of-artificial-intelligence-aaai","locations_url":"https://api-staging.smc-connect.org/organizations/association-for-the-advancement-of-artificial-intelligence-aaai/locations"},"phones":[{"id":931,"department":null,"extension":null,"number":"650
+        328-3123","number_type":"voice","vanity_number":null},{"id":2932,"department":null,"extension":null,"number":"650
+        321-4457","number_type":"fax","vanity_number":null}]},{"id":1193,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-121.8784757,37.339285],"description":"Provides
+        a 24-hour residential treatment program for persons who are suffering from
+        dependency on PCP, heroin, alcohol, amphetamines, cocaine, barbituates or
+        other mind-altering, health-impairing substances.","kind":"Human Services","latitude":37.339285,"longitude":-121.8784757,"name":"Pathway
+        House","short_desc":"Provides a 24-hour residential treatment program for
+        persons who are suffering from drug or alcohol dependency.","slug":"pathway-house","updated_at":"2014-12-04T11:19:23.103-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/pathway-house","address":{"id":953,"address_1":"102
+        South 11th Street","address_2":null,"city":"San Jose","state_province":"CA","postal_code":"95112"},"organization":{"id":585,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Pathway
+        Society","website":null,"slug":"pathway-society","url":"https://api-staging.smc-connect.org/organizations/pathway-society","locations_url":"https://api-staging.smc-connect.org/organizations/pathway-society/locations"},"phones":[{"id":1564,"department":"24
+        hours daily","extension":null,"number":"408 998-5191","number_type":"voice","vanity_number":null},{"id":1565,"department":"Administration","extension":null,"number":"408
+        244-1834","number_type":"voice","vanity_number":null},{"id":3235,"department":null,"extension":null,"number":"408
+        287-1930","number_type":"fax","vanity_number":null}]},{"id":849,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"A
+        12-step recovery group for workaholics. Call for information on meetings in
+        the area.","kind":"Human Services","latitude":null,"longitude":null,"name":"Workaholics
+        Anonymous","short_desc":"A 12-step recovery group for workaholics.","slug":"workaholics-anonymous","updated_at":"2014-11-25T17:15:23.460-08:00","website":"http://www.workaholics-anonymous.org","url":"https://api-staging.smc-connect.org/locations/workaholics-anonymous","address":null,"organization":{"id":849,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Workaholics
+        Anonymous","website":null,"slug":"workaholics-anonymous","url":"https://api-staging.smc-connect.org/organizations/workaholics-anonymous","locations_url":"https://api-staging.smc-connect.org/organizations/workaholics-anonymous/locations"},"phones":[{"id":1126,"department":"Voicemail
+        24 hours daily","extension":null,"number":"510 273-9253","number_type":"voice","vanity_number":null}]},{"id":1824,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.1327257,37.4658583],"description":"Provides
+        academic support (KidSmart for grades 1-5) spiritual mentoring, and life skills
+        to youth in elementary, middle school and high school.","kind":"Human Services","latitude":37.4658583,"longitude":-122.1327257,"name":"Bayshore
+        Christian Ministries","short_desc":null,"slug":"bayshore-christian-ministries","updated_at":"2017-07-03T11:55:34.190-07:00","website":"http://www.bayshore.org/","url":"https://api-staging.smc-connect.org/locations/bayshore-christian-ministries","address":{"id":1551,"address_1":"1001
+        Beech Street","address_2":null,"city":"East Palo Alto","state_province":"CA","postal_code":"94303"},"organization":{"id":1383,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":"Provides
+        academic support (KidSmart for grades 1-5) spiritual mentoring, and life skills
+        to youth in elementary, middle school and high school","email":null,"funding_sources":[],"licenses":[],"name":"Bayshore
+        Christian Ministries","website":"http://www.bayshore.org/","slug":"bayshore-christian-ministries","url":"https://api-staging.smc-connect.org/organizations/bayshore-christian-ministries","locations_url":"https://api-staging.smc-connect.org/organizations/bayshore-christian-ministries/locations"},"phones":[{"id":3679,"department":null,"extension":null,"number":"650-327-9941","number_type":"voice","vanity_number":null}]},{"id":1204,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.239977,37.4724376],"description":"ARAP
+        (Accessible Recreation Activities Program) is a city-run program that provides
+        recreational programming to teens and adults with mental, physical, emotional
+        and/or developmental disabilities. Activities include dances, classes and
+        special events.","kind":"Other","latitude":37.4724376,"longitude":-122.239977,"name":"Accessible
+        Recreation Activities Program","short_desc":"Offers activity programs such
+        as trips, movies, swimming and social events for persons with physical limitations
+        or developmental disabilities.","slug":"accessible-recreation-activities-program","updated_at":"2014-11-25T17:22:13.395-08:00","website":"http://www.redwoodcity.org","url":"https://api-staging.smc-connect.org/locations/accessible-recreation-activities-program","address":{"id":962,"address_1":"1455
+        Madison Avenue","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94061"},"organization":{"id":29,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Redwood
+        City Parks, Recreation and Community Services Department","website":null,"slug":"redwood-city-parks-recreation-and-community-services-department","url":"https://api-staging.smc-connect.org/organizations/redwood-city-parks-recreation-and-community-services-department","locations_url":"https://api-staging.smc-connect.org/organizations/redwood-city-parks-recreation-and-community-services-department/locations"},"phones":[{"id":1579,"department":null,"extension":null,"number":"650
+        780-7313","number_type":"voice","vanity_number":null},{"id":3244,"department":null,"extension":null,"number":"650
+        364-5399","number_type":"fax","vanity_number":null}]},{"id":1290,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.217107,37.4824744],"description":"Provides
+        academic, life skills and physical education programs and activities for boys
+        and girls age 6-18. Homework assistance and tutoring are available. Program
+        professionals can also refer youth to medical, educational and other community
+        professionals. Brochures are available to describe in detail what is offered
+        and important dates. They can be obtained at the front desk inside the clubhouse.
+        The club is located at 1109 Hilton Street, Redwood City. School year: Monday,
+        Tuesday, Wednesday, Friday, 2:30-6:30; Thursday, 1:30-6:30. Summer: Monday-Friday,
+        7-6. Teens: Monday-Thursday, 2:30-8; Friday, 2:30-10.","kind":"Human Services","latitude":37.4824744,"longitude":-122.217107,"name":"Mervin
+        G. Morris Branch","short_desc":"Provides academic, life skills and physical
+        education programs and activities for children and teens age 6-18.","slug":"mervin-g-morris-branch","updated_at":"2014-11-25T17:22:14.899-08:00","website":"http://www.bgcp.org","url":"https://api-staging.smc-connect.org/locations/mervin-g-morris-branch","address":{"id":1032,"address_1":"1109
+        Hilton Street","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94063"},"organization":{"id":1272,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Boys
+        and Girls Club of the Peninsula","website":null,"slug":"boys-and-girls-club-of-the-peninsula","url":"https://api-staging.smc-connect.org/organizations/boys-and-girls-club-of-the-peninsula","locations_url":"https://api-staging.smc-connect.org/organizations/boys-and-girls-club-of-the-peninsula/locations"},"phones":[{"id":1704,"department":null,"extension":null,"number":"650
+        587-9370","number_type":"voice","vanity_number":null},{"id":3296,"department":null,"extension":null,"number":"650
+        364-1618","number_type":"fax","vanity_number":null}]},{"id":647,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-121.7741434,36.9626569],"description":"A
+        work ethic program with a dual mission: the employment and development of
+        young people and the conservation and enhancement of the state''s natural
+        resources. To carry out the mission, the CCC has established seven residential
+        centers throughout the state, as well as more than 30 non-residential satellite
+        locations.","kind":"Human Services","latitude":36.9626569,"longitude":-121.7741434,"name":"California
+        Conservation Corps (CCC)","short_desc":"A work ethic program to train and
+        develop young people and to conserve and enhance natural resources.","slug":"california-conservation-corps-ccc-757-green-valley-road","updated_at":"2014-11-25T17:22:05.772-08:00","website":"http://ccc.ca.gov","url":"https://api-staging.smc-connect.org/locations/california-conservation-corps-ccc-757-green-valley-road","address":{"id":547,"address_1":"757
+        Green Valley Road","address_2":null,"city":"Watsonville","state_province":"CA","postal_code":"95076"},"organization":{"id":77,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"California
+        Conservation Corps (CCC)","website":null,"slug":"california-conservation-corps-ccc","url":"https://api-staging.smc-connect.org/organizations/california-conservation-corps-ccc","locations_url":"https://api-staging.smc-connect.org/organizations/california-conservation-corps-ccc/locations"},"phones":[{"id":882,"department":null,"extension":"208","number":"831
+        768-0150","number_type":"voice","vanity_number":null},{"id":883,"department":null,"extension":null,"number":"800-952-5627","number_type":"voice","vanity_number":"800-952-JOBS"},{"id":2917,"department":null,"extension":null,"number":"877
+        568-8939","number_type":"fax","vanity_number":null}]},{"id":876,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.0987921,37.4223213],"description":"Graduated
+        choir levels for singers age 4 through high school. Rehearsals are held in
+        Los Altos. Membership is non-competitive with auditions or evaluations in
+        Januray, June and August.","kind":"Other","latitude":37.4223213,"longitude":-122.0987921,"name":"Cantabile
+        Youth Singers","short_desc":"A chorus for singers in first grade through high
+        school.","slug":"cantabile-youth-singers-953-industrial-avenue-suite-122","updated_at":"2014-11-25T17:22:08.272-08:00","website":"http://www.cantabile.org","url":"https://api-staging.smc-connect.org/locations/cantabile-youth-singers-953-industrial-avenue-suite-122","address":{"id":704,"address_1":"953
+        Industrial Avenue, Suite 122","address_2":null,"city":"Palo Alto","state_province":"CA","postal_code":"94303"},"organization":{"id":734,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Cantabile
+        Youth Singers","website":null,"slug":"cantabile-youth-singers","url":"https://api-staging.smc-connect.org/organizations/cantabile-youth-singers","locations_url":"https://api-staging.smc-connect.org/organizations/cantabile-youth-singers/locations"},"phones":[{"id":1160,"department":null,"extension":null,"number":"650
+        424-1410","number_type":"voice","vanity_number":null},{"id":3037,"department":null,"extension":null,"number":"650
+        424-1430","number_type":"fax","vanity_number":null}]}]'
+  recorded_at: Fri, 20 Jan 2023 02:37:40 GMT
 - request:
     method: get
-    uri: http://smc-ohana-api-test.herokuapp.com/api/search?action=index&controller=locations&kind=Other
+    uri: https://api-staging.smc-connect.org/search?action=index&controller=locations&keyword=soccer
     body:
       encoding: US-ASCII
       string: ''
@@ -161,7 +398,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -179,62 +416,496 @@ http_interactions:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Etag:
-      - '"93abe5c57758d50bb2fb5b50889cc5e9"'
-      Link:
-      - <http://smc-ohana-api-test.herokuapp.com/api/search?kind=Other&page=48>; rel="last",
-        <http://smc-ohana-api-test.herokuapp.com/api/search?kind=Other&page=2>; rel="next"
+      - W/"1d013990683e264e43359d03286329a7"
       X-Total-Count:
-      - '48'
+      - '6'
       Content-Type:
       - application/json; charset=utf-8
-      Cache-Control:
-      - max-age=0, public
-      X-Request-Id:
-      - 30bace4e-06b6-49bc-b518-5d1d9554b425
-      X-Runtime:
-      - '0.548487'
-      X-Content-Digest:
-      - 1516f725dd0ba9af82da6d8a310daa08b9b87843
       Date:
-      - Sat, 15 Aug 2015 18:04:22 GMT
-      Age:
-      - '0'
-      X-Rack-Cache:
-      - stale, valid, store
-      Content-Length:
-      - '3267'
+      - Fri, 20 Jan 2023 02:37:40 GMT
+      Cache-Control:
+      - max-age=60, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 2c7448d4-26ee-4d25-9fe6-dc6e4a94b231
+      X-Runtime:
+      - '0.024589'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":1373,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.3263232,37.5639394],"description":"Provides
-        training and job placement to eligible people age 55 or over who meet certain
-        income qualifications. An income of 125% of poverty level or less is required
-        for subsidized employment and training. (No income requirements for job matchup
-        program.) If a person seems likely to be qualified after a preliminary phone
-        call or visit, he or she must complete an application at this office. Staff
-        will locate appropriate placements for applicants, provide orientation and
-        on-the-job training and assist with finding a job outside the program. Any
-        county resident, regardless of income, age 55 or over has access to the program,
-        job developers and the job bank. Also provides referrals to classroom training.
-        Formerly known as Family Service Agency of San Mateo County, Senior Employment
-        Services.","kind":"Other","latitude":37.5639394,"longitude":-122.3263232,"name":"Second
-        Career Employment Program","short_desc":"Provides training and job placement
-        to eligible persons age 55 or over. All persons age 55 or over have access
-        to information in the program''s job bank.","slug":"second-career-employment-program","updated_at":"2014-11-30T19:05:11.740-08:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/second-career-employment-program","address":{"id":1113,"address_1":"24
-        Second Avenue","address_2":null,"street_1":"24 Second Avenue","street_2":null,"city":"San
-        Mateo","state_province":"CA","postal_code":"94401"},"organization":{"id":1297,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Peninsula
-        Family Service","website":null,"slug":"peninsula-family-service-f8e82538-5878-414f-9ba9-6ded2c15d731","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/peninsula-family-service-f8e82538-5878-414f-9ba9-6ded2c15d731","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/peninsula-family-service-f8e82538-5878-414f-9ba9-6ded2c15d731/locations"},"phones":[{"id":1851,"department":null,"extension":null,"number":"650
-        403-4300","number_type":null,"vanity_number":null},{"id":1852,"department":null,"extension":"4385","number":"650
-        403-4300","number_type":null,"vanity_number":null},{"id":1853,"department":null,"extension":"4322
-        (English)","number":"650 403-4300","number_type":null,"vanity_number":null},{"id":1854,"department":null,"extension":"4392
-        (Cantonese or Mandarin)","number":"650 403-4300","number_type":null,"vanity_number":null},{"id":1855,"department":null,"extension":"4363
-        (Filipino)","number":"650 403-4300","number_type":null,"vanity_number":null},{"id":1856,"department":null,"extension":"4322
-        (LGBT (Lesbian, Gay, Bisexual, Transgender) community)","number":"650 403-4300","number_type":null,"vanity_number":null},{"id":1857,"department":null,"extension":"4321
-        (Spanish / La Esperanza Vive)","number":"650 403-4300","number_type":null,"vanity_number":null},{"id":1858,"department":null,"extension":"4500","number":"650
-        403-4300","number_type":null,"vanity_number":null},{"id":1859,"department":null,"extension":"4100","number":"650
-        403-4300","number_type":null,"vanity_number":null}]}]'
-    http_version: 
-  recorded_at: Sat, 15 Aug 2015 18:04:23 GMT
-recorded_with: VCR 2.9.3
+      string: '[{"id":1279,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"An
+        organized, child-centered soccer program focused on teaching children the
+        value of team play. All programs are run by volunteers from the community.
+        Children age 5-18 are welcome to play and all will play at least one-half
+        of every game. Teams typically practice twice a week and play a game every
+        Saturday. The kinder program runs for six weeks starting in September. Walk-in
+        registration dates are in May, and mail-in registration starts in April and
+        continues until May 31. Registrants after May 31 are assigned team slots on
+        a as-needed basis. The season runs from September through the first week in
+        December.","kind":"Sports","latitude":null,"longitude":null,"name":"Palo Alto,
+        Region 26","short_desc":"An organized, child-centered soccer program focused
+        on teaching children the value of team play.","slug":"palo-alto-region-26","updated_at":"2014-11-25T17:15:35.983-08:00","website":"http://www.ayso26.org","url":"https://api-staging.smc-connect.org/locations/palo-alto-region-26","address":null,"organization":{"id":1268,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"American
+        Youth Soccer Organization","website":null,"slug":"american-youth-soccer-organization","url":"https://api-staging.smc-connect.org/organizations/american-youth-soccer-organization","locations_url":"https://api-staging.smc-connect.org/organizations/american-youth-soccer-organization/locations"},"phones":[{"id":1690,"department":"24-hour
+        recording","extension":null,"number":"650 324-0863","number_type":"voice","vanity_number":null}]},{"id":1280,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"Offers
+        a soccer program for boys and girls, age 4 1/2-18, in Foster City. Has an
+        \"everyone plays\" philosophy which guarantees that all players play at least
+        half of each game, regardless of skill. Registration for the fall season is
+        held every spring, but late signers can be put on a waiting list and called
+        if needed to play. The season starts the last weekend of August. Games are
+        held Saturday, 9-5, from September to November. AYSO is an all-volunteer organization.
+        Parents and guardians should be prepared to volunteer.","kind":"Sports","latitude":null,"longitude":null,"name":"Foster
+        City - Region 62","short_desc":"Offers a soccer program for boys and girls,
+        age 4 1/2-18, in Foster City.","slug":"foster-city-region-62","updated_at":"2014-11-25T11:50:35.438-08:00","website":"http://www.aysofc.org","url":"https://api-staging.smc-connect.org/locations/foster-city-region-62","address":null,"organization":{"id":1268,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"American
+        Youth Soccer Organization","website":null,"slug":"american-youth-soccer-organization","url":"https://api-staging.smc-connect.org/organizations/american-youth-soccer-organization","locations_url":"https://api-staging.smc-connect.org/organizations/american-youth-soccer-organization/locations"},"phones":[]},{"id":1684,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.1425461,37.4656323],"description":"Provides
+        social, recreational and health and fitness services for persons of all ages.
+        Swimming lessons and aquatic exercise are offered in an outdoor pool (seasonal).
+        Day camp for children (seasonal), youth basketball, youth soccer, kids'' club,
+        Childwatch, climbing walls and teen social center are also offered.","kind":"Sports","latitude":37.4656323,"longitude":-122.1425461,"name":"East
+        Palo Alto Family YMCA","short_desc":"Provides social, recreational and health
+        and fitness services for persons of all ages.","slug":"east-palo-alto-family-ymca","updated_at":"2014-11-25T17:22:22.673-08:00","website":"http://www.ymcasv.org","url":"https://api-staging.smc-connect.org/locations/east-palo-alto-family-ymca","address":{"id":1408,"address_1":"550
+        Bell Street","address_2":null,"city":"East Palo Alto","state_province":"CA","postal_code":"94303"},"organization":{"id":1342,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"YMCA
+        of Silicon Valley","website":null,"slug":"ymca-of-silicon-valley","url":"https://api-staging.smc-connect.org/organizations/ymca-of-silicon-valley","locations_url":"https://api-staging.smc-connect.org/organizations/ymca-of-silicon-valley/locations"},"phones":[{"id":2460,"department":null,"extension":null,"number":"650
+        328-9622","number_type":"voice","vanity_number":null},{"id":3567,"department":null,"extension":null,"number":"650
+        687-5380","number_type":"fax","vanity_number":null}]},{"id":1674,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2268014,37.47020310000001],"description":"Provides
+        social and recreational services for persons age three months or over. Services
+        include a full aquatic program (in an indoor heated pool), fitness activities,
+        active older adults programs and community programs. The Aspire Adaptive Swim
+        Program is offered for developmentally or physically disabled persons of all
+        ages. The arthritis water exercise is sanctioned by the Arthritis Foundation.
+        Sequoia offers group exercise, Zumba, yoga, Pilates and Tai-Chi, weight training
+        equipment and fitness equipment. Personal trainers are available to help with
+        individualized programs. Youth programs include swim lessons, basketball,
+        martial arts, soccer, dance, preschool sports program, Mommy \u0026 Me water
+        classes and more. Youth leadership opportunities are available as well as
+        adult and youth volunteer opportunities. Offers summer and intersessions day
+        camp for children age 5-14, Monday-Friday, 7:30-6. Call for dates. Offers
+        a free program for cancer survivors, \"Living Strong, Living Well\".","kind":"Other","latitude":37.47020310000001,"longitude":-122.2268014,"name":"Sequoia
+        Branch","short_desc":"Provides social and recreational programs for all ages.","slug":"sequoia-branch","updated_at":"2014-11-25T17:22:22.475-08:00","website":"http://www.ymcasv.org","url":"https://api-staging.smc-connect.org/locations/sequoia-branch","address":{"id":1398,"address_1":"1445
+        Hudson Street","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94061"},"organization":{"id":1342,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"YMCA
+        of Silicon Valley","website":null,"slug":"ymca-of-silicon-valley","url":"https://api-staging.smc-connect.org/organizations/ymca-of-silicon-valley","locations_url":"https://api-staging.smc-connect.org/organizations/ymca-of-silicon-valley/locations"},"phones":[{"id":2450,"department":null,"extension":null,"number":"650
+        368-4168","number_type":"voice","vanity_number":null},{"id":3561,"department":null,"extension":null,"number":"650
+        368-1140","number_type":"fax","vanity_number":null}]},{"id":1276,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2368024,37.4880212],"description":"Assists
+        veterans and their dependents and supports patriotic observances of all kinds.
+        Supports such youth activities as junior baseball, AYSO Soccer, YMCA, Scouting,
+        etc. Membership is open to eligible veterans of the armed forces of the United
+        States. Meets the second Wednesday of each month at 7 pm. Hall rentals for
+        birthdays, weddings, reunions, etc. No political meetings. Phone to reserve.","kind":"Other","latitude":37.4880212,"longitude":-122.2368024,"name":"Post
+        #105","short_desc":null,"slug":"post-105","updated_at":"2014-11-25T17:22:14.598-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/post-105","address":{"id":1021,"address_1":"651
+        El Camino Real","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94063"},"organization":{"id":1266,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"American
+        Legion","website":null,"slug":"american-legion","url":"https://api-staging.smc-connect.org/organizations/american-legion","locations_url":"https://api-staging.smc-connect.org/organizations/american-legion/locations"},"phones":[{"id":1686,"department":null,"extension":null,"number":"650
+        365-1337","number_type":"voice","vanity_number":null},{"id":3289,"department":null,"extension":null,"number":"650
+        365-1348","number_type":"fax","vanity_number":null}]},{"id":822,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.213111,37.375907],"description":"Offers
+        instruction in tennis, baseball, basketball, archery, drama, football, soccer,
+        volleyball, swimming, dance, arts and crafts, outdoor living skills, mountain
+        biking and horseback riding. Other activities include sing-alongs, evening
+        hikes, bingo, movies and talent nights. Camp sessions run from one week up
+        to 7 weeks. Camp Unique is located at the Woodside Priory in Portola Valley
+        and is for children age 7-15.","kind":"Other","latitude":37.375907,"longitude":-122.213111,"name":"Camp
+        Unique at Woodside Priory","short_desc":"Overnight and day camps for children
+        age 5-15.","slug":"camp-unique-at-woodside-priory","updated_at":"2014-11-25T17:22:07.443-08:00","website":"http://www.campunique.com","url":"https://api-staging.smc-connect.org/locations/camp-unique-at-woodside-priory","address":{"id":668,"address_1":"302
+        Portola Road","address_2":null,"city":"Portola Valley","state_province":"CA","postal_code":"94028"},"organization":{"id":822,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Camp
+        Unique at Woodside Priory","website":null,"slug":"camp-unique-at-woodside-priory","url":"https://api-staging.smc-connect.org/organizations/camp-unique-at-woodside-priory","locations_url":"https://api-staging.smc-connect.org/organizations/camp-unique-at-woodside-priory/locations"},"phones":[{"id":1095,"department":null,"extension":null,"number":"800
+        260-2267","number_type":"voice","vanity_number":null},{"id":3006,"department":null,"extension":null,"number":"415
+        351-3939","number_type":"fax","vanity_number":null}]}]'
+  recorded_at: Fri, 20 Jan 2023 02:37:40 GMT
+- request:
+    method: get
+    uri: https://api-staging.smc-connect.org/search?action=index&controller=locations&kind=Other
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"54925c85dbbffe3d5ddb279fb6399a28"
+      Link:
+      - <https://api-staging.smc-connect.org/search?page=19>; rel="last", <https://api-staging.smc-connect.org/search?page=2>;
+        rel="next"
+      X-Total-Count:
+      - '564'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 20 Jan 2023 02:37:40 GMT
+      Cache-Control:
+      - max-age=60, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 0ae0cbed-4ef3-4edf-b6e1-655880a2a41a
+      X-Runtime:
+      - '0.047472'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":1441,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2309704,37.4881077],"description":"Provides
+        counseling and support to victims of domestic violence. Assists prosecuting
+        attorneys with contacting domestic violence victims. Interviews clients and
+        evaluates the problems presented. Offers resource and referral assistance.
+        Interprets the rules, regulations and policies of the District Attorney''s
+        Office to clients. Another office is located in the Northern Court Building,
+        1050 Mission Road, South San Francisco, 94080.","kind":"Other","latitude":37.4881077,"longitude":-122.2309704,"name":"Domestic
+        Violence Victim Advocate","short_desc":"Assists victims of domestic violence.","slug":"domestic-violence-victim-advocate","updated_at":"2014-11-25T17:15:43.582-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/domestic-violence-victim-advocate","address":{"id":1181,"address_1":"400
+        County Center, 4th Floor","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94063"},"organization":{"id":171,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County District Attorney","website":null,"slug":"san-mateo-county-district-attorney","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-district-attorney","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-district-attorney/locations"},"phones":[{"id":1970,"department":"Redwood
+        City","extension":null,"number":"650 599-7330","number_type":"voice","vanity_number":null},{"id":1971,"department":"South
+        San Francisco","extension":null,"number":"650 877-5797","number_type":"voice","vanity_number":null}]},{"id":687,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.174863,37.451574],"description":"The
+        principal technical society serving the artificial intelligence community.
+        The association was founded to encourage basic knowledge of what constitutes
+        intelligent thought and behavior and how it can be expressed in computers.
+        Membership is open to anyone with an interest in the field. Formerly known
+        as American Association for Artificial Intelligence (AAAI).","kind":"Other","latitude":37.451574,"longitude":-122.174863,"name":"Association
+        for the Advancement of Artificial Intelligence (AAAI)","short_desc":"A technical
+        society serving the artificial intelligence community.","slug":"association-for-the-advancement-of-artificial-intelligence-aaai","updated_at":"2014-11-25T17:22:05.957-08:00","website":"http://www.aaai.org","url":"https://api-staging.smc-connect.org/locations/association-for-the-advancement-of-artificial-intelligence-aaai","address":{"id":576,"address_1":"445
+        Burgess Drive, Suite 100","address_2":null,"city":"Menlo Park","state_province":"CA","postal_code":"94025"},"organization":{"id":687,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Association
+        for the Advancement of Artificial Intelligence (AAAI)","website":null,"slug":"association-for-the-advancement-of-artificial-intelligence-aaai","url":"https://api-staging.smc-connect.org/organizations/association-for-the-advancement-of-artificial-intelligence-aaai","locations_url":"https://api-staging.smc-connect.org/organizations/association-for-the-advancement-of-artificial-intelligence-aaai/locations"},"phones":[{"id":931,"department":null,"extension":null,"number":"650
+        328-3123","number_type":"voice","vanity_number":null},{"id":2932,"department":null,"extension":null,"number":"650
+        321-4457","number_type":"fax","vanity_number":null}]},{"id":1204,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.239977,37.4724376],"description":"ARAP
+        (Accessible Recreation Activities Program) is a city-run program that provides
+        recreational programming to teens and adults with mental, physical, emotional
+        and/or developmental disabilities. Activities include dances, classes and
+        special events.","kind":"Other","latitude":37.4724376,"longitude":-122.239977,"name":"Accessible
+        Recreation Activities Program","short_desc":"Offers activity programs such
+        as trips, movies, swimming and social events for persons with physical limitations
+        or developmental disabilities.","slug":"accessible-recreation-activities-program","updated_at":"2014-11-25T17:22:13.395-08:00","website":"http://www.redwoodcity.org","url":"https://api-staging.smc-connect.org/locations/accessible-recreation-activities-program","address":{"id":962,"address_1":"1455
+        Madison Avenue","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94061"},"organization":{"id":29,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Redwood
+        City Parks, Recreation and Community Services Department","website":null,"slug":"redwood-city-parks-recreation-and-community-services-department","url":"https://api-staging.smc-connect.org/organizations/redwood-city-parks-recreation-and-community-services-department","locations_url":"https://api-staging.smc-connect.org/organizations/redwood-city-parks-recreation-and-community-services-department/locations"},"phones":[{"id":1579,"department":null,"extension":null,"number":"650
+        780-7313","number_type":"voice","vanity_number":null},{"id":3244,"department":null,"extension":null,"number":"650
+        364-5399","number_type":"fax","vanity_number":null}]},{"id":876,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.0987921,37.4223213],"description":"Graduated
+        choir levels for singers age 4 through high school. Rehearsals are held in
+        Los Altos. Membership is non-competitive with auditions or evaluations in
+        Januray, June and August.","kind":"Other","latitude":37.4223213,"longitude":-122.0987921,"name":"Cantabile
+        Youth Singers","short_desc":"A chorus for singers in first grade through high
+        school.","slug":"cantabile-youth-singers-953-industrial-avenue-suite-122","updated_at":"2014-11-25T17:22:08.272-08:00","website":"http://www.cantabile.org","url":"https://api-staging.smc-connect.org/locations/cantabile-youth-singers-953-industrial-avenue-suite-122","address":{"id":704,"address_1":"953
+        Industrial Avenue, Suite 122","address_2":null,"city":"Palo Alto","state_province":"CA","postal_code":"94303"},"organization":{"id":734,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Cantabile
+        Youth Singers","website":null,"slug":"cantabile-youth-singers","url":"https://api-staging.smc-connect.org/organizations/cantabile-youth-singers","locations_url":"https://api-staging.smc-connect.org/organizations/cantabile-youth-singers/locations"},"phones":[{"id":1160,"department":null,"extension":null,"number":"650
+        424-1410","number_type":"voice","vanity_number":null},{"id":3037,"department":null,"extension":null,"number":"650
+        424-1430","number_type":"fax","vanity_number":null}]},{"id":688,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.405848,37.7896823],"description":"A
+        nonprofit association of book lovers and collectors who have a special interest
+        in the literature and history of the Pacific Coast, in the graphic arts and
+        in fine printing. Membership is limited to 1,000.","kind":"Other","latitude":37.7896823,"longitude":-122.405848,"name":"Book
+        Club of California","short_desc":null,"slug":"book-club-of-california","updated_at":"2014-11-25T17:15:20.489-08:00","website":"http://www.bccbooks.org","url":"https://api-staging.smc-connect.org/locations/book-club-of-california","address":{"id":577,"address_1":"312
+        Sutter Street, 5th Flr.","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94108"},"organization":{"id":688,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Book
+        Club of California","website":null,"slug":"book-club-of-california","url":"https://api-staging.smc-connect.org/organizations/book-club-of-california","locations_url":"https://api-staging.smc-connect.org/organizations/book-club-of-california/locations"},"phones":[{"id":932,"department":null,"extension":null,"number":"415
+        781-7532","number_type":"voice","vanity_number":null}]},{"id":368,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.326903,37.5622109],"description":"Accepts
+        book donations from the public and coordinates daily book sale at Main Library
+        in coordination with the San Mateo Public Library Foundation. Proceeds support
+        library services and operations in order to ensure high-quality library services.","kind":"Other","latitude":37.5622109,"longitude":-122.326903,"name":"Friends
+        of the San Mateo Public Library","short_desc":"Supports library services by
+        providing supplemental funds for extra library needs and activities.","slug":"friends-of-the-san-mateo-public-library","updated_at":"2014-11-25T17:15:11.832-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/friends-of-the-san-mateo-public-library","address":{"id":311,"address_1":"55
+        West Third Avenue","address_2":null,"city":"San Mateo","state_province":"CA","postal_code":"94402"},"organization":{"id":368,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Friends
+        of the San Mateo Public Library","website":null,"slug":"friends-of-the-san-mateo-public-library","url":"https://api-staging.smc-connect.org/organizations/friends-of-the-san-mateo-public-library","locations_url":"https://api-staging.smc-connect.org/organizations/friends-of-the-san-mateo-public-library/locations"},"phones":[{"id":495,"department":null,"extension":null,"number":"650
+        522-7802","number_type":"voice","vanity_number":null}]},{"id":382,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4852507,37.8590937],"description":"The
+        Marine Mammal Center is a nonprofit organization licensed to rescue, rehabilitate
+        and release back to the sea orphaned, stranded, sick and injured marine mammals.
+        Education opportunities exist for adults and children. Science programs examine
+        diseases, the animals'' immune systems, the ocean habitat and how the animals
+        are affected by changes in the environment. Anyone may join as a member. Volunteers,
+        age 14 or over, can help in animal care, rescue, and other support services.
+        The center is open 10-5 daily (except Thanksgiving, Christmas and January
+        1) and visitors are welcome. Admission is free; however, donations are encouraged.","kind":"Other","latitude":37.8590937,"longitude":-122.4852507,"name":"Marine
+        Mammal Center","short_desc":"The Marine Mammal Center is a nonprofit organization
+        licensed to rescue, rehabilitate and release back to the sea stranded, sick
+        and injured marine mammals.","slug":"marine-mammal-center","updated_at":"2014-11-25T17:22:00.979-08:00","website":"http://www.marinemammalcenter.org","url":"https://api-staging.smc-connect.org/locations/marine-mammal-center","address":{"id":324,"address_1":"2000
+        Bunker Road, Fort Cronkhite","address_2":null,"city":"Sausalito","state_province":"CA","postal_code":"94965-2619"},"organization":{"id":382,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Marine
+        Mammal Center","website":null,"slug":"marine-mammal-center","url":"https://api-staging.smc-connect.org/organizations/marine-mammal-center","locations_url":"https://api-staging.smc-connect.org/organizations/marine-mammal-center/locations"},"phones":[{"id":509,"department":"Education","extension":null,"number":"415
+        289-7330","number_type":"voice","vanity_number":null},{"id":510,"department":"Rescue
+        24 hours daily","extension":null,"number":"415 289-7325","number_type":"voice","vanity_number":"415-289-SEAL"},{"id":2734,"department":null,"extension":null,"number":"415
+        289-7333","number_type":"fax","vanity_number":null}]},{"id":427,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.177303,37.480533],"description":"Dedicated
+        to developing speaking and leadership skills in a friendly and supportive
+        environment. Meets from 11:45 am to 12:55 pm on the first and third Thursday
+        of every month at Allstate Research Center.","kind":"Other","latitude":37.480533,"longitude":-122.177303,"name":"Sunset
+        Toastmasters","short_desc":"Dedicated to developing speaking and leadership
+        skills in a friendly and supportive environment.","slug":"sunset-toastmasters","updated_at":"2014-11-25T17:15:12.711-08:00","website":"http://www.sunset.freetoasthost.com","url":"https://api-staging.smc-connect.org/locations/sunset-toastmasters","address":{"id":359,"address_1":"4200
+        Bohannon Drive, Suite 200","address_2":null,"city":"Menlo Park","state_province":"CA","postal_code":"94025"},"organization":{"id":427,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Sunset
+        Toastmasters","website":null,"slug":"sunset-toastmasters","url":"https://api-staging.smc-connect.org/organizations/sunset-toastmasters","locations_url":"https://api-staging.smc-connect.org/organizations/sunset-toastmasters/locations"},"phones":[{"id":566,"department":null,"extension":null,"number":"650
+        833-6344","number_type":"voice","vanity_number":null}]},{"id":45,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.3205964,37.5668991],"description":"A
+        nonprofit educational project founded by Japanese American educators to help
+        establish an Asian perspective within the public education system. Operates
+        a bookstore of Asian American publications.","kind":"Other","latitude":37.5668991,"longitude":-122.3205964,"name":"Asian
+        American Curriculum Project, Inc. (AACP)","short_desc":"Attempts to establish
+        an Asian perspective within the public education system.","slug":"asian-american-curriculum-project-inc-aacp","updated_at":"2014-11-25T17:21:55.882-08:00","website":"http://www.asianamericanbooks.com","url":"https://api-staging.smc-connect.org/locations/asian-american-curriculum-project-inc-aacp","address":{"id":44,"address_1":"529
+        East Third Avenue","address_2":null,"city":"San Mateo","state_province":"CA","postal_code":"94401"},"organization":{"id":45,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Asian
+        American Curriculum Project, Inc. (AACP)","website":null,"slug":"asian-american-curriculum-project-inc-aacp","url":"https://api-staging.smc-connect.org/organizations/asian-american-curriculum-project-inc-aacp","locations_url":"https://api-staging.smc-connect.org/organizations/asian-american-curriculum-project-inc-aacp/locations"},"phones":[{"id":65,"department":null,"extension":null,"number":"650
+        375-8286","number_type":"voice","vanity_number":null},{"id":2520,"department":null,"extension":null,"number":"650
+        375-8797","number_type":"fax","vanity_number":null}]},{"id":251,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.1836449,37.4508138],"description":"Provides
+        service and funding to deserving charities in Menlo Park and Atherton. Meets
+        at Menlo Park Recreation Center, Tuesdays at 12 noon.","kind":"Other","latitude":37.4508138,"longitude":-122.1836449,"name":"Kiwanis
+        Club - Menlo Park","short_desc":null,"slug":"kiwanis-club-menlo-park","updated_at":"2014-11-25T17:21:59.346-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/kiwanis-club-menlo-park","address":{"id":230,"address_1":"750
+        Menlo Avenue","address_2":null,"city":"Menlo Park","state_province":"CA","postal_code":"94025"},"organization":{"id":251,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Kiwanis
+        Club - Menlo Park","website":null,"slug":"kiwanis-club-menlo-park","url":"https://api-staging.smc-connect.org/organizations/kiwanis-club-menlo-park","locations_url":"https://api-staging.smc-connect.org/organizations/kiwanis-club-menlo-park/locations"},"phones":[{"id":331,"department":null,"extension":null,"number":"650
+        289-1160","number_type":"voice","vanity_number":null},{"id":2660,"department":null,"extension":null,"number":"650
+        325-7757","number_type":"fax","vanity_number":null}]},{"id":691,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.244045,37.489696],"description":"A
+        Masonic lodge open to all men, age 18 or over, who have lived in California
+        for at least one year. Meets on Tuesdays at 7:30 pm. All visiting Masons welcome.","kind":"Other","latitude":37.489696,"longitude":-122.244045,"name":"Peninsula
+        Masonic Lodge #168","short_desc":"A Masonic lodge open to all men, age 18
+        or over, who have lived in California for at least one year.","slug":"peninsula-masonic-lodge-168","updated_at":"2014-11-25T17:15:20.515-08:00","website":"http://www.peninsulamasoniclodge.org","url":"https://api-staging.smc-connect.org/locations/peninsula-masonic-lodge-168","address":{"id":580,"address_1":"171
+        Wellesley Crescent","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94062-1764"},"organization":{"id":691,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Peninsula
+        Masonic Lodge #168","website":null,"slug":"peninsula-masonic-lodge-168","url":"https://api-staging.smc-connect.org/organizations/peninsula-masonic-lodge-168","locations_url":"https://api-staging.smc-connect.org/organizations/peninsula-masonic-lodge-168/locations"},"phones":[{"id":935,"department":"24-hour
+        answering machine","extension":null,"number":"650 366-0853","number_type":"voice","vanity_number":null}]},{"id":290,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"An
+        international service club providing support for local and international activities.
+        Meets every Wednesday from 12:15 to 1:30, at Marie Callendar''s Restaurant,
+        Serramonte Shopping Center.","kind":"Other","latitude":null,"longitude":null,"name":"Rotary
+        Club - Daly City/Colma","short_desc":null,"slug":"rotary-club-daly-city-colma","updated_at":"2014-12-04T11:08:51.888-08:00","website":"http://www.dalycity-colmarotary.org","url":"https://api-staging.smc-connect.org/locations/rotary-club-daly-city-colma","address":null,"organization":{"id":290,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Rotary
+        Club - Daly City/Colma","website":null,"slug":"rotary-club-daly-city-colma","url":"https://api-staging.smc-connect.org/organizations/rotary-club-daly-city-colma","locations_url":"https://api-staging.smc-connect.org/organizations/rotary-club-daly-city-colma/locations"},"phones":[{"id":383,"department":null,"extension":null,"number":"650
+        438-6958","number_type":"voice","vanity_number":null}]},{"id":85,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.1913702,37.4651509],"description":"Holds
+        classes including arts and crafts, ballet, aerobics, yoga, dog training, etc.
+        Offers a playground for small children. Facilities are available for rent
+        for meetings, weddings and private parties.","kind":"Other","latitude":37.4651509,"longitude":-122.1913702,"name":"Atherton-Holbrook
+        Palmer Park","short_desc":null,"slug":"atherton-holbrook-palmer-park","updated_at":"2014-11-25T17:21:56.522-08:00","website":"http://www.herecomestheguide.com","url":"https://api-staging.smc-connect.org/locations/atherton-holbrook-palmer-park","address":{"id":81,"address_1":"150
+        Watkins Avenue","address_2":null,"city":"Atherton","state_province":"CA","postal_code":"94027"},"organization":{"id":85,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Atherton-Holbrook
+        Palmer Park","website":null,"slug":"atherton-holbrook-palmer-park","url":"https://api-staging.smc-connect.org/organizations/atherton-holbrook-palmer-park","locations_url":"https://api-staging.smc-connect.org/organizations/atherton-holbrook-palmer-park/locations"},"phones":[{"id":111,"department":null,"extension":null,"number":"650
+        752-0534","number_type":"voice","vanity_number":null},{"id":2544,"department":null,"extension":null,"number":"650
+        688-6548","number_type":"fax","vanity_number":null}]},{"id":742,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.1030462,37.4214271],"description":"Provides
+        music education and performance opportunities to Bay Area musicians age 6-18.
+        Auditions are held by appointment.","kind":"Other","latitude":37.4214271,"longitude":-122.1030462,"name":"El
+        Camino Youth Symphony","short_desc":"Provides music education and performance
+        opportunities to Bay Area musicians age 6-18.","slug":"el-camino-youth-symphony","updated_at":"2014-11-25T17:22:06.375-08:00","website":"http://www.ecys.org","url":"https://api-staging.smc-connect.org/locations/el-camino-youth-symphony","address":{"id":615,"address_1":"4055
+        Fabian Way","address_2":null,"city":"Palo Alto","state_province":"CA","postal_code":"94303"},"organization":{"id":742,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"El
+        Camino Youth Symphony","website":null,"slug":"el-camino-youth-symphony","url":"https://api-staging.smc-connect.org/organizations/el-camino-youth-symphony","locations_url":"https://api-staging.smc-connect.org/organizations/el-camino-youth-symphony/locations"},"phones":[{"id":1000,"department":"Musicians
+        (for members only)","extension":null,"number":"650 213-7112","number_type":"voice","vanity_number":null},{"id":1001,"department":"Office","extension":null,"number":"650
+        213-7111","number_type":"voice","vanity_number":null},{"id":2961,"department":null,"extension":null,"number":"650
+        493-1525","number_type":"fax","vanity_number":null}]},{"id":1825,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.4922019,37.6375693],"description":"The
+        Boys \u0026 Girls Clubs of North County programs promote the development of
+        young people by instilling a sense of competence, a sense of usefulness, a
+        sense of belonging and a sense of power or influence. When this strategy is
+        fully implemented, self-esteem is enhanced and an environment is created which
+        helps boys and girls achieve their full potential","kind":"Other","latitude":37.6375693,"longitude":-122.4922019,"name":"Ingrid
+        B. Lacy Middle School Club","short_desc":null,"slug":"ingrid-b-lacy-middle-school-club","updated_at":"2017-07-03T11:59:40.089-07:00","website":"http://pacificasd.org/IBLMS/","url":"https://api-staging.smc-connect.org/locations/ingrid-b-lacy-middle-school-club","address":{"id":1552,"address_1":"1427
+        Palmetto Ave","address_2":null,"city":"Pacifica","state_province":"CA","postal_code":"94044"},"organization":{"id":1271,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Boys
+        and Girls Club of North San Mateo County","website":null,"slug":"boys-and-girls-club-of-north-san-mateo-county","url":"https://api-staging.smc-connect.org/organizations/boys-and-girls-club-of-north-san-mateo-county","locations_url":"https://api-staging.smc-connect.org/organizations/boys-and-girls-club-of-north-san-mateo-county/locations"},"phones":[{"id":3680,"department":null,"extension":null,"number":"650-359-6118","number_type":"voice","vanity_number":null}]},{"id":1089,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.273583,37.806393],"description":"The
+        board''s primary duty is to protect the quality of the waters within the region
+        for all beneficial uses. This duty is implemented by formulating and adopting
+        water quality plans for specific ground or surface water basins and by prescribing
+        and enforcing requirements on all domestic and industrial waste discharges.
+        Specific responsibilities and procedures of the board are outlined in the
+        Porter-Cologne Water Quality Control Act. Regular board meetings are held
+        on the second Wednesday of each month. At the meetings, the board obtains
+        testimony and information from concerned and affected parties and makes decisions
+        after considering the recommendations made by the Executive Officer. Electronic
+        recordings of the meetings are retained for two years. Anyone desiring copies
+        may contact the Regional Board Executive Assistant at 510-622-2399.","kind":"Other","latitude":37.806393,"longitude":-122.273583,"name":"San
+        Francisco Bay Region","short_desc":null,"slug":"san-francisco-bay-region","updated_at":"2014-11-25T17:22:11.302-08:00","website":"http://www.waterboards.ca.gov/sanfranciscobay/","url":"https://api-staging.smc-connect.org/locations/san-francisco-bay-region","address":{"id":868,"address_1":"1515
+        Clay Street, Suite 1400","address_2":null,"city":"Oakland","state_province":"CA","postal_code":"94612"},"organization":{"id":1089,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"California
+        Regional Water Quality Control Board","website":null,"slug":"california-regional-water-quality-control-board","url":"https://api-staging.smc-connect.org/organizations/california-regional-water-quality-control-board","locations_url":"https://api-staging.smc-connect.org/organizations/california-regional-water-quality-control-board/locations"},"phones":[{"id":1414,"department":null,"extension":null,"number":"510
+        622-2300","number_type":"voice","vanity_number":null},{"id":3169,"department":null,"extension":null,"number":"510
+        622-2460","number_type":"fax","vanity_number":null}]},{"id":95,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.1032611,37.4308804],"description":"Works
+        to protect the open space, farmlands, and natural resources of San Mateo and
+        Santa Clara counties through advocacy, education, and grassroots action. Each
+        county has a CGF legislative advocate who researches issues, testifies before
+        public agencies and works with city and county officials. Publishes a quarterly
+        newsletter on its activities.","kind":"Other","latitude":37.4308804,"longitude":-122.1032611,"name":"Committee
+        for Green Foothills (CGF)","short_desc":null,"slug":"committee-for-green-foothills-cgf","updated_at":"2014-11-25T17:21:56.690-08:00","website":"http://www.greenfoothills.org","url":"https://api-staging.smc-connect.org/locations/committee-for-green-foothills-cgf","address":{"id":91,"address_1":"3921
+        East Bayshore Road","address_2":null,"city":"Palo Alto","state_province":"CA","postal_code":"94303"},"organization":{"id":95,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Committee
+        for Green Foothills (CGF)","website":null,"slug":"committee-for-green-foothills-cgf","url":"https://api-staging.smc-connect.org/organizations/committee-for-green-foothills-cgf","locations_url":"https://api-staging.smc-connect.org/organizations/committee-for-green-foothills-cgf/locations"},"phones":[{"id":123,"department":null,"extension":null,"number":"650
+        968-7243","number_type":"voice","vanity_number":null},{"id":2554,"department":null,"extension":null,"number":"650
+        968-8431","number_type":"fax","vanity_number":null}]},{"id":991,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.140089,37.4643749],"description":"Provides
+        a variety of services to people in need, including aftercare, clothing, emergency
+        funds, and scholarships.","kind":"Other","latitude":37.4643749,"longitude":-122.140089,"name":"Interfaith
+        Network for Community Help (INCH)","short_desc":"Provides a variety of services
+        to people in need, including aftercare, clothing, emergency funds, and scholarships.","slug":"interfaith-network-for-community-help-inch","updated_at":"2014-11-25T17:15:26.648-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/interfaith-network-for-community-help-inch","address":{"id":784,"address_1":"2162
+        Capitol Avenue","address_2":null,"city":"East Palo Alto","state_province":"CA","postal_code":"94303"},"organization":{"id":991,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Interfaith
+        Network for Community Help (INCH)","website":null,"slug":"interfaith-network-for-community-help-inch","url":"https://api-staging.smc-connect.org/organizations/interfaith-network-for-community-help-inch","locations_url":"https://api-staging.smc-connect.org/organizations/interfaith-network-for-community-help-inch/locations"},"phones":[{"id":1293,"department":null,"extension":null,"number":"650
+        321-7760","number_type":"voice","vanity_number":null}]},{"id":97,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4027692,37.6868639],"description":"Provides
+        recreation and community services including special-interest classes and athletic
+        programs. Some of the classes offered are dance, yoga, guitar, crafts and
+        exercise. Athletic programs for youth and adults consist of basketball, baseball,
+        softball, wrestling and volleyball. Also available are a senior citizens''
+        club, an after-school youth activity club, preschool classes and community
+        events.","kind":"Other","latitude":37.6868639,"longitude":-122.4027692,"name":"Brisbane
+        Recreation Department","short_desc":"Provides recreation, athletic events
+        and facilities and meeting places for clubs.","slug":"brisbane-recreation-department","updated_at":"2014-11-25T17:21:56.697-08:00","website":"http://www.ci.brisbane.ca.us","url":"https://api-staging.smc-connect.org/locations/brisbane-recreation-department","address":{"id":92,"address_1":"50
+        Park Place","address_2":null,"city":"Brisbane","state_province":"CA","postal_code":"94005"},"organization":{"id":97,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Brisbane
+        Recreation Department","website":null,"slug":"brisbane-recreation-department","url":"https://api-staging.smc-connect.org/organizations/brisbane-recreation-department","locations_url":"https://api-staging.smc-connect.org/organizations/brisbane-recreation-department/locations"},"phones":[{"id":125,"department":null,"extension":null,"number":"415
+        508-2140","number_type":"voice","vanity_number":null},{"id":2555,"department":null,"extension":null,"number":"415
+        467-4989","number_type":"fax","vanity_number":null}]},{"id":1096,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-118.2497843,34.0478161],"description":"Receives
+        requests for assistance and questions regarding claims, underwriting and rates
+        for property, life/disability and casualty insurance (such as automobile,
+        homeowners, business and title insurance). Accepts problems regarding cancellations,
+        mid-term changes in policies and rates that are thought to be excessive or
+        discriminatory. Inquiries may be made by phone or in writing.","kind":"Other","latitude":34.0478161,"longitude":-118.2497843,"name":"Consumer
+        Hotline","short_desc":"Receives complaints and questions regarding insurance
+        claims, underwriting and rates.","slug":"consumer-hotline","updated_at":"2014-11-25T17:15:29.699-08:00","website":"http://www.insurance.ca.gov","url":"https://api-staging.smc-connect.org/locations/consumer-hotline","address":{"id":875,"address_1":"300
+        South Spring Street, 9th Floor. South Tower","address_2":null,"city":"Los
+        Angeles","state_province":"CA","postal_code":"90013"},"organization":{"id":1096,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"California
+        State Department of Insurance","website":null,"slug":"california-state-department-of-insurance","url":"https://api-staging.smc-connect.org/organizations/california-state-department-of-insurance","locations_url":"https://api-staging.smc-connect.org/organizations/california-state-department-of-insurance/locations"},"phones":[{"id":1422,"department":null,"extension":null,"number":"800
+        927-4357","number_type":"voice","vanity_number":"800-927-HELP"},{"id":1423,"department":null,"extension":null,"number":"800
+        482-4833","number_type":"tty","vanity_number":null}]},{"id":678,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.3426668,37.5820478],"description":"A
+        social club with membership open to all citizens of the area served, age 55
+        or over. Activities include hot luncheons, bazaars, fundraisers and bingo.
+        Meets every Friday, 11 am-3 pm, at the Burlingame Recreation Center, 850 Burlingame
+        Avenue, Burlingame.","kind":"Other","latitude":37.5820478,"longitude":-122.3426668,"name":"Senior
+        Citizen Organization of Burlingame, Inc.","short_desc":"A social club for
+        persons age 65 or over.","slug":"senior-citizen-organization-of-burlingame-inc","updated_at":"2014-12-04T11:08:53.173-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/senior-citizen-organization-of-burlingame-inc","address":{"id":570,"address_1":"850
+        Burlingame Avenue","address_2":null,"city":"Burlingame","state_province":"CA","postal_code":"94010"},"organization":{"id":678,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Senior
+        Citizen Organization of Burlingame, Inc.","website":null,"slug":"senior-citizen-organization-of-burlingame-inc","url":"https://api-staging.smc-connect.org/organizations/senior-citizen-organization-of-burlingame-inc","locations_url":"https://api-staging.smc-connect.org/organizations/senior-citizen-organization-of-burlingame-inc/locations"},"phones":[{"id":919,"department":null,"extension":null,"number":"650
+        347-0868","number_type":"voice","vanity_number":null}]},{"id":1826,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.436008,37.665897],"description":"Located
+        on school grounds (in our very own room!) our clubhouse is known for our fitness
+        Mileage Club, getting our homework done, healthy habits nutrition and cooking
+        program, and our very own garden where we grow vegetables and herbs! We also
+        love our “Stone Soup” Thanksgiving celebration with family and friends (yes,
+        using our vegetables that we grow in the garden!). We always enjoy each others’
+        company, learn new things for life and school success, and play and hang out
+        — an overall great “little” clubhouse that members can call their own!","kind":"Other","latitude":37.665897,"longitude":-122.436008,"name":"Sunshine
+        Gardens Elementary Club","short_desc":null,"slug":"sunshine-gardens-elementary-club","updated_at":"2017-07-03T12:35:37.776-07:00","website":"http://theclubs.org/clubs/sunshine-gardens-elementary-school-club/","url":"https://api-staging.smc-connect.org/locations/sunshine-gardens-elementary-club","address":{"id":1553,"address_1":"1200
+        Miller Avenue","address_2":null,"city":"South San Francisco","state_province":"CA","postal_code":"94080"},"organization":{"id":1271,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Boys
+        and Girls Club of North San Mateo County","website":null,"slug":"boys-and-girls-club-of-north-san-mateo-county","url":"https://api-staging.smc-connect.org/organizations/boys-and-girls-club-of-north-san-mateo-county","locations_url":"https://api-staging.smc-connect.org/organizations/boys-and-girls-club-of-north-san-mateo-county/locations"},"phones":[]},{"id":239,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"An
+        organization of business and professional people providing humanitarian service,
+        encouraging high ethical standards and building goodwill. Meets every Monday
+        at 12:15 at the Hilton SFO in Burlingame.","kind":"Other","latitude":null,"longitude":null,"name":"Rotary
+        Club - Burlingame","short_desc":"An organization of business and professional
+        people.","slug":"rotary-club-burlingame","updated_at":"2014-11-25T17:15:08.794-08:00","website":"http://www.burlingamerotary.org","url":"https://api-staging.smc-connect.org/locations/rotary-club-burlingame","address":null,"organization":{"id":239,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Rotary
+        Club - Burlingame","website":null,"slug":"rotary-club-burlingame","url":"https://api-staging.smc-connect.org/organizations/rotary-club-burlingame","locations_url":"https://api-staging.smc-connect.org/organizations/rotary-club-burlingame/locations"},"phones":[{"id":318,"department":null,"extension":null,"number":"650
+        342-1304","number_type":"voice","vanity_number":null}]},{"id":1665,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.3057746,37.8663982],"description":"A
+        clearinghouse for information about activities in aging, on and off campus,
+        including research grant availability. A small lending library is available
+        for use by students, faculty and the public. Publishes a bi-weekly email newsletter
+        and a job list on aging in California, and has an extensive Web site including
+        an electronic library. Email ddriver@berkeley.edu to be added to email list.
+        The center is located in room 535 of University Hall.","kind":"Other","latitude":37.8663982,"longitude":-122.3057746,"name":"Resource
+        Center on Aging","short_desc":"Information, newsletter, library on gerontology
+        for professionals, faculty and public.","slug":"resource-center-on-aging","updated_at":"2014-11-25T17:22:22.370-08:00","website":"http://socrates.berkeley.edu/~aging","url":"https://api-staging.smc-connect.org/locations/resource-center-on-aging","address":{"id":1389,"address_1":"535
+        University Hall","address_2":null,"city":"Berkeley","state_province":"CA","postal_code":"94720"},"organization":{"id":1339,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"University
+        of California, Berkeley","website":null,"slug":"university-of-california-berkeley","url":"https://api-staging.smc-connect.org/organizations/university-of-california-berkeley","locations_url":"https://api-staging.smc-connect.org/organizations/university-of-california-berkeley/locations"},"phones":[{"id":2437,"department":null,"extension":null,"number":"510
+        643-6427","number_type":"voice","vanity_number":null},{"id":3554,"department":null,"extension":null,"number":"510
+        642-1197","number_type":"fax","vanity_number":null}]},{"id":1668,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4583942,37.7638681],"description":"Provides
+        ongoing health care for children and adolescents age 21 or under. Well child
+        visits are scheduled for a primary pediatrician or nurse practitioner. Children
+        who are ill may drop in during urgent care clinic hours. Urgent care is provided
+        Monday-Friday, 9 am-6:30 pm, and Saturday, 9-11:45. An ill child requiring
+        hospitalization may be admitted to Long/Moffitt Hospital. A lactation specialist
+        is available for consultation through Early Newborn Discharge Clinic. The
+        Adolescent Clinic for age 11-21 includes a multidisciplinary team of physicians,
+        social workers, psychologists, nutritionist and teacher. Patients are self-referred
+        or referred by a physician.","kind":"Other","latitude":37.7638681,"longitude":-122.4583942,"name":"Primary
+        Care Pediatrics Practice","short_desc":"Provides ongoing health care for children
+        and adolescents age 18 or under.","slug":"primary-care-pediatrics-practice","updated_at":"2014-11-25T17:22:22.395-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/primary-care-pediatrics-practice","address":{"id":1392,"address_1":"400
+        Parnassus Avenue, 2nd Floor","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94143"},"organization":{"id":1340,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"University
+        of California, San Francisco (UCSF)","website":null,"slug":"university-of-california-san-francisco-ucsf","url":"https://api-staging.smc-connect.org/organizations/university-of-california-san-francisco-ucsf","locations_url":"https://api-staging.smc-connect.org/organizations/university-of-california-san-francisco-ucsf/locations"},"phones":[{"id":2441,"department":"24
+        hours daily","extension":null,"number":"415 353-2000","number_type":"voice","vanity_number":null},{"id":2442,"department":"Teen
+        Clinic","extension":null,"number":"415 353-2002","number_type":"voice","vanity_number":null},{"id":2443,"department":"Emergency
+        Room 24 hours daily","extension":null,"number":"415 476-1037","number_type":"voice","vanity_number":null},{"id":3556,"department":null,"extension":null,"number":"415
+        353-2680","number_type":"fax","vanity_number":null}]},{"id":1686,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.489409,37.6491073],"description":"Offers
+        counseling services to children, families and couples. Serves as a juvenile
+        diversion program for youth referred from the Probation Department, police
+        departments, sheriff''s office or other community agencies. Counselors are
+        on-site at all of the Laguna Salada schools and Terra Nova, Oceana and Jefferson
+        high schools to provide individual and group counseling, crisis intervention
+        and consultation. Children''s groups are held several times a year.","kind":"Other","latitude":37.6491073,"longitude":-122.489409,"name":"Pacifica","short_desc":"Offers
+        a number of counseling programs for youth age 3-18, including youth with questions
+        about their sexuality. Also offers counseling for adults.","slug":"pacifica","updated_at":"2014-12-04T11:10:50.926-08:00","website":"http://www.youthservicebureaus.org","url":"https://api-staging.smc-connect.org/locations/pacifica","address":{"id":1410,"address_1":"435
+        Edgemar Avenue","address_2":null,"city":"Pacifica","state_province":"CA","postal_code":"94044"},"organization":{"id":1343,"accreditations":[],"alternate_name":"Pacifica
+        Youth Service Bureau, Youth Service Bureau of South San Francisco, Youth Service
+        Bureau of San Mateo","date_incorporated":null,"description":"The YSB’s mission
+        is to support and nurture families in developing connected, productive, and
+        healthy youth who can navigate the future and contribute to their communities.
+        Established in 1969 to provide diversion services for first-time youth offenders,
+        we now offer outpatient mental health services in our three clinics (Youth
+        Service Bureaus) and school-based counseling and support in over 50 schools
+        throughout San Mateo County. We are partners with the San Mateo County of
+        Education, eight school districts, five police departments, and County Departments
+        of Behavioral Health and Recovery Services, Human Services, and Juvenile Probation.
+        We specialize in counseling for youth and families, nurturing safe school
+        environments, delivering prevention programs for at-risk youth, and parent
+        support. Our programs help individuals and families cope with life challenges,
+        such as traumatic experiences, depression, school related issues, high-risk
+        adolescent behaviors, and mental illness. The YSBs became a part of the YMCA
+        Association of San Francisco 20 year ago and operate fiscally under their
+        nonprofit tax ID status.","email":"ysbinfo@ymcasf.org","funding_sources":[],"licenses":[],"name":"Youth
+        Service Bureaus of the YMCA","website":null,"slug":"youth-service-bureaus-of-the-ymca","url":"https://api-staging.smc-connect.org/organizations/youth-service-bureaus-of-the-ymca","locations_url":"https://api-staging.smc-connect.org/organizations/youth-service-bureaus-of-the-ymca/locations"},"phones":[{"id":2462,"department":null,"extension":null,"number":"650
+        355-3900","number_type":"voice","vanity_number":null},{"id":3569,"department":null,"extension":null,"number":"650
+        355-2850","number_type":"fax","vanity_number":null}]},{"id":1674,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2268014,37.47020310000001],"description":"Provides
+        social and recreational services for persons age three months or over. Services
+        include a full aquatic program (in an indoor heated pool), fitness activities,
+        active older adults programs and community programs. The Aspire Adaptive Swim
+        Program is offered for developmentally or physically disabled persons of all
+        ages. The arthritis water exercise is sanctioned by the Arthritis Foundation.
+        Sequoia offers group exercise, Zumba, yoga, Pilates and Tai-Chi, weight training
+        equipment and fitness equipment. Personal trainers are available to help with
+        individualized programs. Youth programs include swim lessons, basketball,
+        martial arts, soccer, dance, preschool sports program, Mommy \u0026 Me water
+        classes and more. Youth leadership opportunities are available as well as
+        adult and youth volunteer opportunities. Offers summer and intersessions day
+        camp for children age 5-14, Monday-Friday, 7:30-6. Call for dates. Offers
+        a free program for cancer survivors, \"Living Strong, Living Well\".","kind":"Other","latitude":37.47020310000001,"longitude":-122.2268014,"name":"Sequoia
+        Branch","short_desc":"Provides social and recreational programs for all ages.","slug":"sequoia-branch","updated_at":"2014-11-25T17:22:22.475-08:00","website":"http://www.ymcasv.org","url":"https://api-staging.smc-connect.org/locations/sequoia-branch","address":{"id":1398,"address_1":"1445
+        Hudson Street","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94061"},"organization":{"id":1342,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"YMCA
+        of Silicon Valley","website":null,"slug":"ymca-of-silicon-valley","url":"https://api-staging.smc-connect.org/organizations/ymca-of-silicon-valley","locations_url":"https://api-staging.smc-connect.org/organizations/ymca-of-silicon-valley/locations"},"phones":[{"id":2450,"department":null,"extension":null,"number":"650
+        368-4168","number_type":"voice","vanity_number":null},{"id":3561,"department":null,"extension":null,"number":"650
+        368-1140","number_type":"fax","vanity_number":null}]},{"id":219,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.307242,37.543022],"description":"A
+        71-unit senior citizen apartment complex, including 6 units for disabled persons.
+        Apartments are all one-bedroom and are unfurnished except for a stove, refrigerator,
+        carpets and blinds. There is a coin-operated washer and dryer on each floor.
+        A large recreation room with a kitchen is available for social activities.
+        Limited parking is available.","kind":"Other","latitude":37.543022,"longitude":-122.307242,"name":"Flores
+        Gardens Apartments","short_desc":"An apartment complex for seniors age 62
+        or over or disabled persons capable of self care.","slug":"flores-gardens-apartments","updated_at":"2014-11-25T17:21:59.101-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/flores-gardens-apartments","address":{"id":203,"address_1":"2604
+        Flores Street","address_2":null,"city":"San Mateo","state_province":"CA","postal_code":"94403-2359"},"organization":{"id":219,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Flores
+        Gardens Apartments","website":null,"slug":"flores-gardens-apartments","url":"https://api-staging.smc-connect.org/organizations/flores-gardens-apartments","locations_url":"https://api-staging.smc-connect.org/organizations/flores-gardens-apartments/locations"},"phones":[{"id":293,"department":null,"extension":null,"number":"650
+        341-8092","number_type":"voice","vanity_number":null},{"id":2645,"department":null,"extension":null,"number":"650
+        341-3747","number_type":"fax","vanity_number":null}]},{"id":651,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.1825909,37.4543028],"description":"Provides
+        information referrals, and education on the humane treatment of animals. Can
+        assist with costs of spaying, neutering, veterinary bills, and the work of
+        local rescuers. Office and shop (Animal Art Gallery) are located at 520 Santa
+        Cruz Avenue, Menlo Park.","kind":"Other","latitude":37.4543028,"longitude":-122.1825909,"name":"Palo
+        Alto Humane Society (PAHS)","short_desc":null,"slug":"palo-alto-humane-society-pahs","updated_at":"2014-11-25T17:22:05.829-08:00","website":"http://www.paloaltohumane.org","url":"https://api-staging.smc-connect.org/locations/palo-alto-humane-society-pahs","address":{"id":550,"address_1":"520
+        Santa Cruz Avenue","address_2":null,"city":"Menlo Park","state_province":"CA","postal_code":"94025"},"organization":{"id":651,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Palo
+        Alto Humane Society (PAHS)","website":null,"slug":"palo-alto-humane-society-pahs","url":"https://api-staging.smc-connect.org/organizations/palo-alto-humane-society-pahs","locations_url":"https://api-staging.smc-connect.org/organizations/palo-alto-humane-society-pahs/locations"},"phones":[{"id":887,"department":null,"extension":null,"number":"650
+        424-1901","number_type":"voice","vanity_number":null},{"id":2920,"department":null,"extension":null,"number":"650
+        462-0306","number_type":"fax","vanity_number":null}]},{"id":737,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"Recruits
+        and manages volunteer bone marrow donors. No direct services are given to
+        prospective patients. Formerly known as Heart of America Bone Marrow Donor
+        Registry, Inc.","kind":"Other","latitude":null,"longitude":null,"name":"National
+        Marrow Donor Program","short_desc":"Recruits and manages volunteer bone marrow
+        donors in order to match donors with patients needing transplants.","slug":"national-marrow-donor-program","updated_at":"2014-11-25T17:22:06.330-08:00","website":"http://www.marrow.org","url":"https://api-staging.smc-connect.org/locations/national-marrow-donor-program","address":null,"organization":{"id":737,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"National
+        Marrow Donor Program","website":null,"slug":"national-marrow-donor-program","url":"https://api-staging.smc-connect.org/organizations/national-marrow-donor-program","locations_url":"https://api-staging.smc-connect.org/organizations/national-marrow-donor-program/locations"},"phones":[{"id":991,"department":null,"extension":null,"number":"510
+        834-8500","number_type":"voice","vanity_number":null},{"id":992,"department":"Hotline
+        24-hour answering machine","extension":null,"number":"800 471-4619","number_type":"hotline","vanity_number":null},{"id":993,"department":"National
+        office","extension":null,"number":"800 526-7809","number_type":"voice","vanity_number":null},{"id":2958,"department":null,"extension":null,"number":"510
+        834-0300","number_type":"fax","vanity_number":null}]}]'
+  recorded_at: Fri, 20 Jan 2023 02:37:40 GMT
+recorded_with: VCR 6.1.0

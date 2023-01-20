@@ -131,6 +131,6 @@ production:
 ###############################################################################
 
 test:
-  OHANA_API_ENDPOINT: http://smc-ohana-api-test.herokuapp.com/api
+  OHANA_API_ENDPOINT: https://api-staging.smc-connect.org
   OHANA_API_TOKEN: ~
   CANONICAL_URL: lvh.me
