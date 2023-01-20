@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-staging.smc-connect.org/locations/san-mateo-farmers-market
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"301740a7d576d66a166c0173a928bdfd"
+      Last-Modified:
+      - Tue, 25 Nov 2014 19:51:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 20 Jan 2023 02:37:29 GMT
+      Cache-Control:
+      - max-age=60, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - bcdf4fd9-a946-49a9-b839-95a54d80af78
+      X-Runtime:
+      - '0.031823'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":1708,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.335123,37.5350511],"description":null,"kind":"Farmers''
+        Markets","latitude":37.5350511,"longitude":-122.335123,"name":"San Mateo Farmers''
+        Market","short_desc":null,"slug":"san-mateo-farmers-market","updated_at":"2014-11-25T11:51:06.627-08:00","website":"http://www.pcfma.com/sanmateo","url":"https://api-staging.smc-connect.org/locations/san-mateo-farmers-market","accessibility":[],"email":null,"hours":"January
+        - December Saturday 9:00 AM to 1:00 PM","languages":[],"market_match":true,"payments":["Credit","WIC","SFMNP","SNAP"],"products":["Baked
+        Goods","Cheese","Crafts","Flowers","Eggs","Seafood","Herbs","Vegetables","Honey","Jams","Meat","Nursery","Nuts","Plants","Poultry","Prepared
+        Food","Soap","Wine"],"transportation":null,"address":{"id":1432,"address_1":"1700
+        West Hillsdale Boulevard","address_2":null,"city":"San Mateo","state_province":"CA","postal_code":"94401"},"organization":{"id":1363,"alternate_name":null,"name":"San
+        Mateo Farmers'' Market","slug":"san-mateo-farmers-market","url":"https://api-staging.smc-connect.org/organizations/san-mateo-farmers-market"},"phones":[],"contacts":[],"mail_address":null,"regular_schedules":[],"holiday_schedules":[],"services":[{"id":1770,"accepted_payments":[],"alternate_name":null,"application_process":null,"audience":null,"description":null,"eligibility":null,"email":null,"fees":null,"funding_sources":[],"interpretation_services":null,"keywords":[],"languages":[],"name":null,"required_documents":[],"service_areas":["San
+        Mateo County"],"status":"active","website":null,"wait_time":null,"updated_at":"2014-08-22T17:42:26.177-07:00","categories":[],"contacts":[],"phones":[],"regular_schedules":[],"holiday_schedules":[]}]}'
+  recorded_at: Fri, 20 Jan 2023 02:37:29 GMT
+recorded_with: VCR 6.1.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://smc-ohana-api-test.herokuapp.com/api/search?kind=Parks
+    uri: https://api-staging.smc-connect.org/search?kind=Parks
     body:
       encoding: US-ASCII
       string: ''
@@ -35,31 +35,206 @@ http_interactions:
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Etag:
-      - W/"c8105054cb1c6ee812d2c0c767a882b6"
-      Link:
-      - <http://smc-ohana-api-test.herokuapp.com/api/search?page=15>; rel="last",
-        <http://smc-ohana-api-test.herokuapp.com/api/search?page=2>; rel="next"
+      - W/"ad553eced5cfdc537a8c7c6397900a12"
       X-Total-Count:
-      - '15'
+      - '29'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 23 Jun 2022 02:32:41 GMT
+      - Fri, 06 Jan 2023 20:33:17 GMT
       Cache-Control:
-      - max-age=0, public
+      - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - ec1b1e82-5266-4682-a1f0-e011b6b6b581
+      - d02747ee-3f6f-4e4d-a761-5f0184c9d8f0
       X-Runtime:
-      - '0.021954'
+      - '0.063179'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":1528,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[],"description":"Crystal
+      string: '[{"id":1541,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2307333,37.4889287],"description":"San
+        Mateo County operates 17 parks, 3 regional trails, numerous other county and
+        local trails and a marina encompassing almost 16,000 acres. Facilities vary
+        from one area to another. Call the park ranger in each area or the administrative
+        number for further information. Coyote Point Recreation Area - 1701 Coyote
+        Point Drive, San Mateo (650-573-2592): Picnic sites, playgrounds, marina,
+        bay swimming and fishing, and museum (650-342-7755). Coyote Point Marina -
+        1900 Coyote Point Drive (650-573-2594). Crystal Springs Trail - San Mateo
+        (650-589-4294): Contains the following trails: - San Andreas Trail: located
+        between the west end of Hillcrest Blvd. in Millbrae and Skyline Blvd. in San
+        Bruno. - Sawyer Camp Trail: A six-mile surfaced trail for cycling, hiking,
+        jogging, horseback riding, located between the west end of Hillcrest Blvd.
+        in Millbrae and the west end of Crystal Springs Road in San Mateo. Edgewood
+        Park and Natural Reserve - Redwood City (650-368-6283): Hiking and horseback
+        riding trails, education center, docent led wildflower walks. Flood Park -
+        215 Bay Road, Menlo Park (650-363-4022): Picnic sites, barbeque pits, playground,
+        facilities for horseshoes, softball, volleyball, petanque and tennis. Children''s
+        playground area designed to be accessible to people with disabilities. Huddart
+        Park - 1100 Kings Mountain Road, Woodside (650-851-1210): Picnic sites, hiking
+        and horse trails, playground, archery range, youth camping, three group camp
+        sites, day camp facilities. James V. Fitzgerald Marine Reserve - California
+        Avenue and North Lake, Moss Beach (650-728-3584): Marine life sanctuary. Docent-led
+        reef and tidepool tours (650-363-4021). Junipero Serra Park - 1801 Crystal
+        Springs Road, San Bruno (650-589-5708): Picnic sites, hiking trails, youth
+        group camping, playground. Pescadero Creek Park Complex - 9500 Pescadero Creek
+        Road, Loma Mar (650-879-0238): Hiking and horseback trails, overnight family
+        and hike-in camping. Contains the following areas: - Memorial Park (650-879-0238):
+        Picnic and camping sites, campfire program, hiking trails. Two sites designed
+        for campers with disabilities. Nature walks for special needs groups. Visitor''s
+        center and camp store. - Heritage Grove (650-879-0238): Redwood preserve.
+        - Sam McDonald Park (650-879-0238): Hike-in camping for youth groups, picnic
+        sites and Jack Brook Horsecamp. San Bruno Mountain - 555 Guadalupe Canyon
+        Parkway, Brisbane (650-992-6770): Hiking. San Pedro Valley Park - 600 Oddstad
+        Road, Pacifica (650-355-8289): Hiking trails, picnic sites, barbeque pits.
+        Camping for youth groups. Visitors'' center. Nature trails for special needs
+        groups. Sanchez Adobe - 1000 Linda Mar, Pacifica ((650-359-1462): A restored
+        adobe residence from the mid 1800s.Call the San Mateo County Historical Association
+        about volunteer program (650-299-0104). Woodside Store - 3300 Tripp Road,
+        Woodside (650-851-7615): A restored 1880''s general store. (Call the San Mateo
+        Historical Association about volunteer program, 650-299-0101). Wunderlich
+        Park - 4040 Woodside Road, Woodside (650-851-1210): Hiking and horseback riding
+        trails. Site of the historic Folger Estate stable.","kind":"Parks","latitude":37.4889287,"longitude":-122.2307333,"name":"Information
+        and Reservations","short_desc":"Handles reservations and provides information
+        on the 19 county parks and recreation areas in San Mateo County.","slug":"information-and-reservations","updated_at":"2014-11-25T17:22:20.356-08:00","website":"http://www.smcoparks.org","url":"https://api-staging.smc-connect.org/locations/information-and-reservations","address":{"id":1277,"address_1":"455
+        County Center, 4th Floor","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94063-1663"},"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2182,"department":"Administration","extension":null,"number":"650
+        363-4020","number_type":"voice","vanity_number":null},{"id":2183,"department":"Reservations","extension":null,"number":"650
+        363-4021","number_type":"voice","vanity_number":null},{"id":2184,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null},{"id":3478,"department":null,"extension":null,"number":"650
+        599-1721","number_type":"fax","vanity_number":null}]},{"id":1529,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.278627,37.4736625],"description":"Located
+        adjacent to the intersection of Edgewood Road in Redwood City and Highway
+        280, this area is composed of large expanses of grassland, chaparral and pockets
+        of oak woodland. Daytime hiking and horseback riding are available on designated
+        trails, and there is a small picnic area in the eastern portion of the park.
+        Pets and bicycles are prohibited. The main entrance is located just east of
+        Crestview Drive on Edgewood Road. There is a small parking lot near the entrance
+        and a large overflow parking area immediately outside the park.","kind":"Parks","latitude":37.4736625,"longitude":-122.278627,"name":"Edgewood
+        Park and Preserve","short_desc":"A park area composed of grassland, chaparral
+        and oak woodland.","slug":"edgewood-park-and-preserve","updated_at":"2014-11-25T17:15:48.162-08:00","website":"http://eparks.net","url":"https://api-staging.smc-connect.org/locations/edgewood-park-and-preserve","address":{"id":1267,"address_1":"10
+        Old Stagecoach Road","address_2":null,"city":"Redwood City","state_province":"CA","postal_code":"94062"},"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2132,"department":"Information","extension":null,"number":"650
+        368-6283","number_type":"voice","vanity_number":null},{"id":2133,"department":"Park
+        Supervisor","extension":null,"number":"650 851-1210","number_type":"voice","vanity_number":null},{"id":2134,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null}]},{"id":243,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4365661,37.6555728],"description":"Offers
+        programs designed to serve the leisure needs of the residents of South San
+        Francisco. Youth and adult programs include extended and full-day licensed
+        preschool and child care and a summer day camp. Classes offered are open to
+        residents with disabilities. Offers a therapeutic swim class in an indoor
+        heated pool with a wheelchair lift (individual sessions for children, adults
+        and seniors). Picnic areas and tennis facilities are available on a first-come,
+        first-served basis. Activities are held in various locations including parks
+        and schools. A community garden, located on Commercial Avenue east of Chestnut,
+        is available to residents who pay a key deposit of $25 and an additional $75
+        per year. Reception halls are available for private rentals for wedding receptions,
+        anniversaries, etc. Gymnasium offers organized basketball and badminton, drop-in
+        times and rentals. One full-service senior center at Magnolia Center, van
+        transportation, and licensed Adult Day Care for seniors with special needs.
+        All programs described in Leisure Guide, available by request and online at
+        ssf.net.","kind":"Parks","latitude":37.6555728,"longitude":-122.4365661,"name":"South
+        San Francisco Parks and Recreation","short_desc":"Offers programs designed
+        to serve the leisure needs of the residents of South San Francisco.","slug":"south-san-francisco-parks-and-recreation","updated_at":"2014-11-25T17:21:59.294-08:00","website":"http://ssf.net","url":"https://api-staging.smc-connect.org/locations/south-san-francisco-parks-and-recreation","address":{"id":222,"address_1":"33
+        Arroyo Drive","address_2":null,"city":"South San Francisco","state_province":"CA","postal_code":"94080"},"organization":{"id":243,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"South
+        San Francisco Parks and Recreation","website":null,"slug":"south-san-francisco-parks-and-recreation","url":"https://api-staging.smc-connect.org/organizations/south-san-francisco-parks-and-recreation","locations_url":"https://api-staging.smc-connect.org/organizations/south-san-francisco-parks-and-recreation/locations"},"phones":[{"id":322,"department":null,"extension":null,"number":"650
+        829-3800","number_type":"voice","vanity_number":null},{"id":2657,"department":null,"extension":null,"number":"650
+        877-8678","number_type":"fax","vanity_number":null}]},{"id":1531,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.416447,37.614588],"description":"This
+        foothill park, open all year round, provides family and group picnic areas,
+        hiking and nature trails and shelter buildings. No overnight camping permitted
+        except to youth groups, which must make reservations. Group picnics require
+        reservations for groups of 20 or more at least ten days in advance of outing.
+        Stores nearby. No pets or amplified sound allowed. Beer or wine only permitted.","kind":"Parks","latitude":37.614588,"longitude":-122.416447,"name":"Junipero
+        Serra Park","short_desc":"Picnic sites, hiking trails.","slug":"junipero-serra-park","updated_at":"2014-11-25T17:22:20.275-08:00","website":"http://www.eparks.net","url":"https://api-staging.smc-connect.org/locations/junipero-serra-park","address":{"id":1269,"address_1":"1801
+        Crystal Springs Road","address_2":null,"city":"San Bruno","state_province":"CA","postal_code":"94066-4004"},"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2141,"department":"Information","extension":null,"number":"650
+        589-5708","number_type":"voice","vanity_number":null},{"id":2142,"department":"Reservations","extension":null,"number":"650
+        363-4021","number_type":"voice","vanity_number":null},{"id":2143,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null},{"id":3469,"department":null,"extension":null,"number":"650
+        869-5494","number_type":"fax","vanity_number":null}]},{"id":1542,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.417564,37.6985254],"description":"A
+        2,267-acre park located on Guadalupe Canyon Parkway between Brisbane and Daly
+        City. Contains species of rare and endangered plant life and butterflies.
+        Trails to the summit offer outstanding views of San Francisco and the Bay
+        Area. Other facilities include family picnicking. Strong winds and summer
+        fog can be expected.","kind":"Parks","latitude":37.6985254,"longitude":-122.417564,"name":"San
+        Bruno Mountain","short_desc":"Picnic sites and a preserve for rare and endangered
+        butterflies and plants.","slug":"san-bruno-mountain","updated_at":"2014-11-25T17:15:48.503-08:00","website":"http://www.eparks.net","url":"https://api-staging.smc-connect.org/locations/san-bruno-mountain","address":{"id":1278,"address_1":"555
+        Guadalupe Canyon Parkway","address_2":null,"city":"Brisbane","state_province":"CA","postal_code":"94005"},"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2185,"department":"Information","extension":null,"number":"650
+        573-2592","number_type":"voice","vanity_number":null},{"id":2186,"department":"Reservations","extension":null,"number":"650
+        363-4021","number_type":"voice","vanity_number":null},{"id":2187,"department":null,"extension":null,"number":"650
+        573-2592","number_type":"voice","vanity_number":null},{"id":2188,"department":null,"extension":null,"number":"650
+        581-5708","number_type":"voice","vanity_number":null},{"id":2189,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null}]},{"id":84,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.3151646,37.5484187],"description":"Provides
+        activities that promote active and healthy lifestyles, creative outlets, child
+        and youth development, lifelong learning, and community gatherings. A wide
+        array of programs for all ages are provided, including sports leagues, sports
+        skill instruction, gymnastics, group fitness, swimming, child care, summer
+        camps, early childhood education, music, drama, dance, arts and crafts, travel,
+        personal development, cooking, computer and language education and more. In
+        addition, specific social services are provided for aging population, including
+        information and referral, transportation, shopping assistance, lunch programs
+        and others. Six community centers, two swimming pools, 19 group picnic areas,
+        bocce ball courts, and numerous ballfields and tennis courts are available
+        for use and may be reserved.","kind":"Parks","latitude":37.5484187,"longitude":-122.3151646,"name":"San
+        Mateo City Parks and Recreation Department","short_desc":"Offers recreational
+        and social activities to persons of all ages.","slug":"san-mateo-city-parks-and-recreation-department","updated_at":"2014-11-25T17:21:56.486-08:00","website":"http://www.cityofsanmateo.org","url":"https://api-staging.smc-connect.org/locations/san-mateo-city-parks-and-recreation-department","address":{"id":80,"address_1":"1900
+        O''Farrell, Suite 140","address_2":null,"city":"San Mateo","state_province":"CA","postal_code":"94403"},"organization":{"id":84,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo City Parks and Recreation Department","website":null,"slug":"san-mateo-city-parks-and-recreation-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-city-parks-and-recreation-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-city-parks-and-recreation-department/locations"},"phones":[{"id":110,"department":null,"extension":null,"number":"650
+        522-7400","number_type":"voice","vanity_number":null},{"id":2543,"department":null,"extension":null,"number":"650
+        522-7401","number_type":"fax","vanity_number":null}]},{"id":925,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.086585,37.3785351],"description":"Raises
+        funds to support educational activities at Deer Hollow Farm including classes
+        in farm life, farm animals and wilderness education for school groups. Offers
+        docent-led farm tours for the public on the third Saturday in the months of
+        March through May and Ohlone Day the third Saturday in October. Free tour
+        of Nature Center every third Saturday of the month.","kind":"Parks","latitude":37.3785351,"longitude":-122.086585,"name":"Friends
+        of Deer Hollow Farm","short_desc":"Supports educational activities at Deer
+        Hollow Farm.","slug":"friends-of-deer-hollow-farm","updated_at":"2014-11-25T11:50:12.216-08:00","website":"http://www.fodhf.org","url":"https://api-staging.smc-connect.org/locations/friends-of-deer-hollow-farm","address":{"id":746,"address_1":"Rancho
+        San Antonio Open Space Preserve","address_2":null,"city":"Mountain View","state_province":"CA","postal_code":"94040"},"organization":{"id":925,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Friends
+        of Deer Hollow Farm","website":null,"slug":"friends-of-deer-hollow-farm","url":"https://api-staging.smc-connect.org/organizations/friends-of-deer-hollow-farm","locations_url":"https://api-staging.smc-connect.org/organizations/friends-of-deer-hollow-farm/locations"},"phones":[]},{"id":937,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"Maintains
+        the county''s archery range at Huddart County Park. The range is open to the
+        public at no charge. .","kind":"Parks","latitude":null,"longitude":null,"name":"King''s
+        Mountain Archers","short_desc":"Maintains the county''s archery range at Huddart
+        County Park.","slug":"king-s-mountain-archers","updated_at":"2014-12-04T11:08:53.887-08:00","website":"http://www.kingsmountainarchers.org","url":"https://api-staging.smc-connect.org/locations/king-s-mountain-archers","address":null,"organization":{"id":937,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"King''s
+        Mountain Archers","website":null,"slug":"king-s-mountain-archers","url":"https://api-staging.smc-connect.org/organizations/king-s-mountain-archers","locations_url":"https://api-staging.smc-connect.org/organizations/king-s-mountain-archers/locations"},"phones":[{"id":1235,"department":"Message
+        machine","extension":null,"number":"650 851-4546","number_type":"voice","vanity_number":null}]},{"id":969,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.251426,37.42836],"description":"Promotes
+        environmental awareness and education through community participation in the
+        preservation and enjoyment of the natural environment on the Peninsula. Assists
+        park rangers to maintain Huddart and Wunderlich parks through the management
+        of volunteer efforts, and provides financial support for programs and volunteer
+        activities within the parks.","kind":"Parks","latitude":37.42836,"longitude":-122.251426,"name":"Friends
+        of Huddart and Wunderlich Parks","short_desc":"Assists park rangers to maintain
+        Huddart and Wunderlich parks through the management of volunteer efforts.","slug":"friends-of-huddart-and-wunderlich-parks","updated_at":"2014-11-25T17:22:09.507-08:00","website":"http://www.huddartwunderlichfriends.org/","url":"https://api-staging.smc-connect.org/locations/friends-of-huddart-and-wunderlich-parks","address":{"id":771,"address_1":"2961
+        Woodside Road #1","address_2":null,"city":"Woodside","state_province":"CA","postal_code":"94062"},"organization":{"id":969,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Friends
+        of Huddart and Wunderlich Parks","website":null,"slug":"friends-of-huddart-and-wunderlich-parks","url":"https://api-staging.smc-connect.org/organizations/friends-of-huddart-and-wunderlich-parks","locations_url":"https://api-staging.smc-connect.org/organizations/friends-of-huddart-and-wunderlich-parks/locations"},"phones":[{"id":1270,"department":null,"extension":null,"number":"650
+        851-2660","number_type":"voice","vanity_number":null},{"id":3093,"department":null,"extension":null,"number":"650
+        851-2622","number_type":"fax","vanity_number":null}]},{"id":625,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4438929,37.7717185],"description":"Works
+        to stimulate interest in San Francisco''s Recreation and Parks Department
+        and to raise money to support the parks, swimming pools, golf courses, stadiums,
+        carousels and programs that are a part of it. Activities include tours of
+        Golden Gate Park (call 415-263-0991) and assistance to neighborhood groups
+        in planning events to raise funds to improve their parks. Membership benefits
+        include a newsletter, free admission to the Conservatory of Flowers and Japanese
+        Tea Garden and other park and recreational facilities as well as invitations
+        to special events and lectures.","kind":"Parks","latitude":37.7717185,"longitude":-122.4438929,"name":"San
+        Francisco Parks Trust","short_desc":null,"slug":"san-francisco-parks-trust","updated_at":"2014-11-25T17:22:05.545-08:00","website":"http://www.sfpt.org","url":"https://api-staging.smc-connect.org/locations/san-francisco-parks-trust","address":{"id":528,"address_1":"McLaren
+        Lodge, Golden Gate Park. 501 Stanyan Street","address_2":null,"city":"San
+        Francisco","state_province":"CA","postal_code":"94117"},"organization":{"id":625,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Francisco Parks Trust","website":null,"slug":"san-francisco-parks-trust","url":"https://api-staging.smc-connect.org/organizations/san-francisco-parks-trust","locations_url":"https://api-staging.smc-connect.org/organizations/san-francisco-parks-trust/locations"},"phones":[{"id":844,"department":null,"extension":null,"number":"415
+        750-5105","number_type":"voice","vanity_number":null},{"id":2902,"department":null,"extension":null,"number":"415
+        221-5996","number_type":"fax","vanity_number":null}]},{"id":779,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"Supports
+        the preservation and interpretation of history, structures and natural resources
+        of Angel Island State Park. The association works in partnership with the
+        California State Parks to raise funds, educate and volunteer to provide an
+        enjoyable experience for the visitor.","kind":"Parks","latitude":null,"longitude":null,"name":"Angel
+        Island Association","short_desc":"Supports the preservation and interpretation
+        of history, structures and natural resources of Angel Island State Park.","slug":"angel-island-association","updated_at":"2014-11-25T17:22:06.569-08:00","website":"http://angelisland.org","url":"https://api-staging.smc-connect.org/locations/angel-island-association","address":null,"organization":{"id":779,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Angel
+        Island Association","website":null,"slug":"angel-island-association","url":"https://api-staging.smc-connect.org/organizations/angel-island-association","locations_url":"https://api-staging.smc-connect.org/organizations/angel-island-association/locations"},"phones":[{"id":1043,"department":null,"extension":null,"number":"415
+        435-3972","number_type":"voice","vanity_number":null},{"id":2978,"department":null,"extension":null,"number":"415
+        435-2950","number_type":"fax","vanity_number":null}]},{"id":1528,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"Crystal
         Springs Trail County Park consists of two multi-use recreational trails, Sawyer
         Camp Trail and San Andreas Trail, located adjacent to the Crystal Springs
         and San Andreas reservoirs. Sawyer Camp Trail is a six-mile asphalt-surfaced
@@ -73,8 +248,248 @@ http_interactions:
         source of water on the trail is 1/10 mile from the north gate of Sawyer Camp
         trail, located at the west end of Hillcrest Blvd.","kind":"Parks","latitude":null,"longitude":null,"name":"Crystal
         Springs Trail County Park","short_desc":"Recreational area consisting of two
-        multi-use trails.","slug":"crystal-springs-trail-county-park","updated_at":"2019-06-04T06:49:34.757-07:00","website":null,"url":"http://smc-ohana-api-test.herokuapp.com/api/locations/crystal-springs-trail-county-park","address":null,"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
-        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/san-mateo-county-parks-department","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2131,"department":null,"extension":null,"number":"650
-        589-4294","number_type":null,"vanity_number":null}]}]'
-  recorded_at: Thu, 23 Jun 2022 02:32:41 GMT
+        multi-use trails.","slug":"crystal-springs-trail-county-park","updated_at":"2014-11-25T17:22:20.258-08:00","website":"http://eparks.net","url":"https://api-staging.smc-connect.org/locations/crystal-springs-trail-county-park","address":null,"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2131,"department":null,"extension":null,"number":"650
+        589-4294","number_type":"voice","vanity_number":null},{"id":3467,"department":null,"extension":null,"number":"650
+        869-5494","number_type":"fax","vanity_number":null}]},{"id":1536,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2930115,37.2777053],"description":"The
+        499-acre park, open all year around, provides picnic sites, group and family
+        camping, group picnic areas, park store, creek swimming, hiking trails, interpretive
+        center, summer naturalist service and campfire program. Camping is allowed
+        in established campsites only and permits must be obtained at the park office.
+        A maximum of two weeks overnight camping is allowed. Maximum of two cars and
+        eight persons per site for overnight camping. Picnic reservations are not
+        accepted for groups of less than 35. Groups of 50 or more require reservations
+        at least ten days and no more than one year in advance of outing. Reservations
+        required for all youth groups regardless of size or activity. No reservations
+        accepted for youth groups on holiday weekends. Two group camping sites are
+        available for handicapped persons. A one-quarter-mile long rope trail for
+        the disabled is available. Small stores nearby. No pets allowed.","kind":"Parks","latitude":37.2777053,"longitude":-122.2930115,"name":"Memorial/Pescadero
+        Creek Park Complex., Memorial Park","short_desc":"Picnic and camping sites,
+        campfire program, swimming, hiking trails, two sites designed for handicapped
+        campers.","slug":"memorial-pescadero-creek-park-complex-memorial-park","updated_at":"2014-11-25T17:22:20.319-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/memorial-pescadero-creek-park-complex-memorial-park","address":{"id":1273,"address_1":"9500
+        Pescadero Creek Road","address_2":null,"city":"Loma Mar","state_province":"CA","postal_code":"94021"},"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2160,"department":null,"extension":null,"number":"650
+        879-0212","number_type":"voice","vanity_number":null},{"id":2161,"department":"Reservations","extension":null,"number":"650
+        363-4021","number_type":"voice","vanity_number":null},{"id":2162,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null},{"id":3474,"department":null,"extension":null,"number":"650
+        879-1034","number_type":"fax","vanity_number":null}]},{"id":1533,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.1747053,37.4754971],"description":"This
+        21-acre park, open all year round, provides picnic sites, barbecue pits and
+        tables, playground, group picnic areas and facilities for horseshoes, softball,
+        baseball, volleyball and tennis. Reservations (may be made up to one year
+        in advance) required for groups of 25 or more (made at least ten days in advance);
+        reservations not accepted for groups of less than 25. Children''s playground
+        area designed to be accessible to physically disabled people. No overnight
+        camping or pets are permitted. Stores are located nearby.","kind":"Parks","latitude":37.4754971,"longitude":-122.1747053,"name":"Flood
+        County Park","short_desc":"Picnic sites, barbeque pits, playground, facilities
+        for horseshoes, softball, volleyball and tennis, wheelchair accessible children''s
+        playground.","slug":"flood-county-park","updated_at":"2014-11-25T17:22:20.291-08:00","website":"http://www.eparks.net","url":"https://api-staging.smc-connect.org/locations/flood-county-park","address":{"id":1271,"address_1":"215
+        Bay Road","address_2":null,"city":"Menlo Park","state_province":"CA","postal_code":"94025"},"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2149,"department":"Flood
+        Park","extension":null,"number":"650 363-4022","number_type":"voice","vanity_number":null},{"id":2150,"department":"Reservations","extension":null,"number":"650
+        363-4021","number_type":"voice","vanity_number":null},{"id":2151,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null},{"id":3471,"department":null,"extension":null,"number":"650
+        328-4186","number_type":"fax","vanity_number":null}]},{"id":1534,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2719622,37.3077137],"description":"Hike-in
+        camping for youth groups, picnic sites, horsecamp This 1,000-acre park, open
+        all year, provides hike-in group camping sites for nonprofit, recognized youth
+        groups, by reservation only. Limited picnic facilities and more than eight
+        miles of hiking trails are also available for drop-in day use.","kind":"Parks","latitude":37.3077137,"longitude":-122.2719622,"name":"Memorial/Pescadero
+        Creek Park Complex., Sam McDonald Park","short_desc":null,"slug":"memorial-pescadero-creek-park-complex-sam-mcdonald-park","updated_at":"2014-11-25T17:22:20.300-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/memorial-pescadero-creek-park-complex-sam-mcdonald-park","address":{"id":1272,"address_1":"9500
+        Pescadero Road","address_2":null,"city":"Loma Mar","state_province":"CA","postal_code":"94020"},"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2152,"department":"Park
+        Ranger","extension":null,"number":"650 879-0238","number_type":"voice","vanity_number":null},{"id":2153,"department":"Reservations","extension":null,"number":"650
+        363-4021","number_type":"voice","vanity_number":null},{"id":2154,"department":"Information","extension":null,"number":"650
+        879-0238","number_type":"voice","vanity_number":null},{"id":2155,"department":null,"extension":null,"number":"650
+        879-0238","number_type":"voice","vanity_number":null},{"id":2156,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null},{"id":3472,"department":null,"extension":null,"number":"650
+        879-1034","number_type":"fax","vanity_number":null}]},{"id":1537,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2930115,37.2777053],"description":"The
+        Memorial/Pescadero Creek Park Complex covers 8,020 acres and is comprised
+        of three separate county parks managed as a single unit. Pescadero Creek Park
+        contains the Jack Brook Horse Camp (by reservation only) with two group areas,
+        one for ten persons, the other for a maximum of 65. Offers restrooms, hot
+        showers, RV Sani-station, water, electricity, phone, outdoor kitchen area,
+        hitch racks and corrals. Firewood available for a small fee. Tarwater and
+        Shaw Flat Hike-in Camps have pit toilets, fire rings, no water or garbage
+        collection. An entrance permit is required. Reservations can be made by calling
+        650-363-4021 or visiting eparks.net.","kind":"Parks","latitude":37.2777053,"longitude":-122.2930115,"name":"Memorial/Pescadero
+        Creek Park Complex., Pescadero Creek Park","short_desc":"Contains Jack Brook
+        Horse Camp with two group camping areas.","slug":"memorial-pescadero-creek-park-complex-pescadero-creek-park","updated_at":"2014-11-25T17:22:20.327-08:00","website":"http://eparks.net","url":"https://api-staging.smc-connect.org/locations/memorial-pescadero-creek-park-complex-pescadero-creek-park","address":{"id":1274,"address_1":"9500
+        Pescadero Creek Road","address_2":null,"city":"Loma Mar","state_province":"CA","postal_code":"94020"},"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2163,"department":"Park
+        Ranger","extension":null,"number":"650 879-0238","number_type":"voice","vanity_number":null},{"id":2164,"department":"Reservations","extension":null,"number":"650
+        363-4021","number_type":"voice","vanity_number":null},{"id":2165,"department":"Information","extension":null,"number":"650
+        879-0238","number_type":"voice","vanity_number":null},{"id":2166,"department":null,"extension":null,"number":"650
+        879-0238","number_type":"voice","vanity_number":null},{"id":2167,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null},{"id":3475,"department":null,"extension":null,"number":"650
+        879-1034","number_type":"fax","vanity_number":null}]},{"id":1539,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2930115,37.2777053],"description":"This
+        38-acre redwood preserve, located on Alpine Road, provides a network of trails
+        through the grove''s stand of redwoods. Fire, pets and overnight camping are
+        prohibited.","kind":"Parks","latitude":37.2777053,"longitude":-122.2930115,"name":"Memorial/Pescadero
+        Creek Park Complex., Heritage Grove","short_desc":"A 38-acre redwood preserve.","slug":"memorial-pescadero-creek-park-complex-heritage-grove","updated_at":"2014-11-25T17:15:48.444-08:00","website":null,"url":"https://api-staging.smc-connect.org/locations/memorial-pescadero-creek-park-complex-heritage-grove","address":{"id":1275,"address_1":"9500
+        Pescadero Creek Road","address_2":null,"city":"Loma Mar","state_province":"CA","postal_code":"94020"},"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2174,"department":"Park
+        Ranger","extension":null,"number":"650 879-0238","number_type":"voice","vanity_number":null},{"id":2175,"department":"Reservations","extension":null,"number":"650
+        363-4021","number_type":"voice","vanity_number":null},{"id":2176,"department":"Information","extension":null,"number":"650
+        879-0238","number_type":"voice","vanity_number":null},{"id":2177,"department":null,"extension":null,"number":"650
+        879-0238","number_type":"voice","vanity_number":null},{"id":2178,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null}]},{"id":1535,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"Marine
+        life sanctuary The reserve is a 350-acre marine life sanctuary located between
+        Moss Beach and Pillar Point. It is set aside for the study and protection
+        of marine plants and animals and for the enjoyment of visitors. All marine
+        life and materials washed up on the beach are protected and should not be
+        disturbed. Hook and line fishing for specific fish only is permitted within
+        fish and game regulations. Picnic sites, interpretive center, restrooms and
+        naturalist service available. Docent classes are given for volunteers in fall.
+        Qualified docents give tidepool nature walks to elementary school children
+        in the third grade and up, on a reservation basis. Reservations are usually
+        made about four weeks in advance.","kind":"Parks","latitude":null,"longitude":null,"name":"James
+        V. Fitzgerald Marine Reserve","short_desc":null,"slug":"james-v-fitzgerald-marine-reserve","updated_at":"2014-11-25T17:22:20.308-08:00","website":"http://www.fitzgeraldreserve.org","url":"https://api-staging.smc-connect.org/locations/james-v-fitzgerald-marine-reserve","address":null,"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2157,"department":null,"extension":null,"number":"650
+        728-3584","number_type":"voice","vanity_number":null},{"id":2158,"department":"Tours","extension":null,"number":"650
+        363-4021","number_type":"voice","vanity_number":null},{"id":2159,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null},{"id":3473,"department":null,"extension":null,"number":"650
+        728-3621","number_type":"fax","vanity_number":null}]},{"id":1538,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"This
+        934-acre undeveloped park is open for daytime hiking and horseback riding
+        on 25 miles of trails. Permits are required for all group activities. Pets
+        and bicycles are prohibited. Check-in point is Wunderlich Park, 4040 Woodside
+        Road, Woodside.","kind":"Parks","latitude":null,"longitude":null,"name":"Wunderlich
+        Park","short_desc":"Hiking and horseback riding trails.","slug":"wunderlich-park","updated_at":"2014-11-25T17:22:20.337-08:00","website":"http://eparks.net","url":"https://api-staging.smc-connect.org/locations/wunderlich-park","address":null,"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2168,"department":"Information","extension":null,"number":"650
+        368-6283","number_type":"voice","vanity_number":null},{"id":2169,"department":"Park
+        Supervisor","extension":null,"number":"650 851-1210","number_type":"voice","vanity_number":null},{"id":2170,"department":"Information","extension":null,"number":"650
+        851-1210","number_type":"voice","vanity_number":null},{"id":2171,"department":"Huddart
+        Park","extension":null,"number":"650 851-0326","number_type":"voice","vanity_number":null},{"id":2172,"department":"Reservations","extension":null,"number":"650
+        363-4021","number_type":"voice","vanity_number":null},{"id":2173,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null},{"id":3476,"department":null,"extension":null,"number":"650
+        851-9558","number_type":"fax","vanity_number":null}]},{"id":645,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.1759,37.4522639],"description":"Provides
+        a wide variety of sports, recreation, social and cultural programs for all
+        ages. Formerly known as Menlo Park Arts Commission.","kind":"Parks","latitude":37.4522639,"longitude":-122.1759,"name":"Menlo
+        Park Community Services Department","short_desc":null,"slug":"menlo-park-community-services-department","updated_at":"2014-11-25T17:15:19.894-08:00","website":"http://www.menlopark.org","url":"https://api-staging.smc-connect.org/locations/menlo-park-community-services-department","address":{"id":545,"address_1":"701
+        Laurel Street","address_2":null,"city":"Menlo Park","state_province":"CA","postal_code":"94025"},"organization":{"id":645,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Menlo
+        Park Community Services Department","website":null,"slug":"menlo-park-community-services-department","url":"https://api-staging.smc-connect.org/organizations/menlo-park-community-services-department","locations_url":"https://api-staging.smc-connect.org/organizations/menlo-park-community-services-department/locations"},"phones":[{"id":880,"department":null,"extension":null,"number":"650
+        330-2200","number_type":"voice","vanity_number":null}]},{"id":83,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4903422,37.635075],"description":"Offers
+        recreational and social activities to persons of all ages in Pacifica via
+        parks, playgrounds, community centers and beaches. Anyone, preschool age through
+        senior citizen, may participate in the programs. Instruction is available
+        in sports, self-improvement, hobbies, crafts, dance, etc. A variety of activities
+        including sports, dances, exercise, trips and dramatics are offered in the
+        afternoons and evenings. Offers a year-round aquatics program in an indoor
+        pool. There are special classes and recreation activities for senior citizens.
+        Some facilities may be reserved in advance for use by community groups. The
+        department also has a subsidized and full-cost child care program for 300
+        children age 2 1/2-12 of moderate- and low-income families at four sites:
+        Ocean Shore, Cabrillo, Sunset Ridge and Vallemar schools. Preschool is available
+        at Fairmont Recreation Center, Fairmont West, Ocean Shore and Vallemar.","kind":"Parks","latitude":37.635075,"longitude":-122.4903422,"name":"Pacifica
+        Parks, Beaches and Recreation Department","short_desc":"Offers recreational
+        and social activities to persons of all ages.","slug":"pacifica-parks-beaches-and-recreation-department","updated_at":"2014-11-25T17:21:56.458-08:00","website":"http://activenet.active.com/pacifica","url":"https://api-staging.smc-connect.org/locations/pacifica-parks-beaches-and-recreation-department","address":{"id":79,"address_1":"1810
+        Francisco Blvd.","address_2":null,"city":"Pacifica","state_province":"CA","postal_code":"94044"},"organization":{"id":83,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Pacifica
+        Parks, Beaches and Recreation Department","website":null,"slug":"pacifica-parks-beaches-and-recreation-department","url":"https://api-staging.smc-connect.org/organizations/pacifica-parks-beaches-and-recreation-department","locations_url":"https://api-staging.smc-connect.org/organizations/pacifica-parks-beaches-and-recreation-department/locations"},"phones":[{"id":109,"department":null,"extension":null,"number":"650
+        738-7381","number_type":"voice","vanity_number":null},{"id":2542,"department":null,"extension":null,"number":"650
+        738-2165","number_type":"fax","vanity_number":null}]},{"id":802,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"A
+        nonprofit organization founded in 1969 to preserve, protect, advocate, and
+        enhance California''s state park system of 278 parks. Membership benefits
+        include free day-use passes to parks, a newsletter and maps. Higher membership
+        levels offer additional benefits. Call or visit the Web site for special introductory
+        offers.","kind":"Parks","latitude":null,"longitude":null,"name":"California
+        State Parks Foundation","short_desc":null,"slug":"california-state-parks-foundation","updated_at":"2014-11-25T17:22:07.179-08:00","website":"http://www.calparks.org","url":"https://api-staging.smc-connect.org/locations/california-state-parks-foundation","address":null,"organization":{"id":802,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"California
+        State Parks Foundation","website":null,"slug":"california-state-parks-foundation","url":"https://api-staging.smc-connect.org/organizations/california-state-parks-foundation","locations_url":"https://api-staging.smc-connect.org/organizations/california-state-parks-foundation/locations"},"phones":[{"id":1070,"department":null,"extension":null,"number":"415
+        262-4400","number_type":"voice","vanity_number":null},{"id":2994,"department":null,"extension":null,"number":"415
+        772-8969","number_type":"fax","vanity_number":null}]},{"id":1530,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.2914197,37.4323732],"description":"A
+        hillside area of redwood forest with picnic sites, 26 miles of hiking and
+        horse trails, playground, archery range and shelter buildings. Docents conduct
+        nature walks by appointment. (call 650-591-1085.) Pets are not allowed in
+        the park. The Chickadee Nature Trail and the Werder picnic and play area are
+        accessible to those with disabilities. Sequoia Day Camp, built for summertime
+        use by the Girl Scouts, is available for families and groups by reservation
+        if not in use by Girl Scouts Day Camps. It offers 30 camp areas, an amphitheater,
+        lawns and a restroom. It can accommodate approximately 200 people and is totally
+        accessible to disabled persons. Group camping in three areas holding up to
+        50 people per area is available by reservation only. No family camping.","kind":"Parks","latitude":37.4323732,"longitude":-122.2914197,"name":"Huddart
+        Park","short_desc":"Picnic sites, hiking and horse trails, playground, archery
+        range.","slug":"huddart-park","updated_at":"2014-11-25T17:22:20.267-08:00","website":"http://www.eparks.net","url":"https://api-staging.smc-connect.org/locations/huddart-park","address":{"id":1268,"address_1":"1100
+        Kings Mountain Road","address_2":null,"city":"Woodside","state_province":"CA","postal_code":"94062"},"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2135,"department":"Information","extension":null,"number":"650
+        368-6283","number_type":"voice","vanity_number":null},{"id":2136,"department":"Park
+        Supervisor","extension":null,"number":"650 851-1210","number_type":"voice","vanity_number":null},{"id":2137,"department":"Information","extension":null,"number":"650
+        851-1210","number_type":"voice","vanity_number":null},{"id":2138,"department":"Huddart
+        Park","extension":null,"number":"650 851-0326","number_type":"voice","vanity_number":null},{"id":2139,"department":"Reservations","extension":null,"number":"650
+        363-4021","number_type":"voice","vanity_number":null},{"id":2140,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null},{"id":3468,"department":null,"extension":null,"number":"650
+        851-9558","number_type":"fax","vanity_number":null}]},{"id":1532,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.3186874,37.5872091],"description":"Open
+        all year, dawn to dusk, the 727-acre park offers the following facilities:
+        picnic sites, group picnic areas, marina, bay swimming, fishing, playground,
+        environmental science museum, rifle and pistol range, boat launching ramp,
+        kayaking, windsurfing, shorebird viewing, saltwater marsh area, sand volleyball
+        areas, and animal center. The playground is wheelchair accessible. Group picnics
+        require reservations for groups of 50 or more. No overnight camping. Stores
+        nearby. No pets allowed. No fee for senior citizens except on weekends and
+        holidays.","kind":"Parks","latitude":37.5872091,"longitude":-122.3186874,"name":"Coyote
+        Point Recreation Area","short_desc":"A 727-acre park on San Francisco Bay
+        with picnic sites, playground, marina, bay swimming and fishing, rifle and
+        pistol range.","slug":"coyote-point-recreation-area","updated_at":"2014-11-25T17:22:20.283-08:00","website":"http://www.eparks.net","url":"https://api-staging.smc-connect.org/locations/coyote-point-recreation-area","address":{"id":1270,"address_1":"1701
+        Coyote Point Drive","address_2":null,"city":"San Mateo","state_province":"CA","postal_code":"94401"},"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2144,"department":"Information","extension":null,"number":"650
+        573-2592","number_type":"voice","vanity_number":null},{"id":2145,"department":"Reservations","extension":null,"number":"650
+        363-4021","number_type":"voice","vanity_number":null},{"id":2146,"department":null,"extension":null,"number":"650
+        573-2592","number_type":"voice","vanity_number":null},{"id":2147,"department":null,"extension":null,"number":"650
+        581-5708","number_type":"voice","vanity_number":null},{"id":2148,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null},{"id":3470,"department":null,"extension":null,"number":"650
+        573-3727","number_type":"fax","vanity_number":null}]},{"id":1540,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4763813,37.58061319999999],"description":"Located
+        at the end of Linda Mar Blvd., this 1,140-acre park has six hiking trails.
+        It is also equipped with picnic tables, barbeque pits and restrooms. The area
+        for groups of 50-200 people can be reserved up to a year in advance. Overnight
+        camping is only available for youth groups. Pets are prohibited. Some facilities
+        and trails are accessible to disabled persons. A visitor center is open to
+        the public on weekends, 10-4.","kind":"Parks","latitude":37.58061319999999,"longitude":-122.4763813,"name":"San
+        Pedro Valley Park","short_desc":"Hiking trails, picnic sites, barbeque pits,
+        camping for youth groups.","slug":"san-pedro-valley-park","updated_at":"2014-11-25T17:22:20.347-08:00","website":"http://www.eparks.net","url":"https://api-staging.smc-connect.org/locations/san-pedro-valley-park","address":{"id":1276,"address_1":"600
+        Oddstad Blvd.","address_2":null,"city":"Pacifica","state_province":"CA","postal_code":"94044"},"organization":{"id":1313,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
+        Mateo County Parks Department","website":null,"slug":"san-mateo-county-parks-department","url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department","locations_url":"https://api-staging.smc-connect.org/organizations/san-mateo-county-parks-department/locations"},"phones":[{"id":2179,"department":"Park","extension":null,"number":"650
+        355-8289","number_type":"voice","vanity_number":null},{"id":2180,"department":"Reservations","extension":null,"number":"650
+        363-4021","number_type":"voice","vanity_number":null},{"id":2181,"department":null,"extension":null,"number":"650
+        325-6973","number_type":"tty","vanity_number":null},{"id":3477,"department":null,"extension":null,"number":"650
+        738-1410","number_type":"fax","vanity_number":null}]},{"id":996,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.148277,37.439994],"description":"Public
+        garden open 365 days from dawn to dusk.","kind":"Parks","latitude":37.439994,"longitude":-122.148277,"name":"Elizabeth
+        F. Gamble Garden","short_desc":null,"slug":"elizabeth-f-gamble-garden","updated_at":"2014-12-04T11:08:54.028-08:00","website":"http://www.gamblegarden.org","url":"https://api-staging.smc-connect.org/locations/elizabeth-f-gamble-garden","address":{"id":789,"address_1":"1431
+        Waverley Street","address_2":null,"city":"Palo Alto","state_province":"CA","postal_code":"94301"},"organization":{"id":996,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Elizabeth
+        F. Gamble Garden","website":null,"slug":"elizabeth-f-gamble-garden","url":"https://api-staging.smc-connect.org/organizations/elizabeth-f-gamble-garden","locations_url":"https://api-staging.smc-connect.org/organizations/elizabeth-f-gamble-garden/locations"},"phones":[{"id":1301,"department":null,"extension":"201","number":"650
+        329-1356","number_type":"voice","vanity_number":null},{"id":3111,"department":null,"extension":null,"number":"650
+        329-1688","number_type":"fax","vanity_number":null}]},{"id":801,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"Initiates
+        and supports interpretive, educational, research, scientific and environmental
+        programs in Yosemite National Park, in cooperation with the National Park
+        Service. Authorized by Congress, the association provides services and direct
+        financial support in order to promote park stewardship and enrich the visitor
+        experience. In addition to publishing and selling literature and maps, the
+        association offers seminars on subjects such as natural and cultural history,
+        writing, photography and backpacking. The association also sponsors the Wilderness
+        Center, the Yosemite Art Activity Center, the Keep Bears Wild public education
+        program, and the Ostrander Lake Ski Hut. Benefits of membership include special
+        events, discounts on products, and the opportunity to volunteer for one-week
+        or one-month assignments to provide visitor information services, seminar
+        coordination and resource management support within the park.","kind":"Parks","latitude":null,"longitude":null,"name":"Yosemite
+        Association","short_desc":null,"slug":"yosemite-association","updated_at":"2014-12-04T11:08:53.557-08:00","website":"http://www.yosemite.org","url":"https://api-staging.smc-connect.org/locations/yosemite-association","address":null,"organization":{"id":801,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Yosemite
+        Association","website":null,"slug":"yosemite-association","url":"https://api-staging.smc-connect.org/organizations/yosemite-association","locations_url":"https://api-staging.smc-connect.org/organizations/yosemite-association/locations"},"phones":[{"id":1069,"department":null,"extension":null,"number":"209
+        379-2646","number_type":"voice","vanity_number":null},{"id":2993,"department":null,"extension":null,"number":"209
+        379-2486","number_type":"fax","vanity_number":null}]},{"id":916,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[],"description":"Dedicated
+        to the preservation of Edgewood County Park and Natural Preserve for the human,
+        plant and animal generations to come. Members support organizational activities
+        such as serving as preserve docents, patrolling trails, performing park maintenance,
+        weeding, restoring natural habitats, beautifying I-280 through the CalTrans
+        Adopt-A-Highway program, and reaching out to the community. Visit www.friendsofedgewood.org
+        for more information.","kind":"Parks","latitude":null,"longitude":null,"name":"Friends
+        of Edgewood Natural Preserve","short_desc":"Dedicated to the preservation
+        of Edgewood County Park and Natural Preserve for the human, plant and animal
+        generations to come.","slug":"friends-of-edgewood-natural-preserve","updated_at":"2016-08-31T15:33:58.128-07:00","website":"http://www.friendsofedgewood.org","url":"https://api-staging.smc-connect.org/locations/friends-of-edgewood-natural-preserve","address":null,"organization":{"id":916,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Friends
+        of Edgewood Natural Preserve","website":null,"slug":"friends-of-edgewood-natural-preserve","url":"https://api-staging.smc-connect.org/organizations/friends-of-edgewood-natural-preserve","locations_url":"https://api-staging.smc-connect.org/organizations/friends-of-edgewood-natural-preserve/locations"},"phones":[{"id":1212,"department":null,"extension":null,"number":"866
+        463-3439","number_type":"voice","vanity_number":"866 GO-EDGEWOOD"}]},{"id":1353,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.1774506,37.4532127],"description":"Provides
+        recreational and leisure activities for Menlo Park residents of all ages.
+        Offers classes in drama, arts and crafts, cooking and many individual and
+        team sports. In the summer any elementary or junior or senior high school
+        age student may participate in activity programs, which include day trips,
+        entertainment, games, sports and parties. Some facilities are available for
+        rent.","kind":"Parks","latitude":37.4532127,"longitude":-122.1774506,"name":"Recreation","short_desc":"Offers
+        classes and recreational activities to persons of all ages.","slug":"recreation","updated_at":"2017-06-26T17:03:21.831-07:00","website":"http://menlopark.org/communityservices","url":"https://api-staging.smc-connect.org/locations/recreation","address":{"id":1093,"address_1":"701
+        Laurel Street","address_2":null,"city":"Menlo Park","state_province":"CA","postal_code":"94025"},"organization":{"id":645,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Menlo
+        Park Community Services Department","website":null,"slug":"menlo-park-community-services-department","url":"https://api-staging.smc-connect.org/organizations/menlo-park-community-services-department","locations_url":"https://api-staging.smc-connect.org/organizations/menlo-park-community-services-department/locations"},"phones":[{"id":1819,"department":null,"extension":null,"number":"650
+        330-2200","number_type":"voice","vanity_number":null}]}]'
+  recorded_at: Fri, 06 Jan 2023 20:33:17 GMT
 recorded_with: VCR 6.1.0

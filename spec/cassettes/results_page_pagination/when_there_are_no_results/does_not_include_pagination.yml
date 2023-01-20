@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://smc-ohana-api-test.herokuapp.com/api/search?action=index&controller=locations&keyword=asdfg
+    uri: https://api-staging.smc-connect.org/search?action=index&controller=locations&keyword=asdfg
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -21,39 +21,45 @@ http_interactions:
       Server:
       - Cowboy
       Connection:
-      - close
-      Date:
-      - Fri, 05 Dec 2014 21:06:02 GMT
-      Status:
-      - 200 OK
+      - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Etag:
-      - '"cd50b341a9b8730649ca0bd98ec16e4f"'
+      - W/"ffeaf6a9451f5a8862e9067becf8c9ae"
       Link:
-      - <http://smc-ohana-api-test.herokuapp.com/api/search?keyword=asdfg&page=0>;
-        rel="last"
+      - <https://api-staging.smc-connect.org/search?keyword=asdfg&page=0>; rel="last"
       X-Total-Count:
       - '0'
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Fri, 20 Jan 2023 02:37:57 GMT
       Cache-Control:
-      - max-age=0, public
+      - max-age=60, public
+      Vary:
+      - Origin
       X-Request-Id:
-      - 8e67cbfa-6b72-4129-ab4d-7600f7e59bdd
+      - 62cbf5c3-e384-4803-8e20-378fad90cec3
       X-Runtime:
-      - '0.014834'
-      X-Rack-Cache:
-      - pass
+      - '0.011033'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: "[]"
-    http_version: 
-  recorded_at: Fri, 05 Dec 2014 21:06:02 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 20 Jan 2023 02:37:57 GMT
+recorded_with: VCR 6.1.0

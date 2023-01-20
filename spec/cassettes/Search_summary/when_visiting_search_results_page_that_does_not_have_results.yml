@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://smc-ohana-api-test.herokuapp.com/api/search?action=index&controller=locations&keyword=asdfdsggfdg
+    uri: https://api-staging.smc-connect.org/search?action=index&controller=locations&keyword=asdfdsggfdg
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -21,39 +21,45 @@ http_interactions:
       Server:
       - Cowboy
       Connection:
-      - close
-      Date:
-      - Fri, 05 Dec 2014 21:06:03 GMT
-      Status:
-      - 200 OK
+      - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Etag:
-      - '"31b8a393f9d59547c4870516597b957c"'
+      - W/"28770ebed7ad3cdb21c2d5b17a3844c6"
       Link:
-      - <http://smc-ohana-api-test.herokuapp.com/api/search?keyword=asdfdsggfdg&page=0>;
-        rel="last"
+      - <https://api-staging.smc-connect.org/search?keyword=asdfdsggfdg&page=0>; rel="last"
       X-Total-Count:
       - '0'
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Fri, 06 Jan 2023 20:33:16 GMT
       Cache-Control:
-      - max-age=0, public
+      - max-age=300, public
+      Vary:
+      - Origin
       X-Request-Id:
-      - 7a5b2a68-cca1-47dc-80f3-04330a3891ff
+      - 4304150f-c7d9-4350-a585-fc28a7f8977a
       X-Runtime:
-      - '0.015505'
-      X-Rack-Cache:
-      - pass
+      - '0.012266'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: "[]"
-    http_version: 
-  recorded_at: Fri, 05 Dec 2014 21:06:03 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 06 Jan 2023 20:33:16 GMT
+recorded_with: VCR 6.1.0

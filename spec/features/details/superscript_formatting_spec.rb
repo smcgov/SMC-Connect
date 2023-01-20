@@ -14,8 +14,10 @@ feature 'superscript formatting' do
 
   scenario 'when the string is unsafe', js: true do
     script = '<script>var x=12;var y=34;document.body.innerHTML=x+y;</script>'
-    VCR.use_cassette('dynamic/location_details/superscript_dynamic',
-                     erb: { name: script }) do
+    VCR.use_cassette(
+      'dynamic/location_details/superscript_dynamic',
+      erb: { name: script }
+    ) do
       visit_test_location
       expect(page).
         to_not have_content('579')

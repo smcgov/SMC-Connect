@@ -11,7 +11,7 @@ feature 'location service details' do
 
     it 'includes name' do
       element = '.services-box .name'
-      expect(all(element).first).to have_content('Passport Photos')
+      expect(all(element).first).to have_content('Example Service Name')
     end
 
     it 'includes alternate name' do

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://smc-ohana-api-test.herokuapp.com/api/search?action=index&controller=locations&keyword=example%20location
+    uri: https://api-staging.smc-connect.org/search?action=index&controller=locations&keyword=alpha%20app
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -21,36 +21,44 @@ http_interactions:
       Server:
       - Cowboy
       Connection:
-      - close
-      Date:
-      - Fri, 05 Dec 2014 21:06:02 GMT
-      Status:
-      - 200 OK
+      - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Etag:
-      - '"8db7a46738992970e1ecab380feff5c1"'
+      - W/"b178075b77815e49d0674e01e954e5da"
       X-Total-Count:
       - '1'
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Fri, 20 Jan 2023 02:38:01 GMT
       Cache-Control:
-      - max-age=0, public
+      - max-age=60, public
+      Vary:
+      - Origin
       X-Request-Id:
-      - 5ca8254e-84b5-4822-b335-3fe3bde98048
+      - b9b2cc1f-f668-4808-ae1c-759797865840
       X-Runtime:
-      - '0.029353'
-      X-Rack-Cache:
-      - pass
+      - '0.021147'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":1689,"active":true,"admin_emails":[],"alternate_name":"The Test
+      string: '[{"id":1909,"active":true,"admin_emails":[],"alternate_name":"The Test
         Spot","coordinates":[-122.4099154,37.7726402],"description":"[NOTE THIS IS
         NOT A REAL ORGANIZATION--THIS IS FOR TESTING PURPOSES OF THIS ALPHA APP] Lorem
         ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit metus
@@ -63,21 +71,19 @@ http_interactions:
         Proin ac hendrerit erat. Duis porta iaculis orci, eu euismod quam tristique
         in. Phasellus nec purus sit amet sapien volutpat egestas.","kind":"Other","latitude":37.7726402,"longitude":-122.4099154,"name":"Example
         Location","short_desc":"[NOTE THIS IS NOT A REAL ENTRY--THIS IS FOR TESTING
-        PURPOSES OF THIS ALPHA APP]","slug":"example-location","updated_at":"2014-12-05T10:04:55.918-08:00","url":"http://smc-ohana-api-test.herokuapp.com/api/locations/example-location","address":{"id":1413,"street":"2013
-        Avenue of the fellows, Suite 100","street_1":"2013 Avenue of the fellows","street_2":"Suite
-        100","city":"San Francisco","state":"VT","state_province":"CA","postal_code":"94103","zip":"05201"},"organization":{"id":1344,"accreditations":["BBB","State
+        PURPOSES OF THIS ALPHA APP]","slug":"example-location","updated_at":"2023-01-18T17:54:11.414-08:00","website":"http://www.example.org","url":"https://api-staging.smc-connect.org/locations/example-location","address":{"id":1613,"address_1":"2013
+        Avenue of the fellows","address_2":"Suite 100","city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1437,"accreditations":["BBB","State
         Board of Education"],"alternate_name":"Alternate Agency Name","date_incorporated":"1970-01-01","description":"Sample
         organization description. The Public Library inspires learning through innovative
         and visionary programming and services—literacy programs, support for school
         success, access to technology, safe, inviting spaces for youth and families,
         and gathering places that connect the members of the community with a love
-        of reading and learning.","email":"info@example.org","funding_sources":["State","Donations","Grants"],"licenses":["State
+        of reading and learning.","email":"info@example.org","funding_sources":["Donations","Grants","State"],"licenses":["State
         Health Inspection License","State Board of Education License"],"name":"Example
-        Agency","website":"http://example.org","slug":"example-agency","url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/example-agency","locations_url":"http://smc-ohana-api-test.herokuapp.com/api/organizations/example-agency/locations"},"phones":[{"id":2465,"department":"Information","extension":"123","number":"650
-        372-6200","number_type":"voice","vanity_number":"222-555-INFO"},{"id":2466,"department":"Reservations","extension":null,"number":"650
-        627-8244","number_type":"fax","vanity_number":null},{"id":2531,"department":"Hotline","extension":null,"number":"800
-        372-6200","number_type":"hotline","vanity_number":null},{"id":2532,"department":"Rental
+        Agency","website":"http://example.org","slug":"example-agency","url":"https://api-staging.smc-connect.org/organizations/example-agency","locations_url":"https://api-staging.smc-connect.org/organizations/example-agency/locations"},"phones":[{"id":3787,"department":"Information","extension":"123","number":"650
+        372-6200","number_type":"voice","vanity_number":"222-555-INFO"},{"id":3788,"department":"Reservations","extension":null,"number":"650
+        627-8244","number_type":"fax","vanity_number":null},{"id":3789,"department":"Hotline","extension":null,"number":"800
+        372-6200","number_type":"hotline","vanity_number":null},{"id":3790,"department":"Rental
         Assistance","extension":"202","number":"650 372-6200","number_type":"tty","vanity_number":null}]}]'
-    http_version: 
-  recorded_at: Fri, 05 Dec 2014 21:06:01 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 20 Jan 2023 02:38:01 GMT
+recorded_with: VCR 6.1.0

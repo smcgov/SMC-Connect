@@ -36,7 +36,7 @@ feature 'searching from results page', :vcr do
     end
 
     it 'displays the number of results' do
-      expect(page).to have_content('Displaying 1 - 1 of 2 results')
+      expect(page).to have_content('Displaying 1 result')
     end
 
     it 'includes the results info in the page title' do
@@ -103,7 +103,9 @@ feature 'searching from results page', :vcr do
   context 'when clicking organization link in results' do
     it 'displays locations that belong to that organization' do
       search(keyword: 'Samaritan House')
-      first('#list-view li').click_link('Samaritan House')
+      within('#list-view') do
+        page.all('a', text: 'Samaritan House')[1].click
+      end
       expect(page).to have_link('Redwood City Free Medical Clinic')
     end
   end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://smc-ohana-api-test.herokuapp.com/api/search?action=index&controller=locations&keyword=asdfg&location=
+    uri: https://api-staging.smc-connect.org/search?action=index&controller=locations&keyword=asdfg&location=
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -28,36 +28,38 @@ http_interactions:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Etag:
-      - '"e8f186293fd305dd40df04d591a38d19"'
+      - W/"ffeaf6a9451f5a8862e9067becf8c9ae"
       Link:
-      - <http://smc-ohana-api-test.herokuapp.com/api/search?keyword=asdfg&location=&page=0>;
-        rel="last"
+      - <https://api-staging.smc-connect.org/search?keyword=asdfg&page=0>; rel="last"
       X-Total-Count:
       - '0'
-      Date:
-      - Sat, 28 Nov 2015 05:26:44 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Fri, 20 Jan 2023 02:37:36 GMT
       Cache-Control:
-      - max-age=0, public
+      - max-age=60, public
+      Vary:
+      - Origin
       X-Request-Id:
-      - 1dddb253-2596-415b-aec0-0f5de3ade18d
+      - d0841b16-d9f2-42a3-9f28-0a4d75082ad2
       X-Runtime:
-      - '0.043910'
-      X-Content-Digest:
-      - 97d170e1550eee4afc0af065b78cda302a97674c
-      Age:
-      - '0'
-      X-Rack-Cache:
-      - miss, store
-      Content-Length:
-      - '2'
+      - '0.014441'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: "[]"
-    http_version: 
-  recorded_at: Sat, 28 Nov 2015 05:26:44 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Fri, 20 Jan 2023 02:37:36 GMT
+recorded_with: VCR 6.1.0

@@ -4,7 +4,7 @@ feature 'location details' do
   context 'when the details page is visited via search results', :vcr do
     it 'includes address elements' do
       search_for_example
-      visit_details
+      click_link 'Example Location'
       expect(page).to have_content('Mailing Address')
       expect(page).to have_content('Physical Address')
       expect(page).to have_content('2013 Avenue of the fellows')
@@ -16,7 +16,7 @@ feature 'location details' do
   context 'when you return to the results page from details page', :js, :vcr do
     it 'displays the same search results' do
       search_for_example
-      visit_details
+      click_link 'Example Location'
       find_link('suzanne@example.com')
       find_link('a', text: 'Back').click
       expect(page).to have_selector('#list-view')
@@ -228,13 +228,8 @@ feature 'location details' do
     end
   end
 
-  context 'when farmers market with market match' do
-    before(:each) do
-      cassette = 'location_details/when_market_details_page_is_visited_directly'
-      VCR.use_cassette(cassette) do
-        visit('/locations/san-mateo-farmers-market')
-      end
-    end
+  context 'when farmers market with market match', :vcr do
+    before(:each) { visit('/locations/san-mateo-farmers-market') }
 
     it 'includes Market Match' do
       expect(page).to have_content('Market Match')
