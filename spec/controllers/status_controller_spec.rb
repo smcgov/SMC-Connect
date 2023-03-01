@@ -5,7 +5,7 @@ describe StatusController do
     context 'when everything is fine', :vcr do
       it 'returns success' do
         get 'check_status'
-        body = JSON.parse(response.body)
+        body = response.parsed_body
         expect(body['status']).to eq('OK')
       end
     end
@@ -39,7 +39,7 @@ describe StatusController do
           to_return(status: 200, body: '', headers: {})
 
         get 'check_status'
-        body = JSON.parse(response.body)
+        body = response.parsed_body
         expect(body['status']).to eq('NOT OK')
       end
     end

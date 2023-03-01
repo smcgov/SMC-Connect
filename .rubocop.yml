@@ -257,3 +257,7 @@ Naming/VariableNumber:
 
 Style/GlobalStdStream:
   Enabled: false
+
+Style/HashSyntax:
+  Exclude:
+    - 'app/views/**/*'
