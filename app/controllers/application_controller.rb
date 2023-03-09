@@ -16,20 +16,10 @@ class ApplicationController < ActionController::Base
   end
 
   def render_bad_search
-    redirect_to path, error: t('errors.bad_search')
+    redirect_back(fallback_location: root_path, error: t('errors.bad_search'))
   end
 
   def render_not_found
-    redirect_to path, error: t('errors.not_found')
-  end
-
-  def path
-    referer = request.env['HTTP_REFERER']
-    uri = request.env['REQUEST_URI']
-    if referer.present? && referer != uri
-      :back
-    else
-      root_path
-    end
+    redirect_back(fallback_location: root_path, error: t('errors.not_found'))
   end
 end
