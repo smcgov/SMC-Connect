@@ -47,7 +47,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
-    addressable (2.8.1)
+    addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     benchmark-ips (2.10.0)
@@ -59,7 +59,7 @@ GEM
     bummr (0.6.0)
       rainbow
       thor
-    capybara (3.38.0)
+    capybara (3.39.0)
       addressable
       matrix
       mini_mime (>= 0.1.3)
@@ -118,7 +118,7 @@ GEM
     execjs (2.7.0)
     faraday (0.17.6)
       multipart-post (>= 1.2, < 3)
-    faraday-http-cache (2.4.1)
+    faraday-http-cache (2.5.0)
       faraday (>= 0.8)
     ffi (1.15.5)
     figaro (1.2.0)
@@ -150,7 +150,7 @@ GEM
       thor
     hiredis (0.6.1)
     htmlentities (4.3.4)
-    i18n (1.12.0)
+    i18n (1.13.0)
       concurrent-ruby (~> 1.0)
     json (2.6.3)
     kaminari-actionview (1.2.2)
@@ -177,10 +177,10 @@ GEM
     method_source (1.0.0)
     mini_histogram (0.3.1)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.1)
+    mini_portile2 (2.8.2)
     minitest (5.18.0)
     multi_json (1.15.0)
-    multipart-post (2.2.3)
+    multipart-post (2.3.0)
     net-imap (0.3.4)
       date
       net-protocol
@@ -190,23 +190,23 @@ GEM
       timeout
     net-smtp (0.3.3)
       net-protocol
-    nio4r (2.5.8)
+    nio4r (2.5.9)
     nokogiri (1.14.3)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     ohanakapa (1.1.3)
       sawyer (~> 0.8)
-    parallel (1.22.1)
-    parser (3.2.1.1)
+    parallel (1.23.0)
+    parser (3.2.2.1)
       ast (~> 2.4.1)
-    public_suffix (5.0.0)
-    puma (6.1.1)
+    public_suffix (5.0.1)
+    puma (6.2.2)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.6.4)
     rack-cache (1.13.0)
       rack (>= 0.4)
-    rack-mini-profiler (3.0.0)
+    rack-mini-profiler (3.1.0)
       rack (>= 1.2.0)
     rack-proxy (0.7.6)
       rack
@@ -237,14 +237,13 @@ GEM
     readthis (2.2.0)
       connection_pool (~> 2.1)
       redis (>= 3.0, < 5.0)
-    recaptcha (5.12.3)
-      json
+    recaptcha (5.14.0)
     redis (4.0.1)
     reek (6.1.4)
       kwalify (~> 0.7.0)
       parser (~> 3.2.0)
       rainbow (>= 2.0, < 4.0)
-    regexp_parser (2.7.0)
+    regexp_parser (2.8.0)
     rexml (3.2.5)
     rspec-core (3.12.0)
       rspec-support (~> 3.12.0)
@@ -263,19 +262,19 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.12.0)
-    rubocop (1.48.1)
+    rubocop (1.50.2)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.2.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.26.0, < 2.0)
+      rubocop-ast (>= 1.28.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.27.0)
+    rubocop-ast (1.28.1)
       parser (>= 3.2.1.0)
-    rubocop-rails (2.18.0)
+    rubocop-rails (2.19.1)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
@@ -322,7 +321,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stackprof (0.2.23)
+    stackprof (0.2.25)
     sysexits (1.2.0)
     temple (0.10.0)
     thor (1.2.1)
@@ -347,20 +346,18 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    webrick (1.7.0)
     websocket (1.2.9)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    yard (0.9.28)
-      webrick (~> 1.7.0)
-    zeitwerk (2.6.7)
+    yard (0.9.34)
+    zeitwerk (2.6.8)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   actionmailer (~> 6.1.5)
-  better_errors
+  better_errors (~> 2.9.1)
   bummr
   capybara
   compass-rails

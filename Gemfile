@@ -27,7 +27,7 @@ gem 'webpacker', '~> 5.2'
 
 # dev and debugging tools
 group :development do
-  gem 'better_errors'
+  gem 'better_errors', '~> 2.9.1'
   gem 'bummr'
   gem 'derailed'
   gem 'flamegraph'
