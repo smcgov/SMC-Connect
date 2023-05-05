@@ -357,7 +357,7 @@ PLATFORMS
 
 DEPENDENCIES
   actionmailer (~> 6.1.5)
-  better_errors
+  better_errors (~> 2.9.1)
   bummr
   capybara
   compass-rails
