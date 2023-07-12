@@ -150,7 +150,6 @@
       %section.services-box
         %h1 Services
         - location.services.each do |service|
-
           %section.service{ itemscope: '', itemtype: 'http://schema.org/Service' }
             %section.title-box
               = render 'component/detail/service_status', service: service

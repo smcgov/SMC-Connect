@@ -9,3 +9,28 @@ linters:
       - app/views/component/info_box/_example_custom_template.html.haml
       - app/views/component/locations/detail/_body.html.haml
       - app/views/component/info_box/_health_care_reform_template.html.haml
+
+  RuboCop:
+    enabled: true
+    # These cops are incredibly noisy when it comes to HAML templates, so we
+    # ignore them.
+    ignored_cops:
+      - Layout/BlockAlignment
+      - Layout/EndAlignment
+      - Lint/Void
+      - Layout/HashAlignment
+      - Layout/ElseAlignment
+      - Layout/ArgumentAlignment
+      - Layout/EmptyLineAfterGuardClause
+      - Layout/EndOfLine
+      - Layout/IndentationWidth
+      - Layout/TrailingEmptyLines
+      - Layout/TrailingWhitespace
+      - Metrics/BlockLength
+      - Metrics/BlockNesting
+      - Layout/LineLength
+      - Naming/FileName
+      - Style/FrozenStringLiteralComment
+      - Style/IfUnlessModifier
+      - Style/Next
+      - Style/WhileUntilModifier

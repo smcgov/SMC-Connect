@@ -33,13 +33,6 @@
 = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700'
 = stylesheet_link_tag 'application', media: 'all'
 
-/[if lte IE 9]
-  :javascript
-    // Hack to handle suppression of JS errors in IE.
-    // Normally JS errors would stop the page from loading,
-    // but this allows the page to continue loading.
-    window.onerror = function (){ return true; };
-
 = javascript_include_tag 'https://plausible.io/js/plausible.js', defer: true, 'data-domain': 'smc-connect.org'
 - if Rails.env.production? && ENV['GOOGLE_ANALYTICS_ID'].present?
   = render 'shared/google_analytics/page_tracking'
