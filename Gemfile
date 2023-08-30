@@ -34,9 +34,6 @@ group :development do
   gem 'letter_opener'
   gem 'rack-mini-profiler', require: false
   gem 'reek'
-  gem 'spring'
-  gem 'spring-commands-rspec'
-  gem 'spring-watcher-listen'
   gem 'stackprof'
   gem 'yard'
 end
@@ -48,9 +45,9 @@ group :test do
   gem 'rails-controller-testing'
   gem 'rubocop'
   gem 'rubocop-rails'
+  gem 'selenium-webdriver'
   gem 'simplecov', '=0.17.1', require: false
   gem 'vcr'
-  gem 'webdrivers', '>= 4.1.2'
   gem 'webmock', '~> 3.4'
 end
 
