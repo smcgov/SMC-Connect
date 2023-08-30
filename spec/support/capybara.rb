@@ -1,4 +1,4 @@
-require 'webdrivers/chromedriver'
+require 'selenium/webdriver'
 
 Capybara.configure do |config|
   config.default_max_wait_time = 5
@@ -12,7 +12,7 @@ Capybara.register_driver :headless_chrome do |app|
 
   Capybara::Selenium::Driver.new app,
                                  browser: :chrome,
-                                 capabilities: [browser_options]
+                                 options: browser_options
 end
 
 Capybara.javascript_driver = :headless_chrome
@@ -21,5 +21,3 @@ Capybara.default_driver = :rack_test
 Capybara.add_selector(:rel) do
   xpath { |rel| ".//a[@rel='#{rel}']" }
 end
-
-Webdrivers.cache_time = 86_400

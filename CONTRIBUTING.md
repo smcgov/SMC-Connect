@@ -52,13 +52,13 @@ you're addressing.
 5. **Write Specs:** Add specs for your unimplemented feature or bug fix in the
 `/spec/` directory.
 
-6. **Test to fail:** Run `spring rspec`. If your specs pass, return to
+6. **Test to fail:** Run `bundle exec rspec`. If your specs pass, return to
 **step 5**. In the spirit of Test-Driven Development, you want to write a
 failing test first, then implement the feature or bug fix to make the test
 pass.
 
 7. **Implement:** Implement your feature or bug fix. Please follow the
-[community-driven Ruby Style Guide][style_guide]*.
+[community-driven Ruby Style Guide][style_guide].
 
 8. **Test to pass:** Run `script/test` to run the test suite in addition to the
 style checkers. If your specs fail and/or style offenses are reported, return
