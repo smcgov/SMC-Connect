@@ -20,7 +20,8 @@ module DetailFormatHelper
       return contact_title_and_department_for(contact)
     end
     return contact_title_for(contact) if contact.title.present?
-    return contact_department_for(contact) if contact.department.present?
+
+    contact_department_for(contact) if contact.department.present?
   end
 
   # Generates HTML snippet for a contact's title and department.
