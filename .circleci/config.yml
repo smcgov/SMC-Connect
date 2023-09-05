@@ -23,7 +23,7 @@ jobs:
     steps:
       - node/install:
           install-yarn: true
-          node-version: '16.20.0'
+          node-version: '16.20.2'
       - run: node --version
       - checkout
       - browser-tools/install-chrome
