@@ -1,5 +1,5 @@
 ---
-name: Update info template
+name: Outdated info on smc-connect.org
 about: For help updating the information found on smc-connect.org
 title: ''
 labels: ''
