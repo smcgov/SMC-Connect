@@ -26,8 +26,6 @@ jobs:
           node-version: '16.20.2'
       - run: node --version
       - checkout
-      # - browser-tools/install-chrome:
-      #     chrome-version: 116.0.5845.96 # TODO: remove when chromedriver downloads are fixed
       - browser-tools/install-chromedriver
 
       - restore_cache:
