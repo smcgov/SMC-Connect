@@ -4,7 +4,7 @@
 #
 version: 2.1
 orbs:
-  browser-tools: circleci/browser-tools@1.4.1
+  browser-tools: circleci/browser-tools@1.4.4
   node: circleci/node@5.1.0
 jobs:
   build:
@@ -26,7 +26,8 @@ jobs:
           node-version: '16.20.2'
       - run: node --version
       - checkout
-      - browser-tools/install-chrome
+      # - browser-tools/install-chrome:
+      #     chrome-version: 116.0.5845.96 # TODO: remove when chromedriver downloads are fixed
       - browser-tools/install-chromedriver
 
       - restore_cache:
