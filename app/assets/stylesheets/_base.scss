@@ -91,7 +91,7 @@ body {
 }
 
 body {
-  @include background-size(100% auto);
+  background-size: 100% auto;
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -145,13 +145,14 @@ ul {
     width: 100%;
     background: $white;
     border-bottom: 2px solid $main-border-color;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
 
     font-size: $font_size_100;
 
     h1 {
         font-size: $font_size_110;
-        @include inline-block();
+        display: inline-block;
+        vertical-align: middle;
         margin-left: 13px;
         padding-top: 4px;
         padding-bottom: 3px;
@@ -160,7 +161,7 @@ ul {
     h2 {
         color: $black;
         font-family: $font_san_serif;
-        @include inline-block();
+        display: inline-block;
         margin-left: 14px;
         padding-bottom: 12px;
         padding-right: 15px;
@@ -168,7 +169,8 @@ ul {
     }
 
     nav {
-      @include inline-block();
+      display: inline-block;
+      vertical-align: middle;
       float: right;
       padding-top: 11px;
       padding-bottom: 10px;
@@ -176,7 +178,8 @@ ul {
 
       li {
         padding-right: 10px;
-        @include inline-block();
+        display: inline-block;
+        vertical-align: middle;
       }
 
       a {
@@ -234,7 +237,8 @@ ul {
   p span.cfaflag {
     width: 30px;
     height: 10px;
-    @include inline-block();
+    display: inline-block;
+    vertical-align: middle;
     // The Code for America flag icon appears below.
     background-image: url('data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAKCAYAAADGmhxQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowQTgwMTE3NDA3MjA2ODExODA4M0Y4NDQzQjY1NUU4QSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGREU5NDQ3QUZFRjIxMUUyODdFMUExNEQxOEY5RTcwNiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGREU5NDQ3OUZFRjIxMUUyODdFMUExNEQxOEY5RTcwNiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkM3NzQxMjdENjNGMjExRTJCMUU5RTMwNzJEMjEwQzU4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkM3NzQxMjdFNjNGMjExRTJCMUU5RTMwNzJEMjEwQzU4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Pb9MpAAAAHRJREFUeNq8lEsOwCAIRCGZS/aEHJPujIvyaQZlaaI8n4Pq7qKqUtQjXFlyrmUb0YAyAqB7ubAXSDDG8G7Pot4gwaYMSgSKbhaGDVb9Fii2hcqgXYL/NJjmYGiSO/bSDFagJw2Gr6eX/8HfWcfAlB6tV4ABAMgqJBh6/fGdAAAAAElFTkSuQmCC');
     background-repeat: no-repeat;
@@ -259,7 +263,6 @@ ul {
 .about .main > * > * {
   display: block;
   padding: 30px;
-  border-bottom: 1px solid $greyscale_midtone; // IE fallback
   border-bottom: 1px solid rgba($black, .1);
   background: $white;
 
@@ -273,7 +276,6 @@ ul {
   }
 
   footer {
-    border-top: 1px solid $greyscale_light; // IE fallback
     border-top: 1px solid rgba($black, .1);
     margin-top: 10px;
     padding-top: 10px;
@@ -315,7 +317,6 @@ ul {
 //=================================================================================
 // Area above the search box.
 .home .search-utilities {
-  background: $search-bg; // IE fallback
   background: rgba($search-bg, 0.9);
   min-height: 44px;
   padding: 10px;
@@ -355,7 +356,7 @@ ul {
     padding: 10px;
     margin-top: 10px;
     letter-spacing: 1px;
-    @include border-radius(4px);
+    border-radius: 4px;
     background-image: url('data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NUY0M0IyNUJFMDE2MTFFMTg5ODA5NDg0NkQ1MTVEOTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NUY0M0IyNUNFMDE2MTFFMTg5ODA5NDg0NkQ1MTVEOTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1RjQzQjI1OUUwMTYxMUUxODk4MDk0ODQ2RDUxNUQ5NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1RjQzQjI1QUUwMTYxMUUxODk4MDk0ODQ2RDUxNUQ5NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pj0mht4AAACuSURBVHjaYvj//z9DRUWFEIgmBgPVioJo5p8/f8oxMDCc3Lt3r4KLi8sOBjygsrJyGpDqB6pdzwRkqAOxBBDnAyUm49EEkssEYlEg1mJqb2/fDWT4A/EvIM7BphkqlgNVEwrUsxVkIwOQsQOXZiyaNoHEGUEeRVLkAaQ2AjEbEE+HKs6H0kEgm2BqUTRi0cyATRMIMKH7B+rsXCShQnRNWG1EsrkGalALNnmAAAMA9HhxydEurYsAAAAASUVORK5CYII=');
     background-repeat: no-repeat;
     background-position: 94% 50%;
@@ -385,13 +386,14 @@ ul {
     padding: 80px;
     text-align: center;
     background: $primary-lightest;
-    @include background( radial-gradient( $primary-lightest 10%, $primary) );
+    background: radial-gradient($primary-lightest 10%, $primary);
     border-top: 1px solid $primary-light;
     border-bottom: 1px solid $primary-light;
     vertical-align: bottom;
 
     > * {
-      @include inline-block();
+      display: inline-block;
+      vertical-align: middle;
     }
   }
 
@@ -399,15 +401,16 @@ ul {
   label {
     font-size: 56px;
     letter-spacing: 1px;
-    @include inline-block();
+    display: inline-block;
+    vertical-align: middle;
 
-    color: $black; // IE fallback
     color: rgba($black, .7);
     text-shadow: 1px 4px 6px lightest($primary), 0 0 0 $black, 1px 4px 6px lightest($primary);
   }
 
   .input-search-big {
-    @include inline-block();
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
@@ -441,7 +444,7 @@ ul {
   top: 9px;
   // Fixed max-height and overflow adjustment needed to
   // handle a 1-pixel layout difference between Chrome and Firefox.
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   max-height: 23px;
   overflow: hidden;
 }
@@ -472,9 +475,9 @@ ul {
   text-align: center;
 
   > section {
-    @include single-box-shadow(0, 0, 5px, 0, rgba($black, .1));
-    @include inline-block();
-    @include border-radius(4px);
+    box-shadow: 0 0 5px 0 rgba($black, .1);
+    display: inline-block;
+    border-radius: 4px;
     margin: 10px;
     vertical-align: top;
     border: 1px solid $list-search-border;
@@ -484,7 +487,7 @@ ul {
         text-align: left;
         text-transform: capitalize;
         font-size: 24px;
-        @include inline-block();
+        display: inline-block;
         vertical-align: top;
         margin-bottom: 40px;
         background: $white;
@@ -499,7 +502,7 @@ ul {
             border-left: 6px solid $listitem-search-border;
           }
           > li:nth-child(odd) {
-            border-left: 6px solid tint($listitem-search-border, 25);
+            border-left: 6px solid mix(white, $listitem-search-border, 25);
           }
         }
       }
@@ -519,7 +522,7 @@ ul {
           border-left: 6px solid $listitem-search-important-border !important;
         }
         > li:nth-child(odd) {
-          border-left: 6px solid tint($listitem-search-important-border, 25) !important;
+          border-left: 6px solid mix(white, $listitem-search-important-border, 25) !important;
         }
       }
     }
@@ -548,11 +551,10 @@ ul {
   min-height: 45px;
   font-family: $font_san_serif;
   background: $greyscale_lightest;
-  border-bottom: 1px solid greyscale_light; // IE fallback
   border-bottom: 1px solid midtone($black, .1);
   width: 100%;
   text-align: right;
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 
   h1 {
     font-size: $font_size_110;
@@ -564,14 +566,16 @@ ul {
     padding-right: 20px;
     color: $black;
     font-family: $font_serif;
-    @include ellipsis();
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   // Print, Email, Directions, Back to search
   .utility-links {
     > span {
       border-left: 1px dotted $greyscale_light;
-      @include inline-block();
+      display: inline-block;
       vertical-align: baseline;
     }
 
@@ -593,7 +597,8 @@ ul {
     text-align: left;
 
     > .static-content, {
-      @include inline-block();
+      display: inline-block;
+      vertical-align: middle;
     }
   }
 
@@ -602,7 +607,8 @@ ul {
     z-index: $layer-8;
 
     > * {
-      @include inline-block();
+      display: inline-block;
+      vertical-align: middle;
     }
   }
 
@@ -611,10 +617,11 @@ ul {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 20px;
-    @include inline-block();
-
+    display: inline-block;
+    vertical-align: middle;
     > * {
-      @include inline-block();
+      display: inline-block;
+      vertical-align: middle;
     }
 
     strong {
@@ -653,7 +660,7 @@ ul {
 .results-header.floating {
   -webkit-backface-visibility: hidden;
   width: 100%;
-  @include single-box-shadow(0, 1px, 6px, 0, rgba($black, .4));
+  box-shadow: 0 1px 6px 0 rgba($black, .4);
   border-bottom: 1px solid $primary-dark !important;
 }
 
@@ -674,7 +681,6 @@ ul {
   // No results styling.
   section.no-results {
     font-family: $font_san_serif;
-    border-bottom: 1px solid $greyscale_midtone; // IE fallback
     border-bottom: 1px solid rgba($black,.1);
 
     .message {
@@ -710,7 +716,6 @@ ul {
 //
 #terminology-box-container,
 #organization-detail-container {
-  border-bottom: 1px solid $greyscale_midtone; // IE fallback
   border-bottom: 1px solid rgba($black, .1);
 }
 
@@ -722,7 +727,6 @@ ul {
     > li {
       position: relative;
       background: $white;
-      border-top: 1px solid $greyscale_light; // IE fallback
       border-top: 1px solid rgba($black,.1);
       background: $greyscale_lightest;
 
@@ -746,7 +750,6 @@ ul {
     }
 
     > li:hover {
-      background: $primary-lightest; // IE fallback
       background: rgba($primary-lightest, .5);
       h1 {
         padding-bottom: 5px;
@@ -762,7 +765,6 @@ ul {
 
     > li:last-child {
       margin-bottom: 0;
-      border-bottom: 1px solid $greyscale_light; // IE fallback
       border-bottom: 1px solid rgba($black, .1);
     }
   }
@@ -786,7 +788,6 @@ ul {
           content: " more...";
           font-size: $font_size_90;
           font-family: $font_san_serif;
-          color: $greyscale_midtone; // IE fallback
           color: rgba($black,.4);
         }
 
@@ -814,12 +815,12 @@ ul {
 
       li {
         margin-bottom: 0;
-        background: $white; // IE fallback
         background: rgba($white,.8);
-        @include box-shadow(none);
-        @include border-radius(4px);
+        box-shadow: none;
+        border-radius: 4px;
         padding: 5px;
-        @include inline-block();
+        display: inline-block;
+        vertical-align: middle;
         font-family: $font_san_serif;
       }
     }
@@ -867,8 +868,8 @@ ul {
 
   .infoBox {
     background-color: $white;
-    @include border-radius(0px 4px 4px 4px);
-    @include single-box-shadow(0, 0, 5px, 0, midtone($black, 0.4));
+    border-radius: 0px 4px 4px 4px;
+    box-shadow: 0 0 5px 0 midtone($black, 0.4);
     border: 1px solid $primary-dark;
     padding: 3px 6px;
     opacity: 0.95;
@@ -889,11 +890,11 @@ ul {
     }
 
     a {
-      color: $greyscale_midtone; // IE fallback
       color: rgba($black, .6);
       cursor: pointer;
       border-bottom: 1px solid $white;
-      @include inline-block();
+      display: inline-block;
+      vertical-align: middle;
     }
 
     a:hover {
@@ -912,7 +913,6 @@ ul {
     }
 
     .button-close {
-      color: $greyscale_midtone; // IE Fallback
       color: rgba($black, .5);
       position: absolute;
       left: 0;
@@ -940,9 +940,10 @@ ul {
 }
 
 #map-size-control {
-  @include inline-block();
+  display: inline-block;
+  vertical-align: middle;
   font-family: $font_san_serif;
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   cursor: pointer;
 }
 
@@ -963,11 +964,9 @@ ul {
   > header {
     padding: 10px;
     padding-top: 20px;
-    border-bottom: 1px solid $greyscale_light; // IE fallback
     border-bottom: 1px solid midtone($black, .1);
-    background: $primary-lightest; // IE fallback
     background: rgba($primary-lightest,.1);
-    @include border-radius(4px 4px 0 0);
+    border-radius: 4px 4px 0 0;
 
     .kind {
       color: $primary-dark;
@@ -1013,11 +1012,10 @@ ul {
       margin-top: 0;
       margin-bottom: 10px;
       padding: 5px;
-      border-bottom: 1px solid $greyscale_light; // IE fallback
       border-bottom: 1px solid rgba($black, .1);
       letter-spacing: 1px;
       font-family: $font_san_serif;
-      @include inline-block();
+      display: inline-block;
       // Overrides compass inline-block mixin setting - needed for correct font alignment.
       vertical-align: baseline;
     }
@@ -1036,12 +1034,11 @@ ul {
         color: $main-header-color;
         @include type-size(baseline);
         font-weight: bold;
-        background: $white; // IE fallback
         background: $main-header-bg;
         padding-left: 5px;
         padding-right: 5px;
-        @include border-radius(5px);
-        @include inline-block();
+        border-radius: 5px;
+        display: inline-block;
         // Overrides compass inline-block mixin setting - needed for correct font alignment.
         vertical-align: baseline;
         margin-left: -5px;
@@ -1056,7 +1053,6 @@ ul {
     margin-left: 20px;
     list-style-type: square;
     li {
-      color: $main-list-mark-color; // IE fallback
       color: rgba($main-list-mark-color, .4);
       > span {
         color: $black;
@@ -1072,14 +1068,14 @@ ul {
     margin-left: 20px;
 
     > .location-sidebar:first-child {
-      @include box-shadow(0 0 1px $white, -1px 0 2px rgba($black,.2), 0 1px 2px rgba($black,.2));
+      box-shadow: 0 0 1px $white, -1px 0 2px rgba($black,.2), 0 1px 2px rgba($black,.2);
     }
     > .location-sidebar {
       margin-bottom: 20px;
       border-left: 1px solid $white;
       border-bottom: 1px solid $white;
-      @include border-radius(0 0 0 10px);
-      @include box-shadow(0 0 1px $white, -1px 0 2px rgba($black,.2), 0 1px 2px rgba($black,.2), 0 -1px 2px rgba($black,.2));
+      border-radius: 0 0 0 10px;
+      box-shadow: 0 0 1px $white, -1px 0 2px rgba($black,.2), 0 1px 2px rgba($black,.2), 0 -1px 2px rgba($black,.2);
       background: $white;
 
       -ms-word-break: break-all;
@@ -1096,11 +1092,10 @@ ul {
           margin-top: 0;
           margin-bottom: 10px;
           padding: 5px;
-          border-bottom: 1px solid $greyscale_light; // IE fallback
           border-bottom: 1px solid rgba($black,.1);
           letter-spacing: 1px;
           font-family: $font_san_serif;
-          @include inline-block();
+          display: inline-block;
           // Overrides compass inline-block mixin setting
           // Needed for correct font alignment.
           vertical-align: baseline;
@@ -1127,7 +1122,6 @@ ul {
         margin-left: 10px;
         list-style-type: square;
         li {
-          color: $main-list-mark-color; // IE fallback
           color: rgba($main-list-mark-color, .4);
           > span {
             color: $black;
@@ -1159,7 +1153,7 @@ ul {
     .short-desc {
       color: $main-highlight;
       //background: $accentA-light;
-      @include border-radius(5px);
+      border-radius: 5px;
       text-align: center;
       font-family: $font_san_serif;
       font-size: 24px;
@@ -1172,7 +1166,7 @@ ul {
   .service-opt-box {
     > section > section
     {
-      @include inline-block();
+      display: inline-block;
       vertical-align: top;
     }
   }
@@ -1188,7 +1182,7 @@ ul {
     }
     .contact-box > section,
     .contact-box .phone {
-      @include inline-block();
+      display: inline-block;
       // Overrides compass inline-block mixin setting.
       // Needed for correct font alignment.
       vertical-align: baseline;
@@ -1207,7 +1201,7 @@ ul {
       border-left: 20px solid $main-highlight;
     }
     .schedules-box {
-      @include inline-block();
+      display: inline-block;
       vertical-align: top;
       h1 {
         margin-bottom: 10px;
@@ -1222,7 +1216,7 @@ ul {
   .map #detail-map-canvas {
     height: 400px;
     width: 100%;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
     border: 2px solid $primary-dark;
     //border-top: 1px solid $primary-dark;
 
@@ -1233,8 +1227,8 @@ ul {
       margin-top: 20px;
       font-size: $font_size_95;
       background: $alert-bg;
-      @include border-radius(5px);
-      @include inline-block();
+      border-radius: 5px;
+      display: inline-block;
       color: $white;
       vertical-align: middle;
     }
@@ -1261,7 +1255,6 @@ ul {
 // Exclude certain links with the site links styles.
 #hsa-logo {
   a:hover {
-    border-bottom: 1px solid $white; // IE fallback
     border-bottom: 1px solid rgba($white, 0);
   }
 }
@@ -1275,7 +1268,7 @@ ul {
 // and contract the amount of text shown.
 .character-limited {
   a:last-child {
-    @include inline-block();
+    display: inline-block;
     // Overrides compass inline-block mixin setting - needed for correct font alignment.
     vertical-align: baseline;
     font-family: $font_san_serif;
@@ -1283,17 +1276,14 @@ ul {
     line-height: normal;
 
     span:first-child {
-      color: $greyscale_midtone; // IE fallback
       color: rgba($black,.4);
     }
 
     span:last-child {
-      color: $greyscale_midtone; // IE fallback
       color: rgba($black,.4);
     }
 
     &:hover {
-      border-bottom: 1px solid $greyscale_midtone; // IE fallback
       border-bottom: 1px solid rgba($black,.4);
       cursor: pointer;
     }

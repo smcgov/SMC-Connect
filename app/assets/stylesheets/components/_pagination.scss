@@ -2,11 +2,13 @@
 .pagination
 {
   text-align: left;
-  @include inline-block();
+  display: inline-block;
+  vertical-align: middle;
 
   > h1,ul,li
   {
-    @include inline-block();
+    display: inline-block;
+    vertical-align: middle;
   }
 
   li
@@ -28,7 +30,7 @@
 
   li:not(.collapsed):not(.current)
   {
-    @include single-box-shadow(0, 0, 1px, 0, rgba($pagination-border, 0.3), inset);
+    box-shadow: 0 0 1px 0 rgba($pagination-border, 0.3) inset;
 
     &:hover
     {

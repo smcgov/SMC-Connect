@@ -172,7 +172,7 @@
 
       .location-sidebar-content > section,
       .location-sidebar-content-group > section {
-        @include inline-block();
+        display: inline-block;
         vertical-align: top;
         margin-right: 10px;
       }
@@ -210,7 +210,8 @@
 
     // Stack content sections in rows.
     #detail-info > * > section * > section {
-      @include inline-block();
+      display: inline-block;
+      vertical-align: middle;
     }
 
     #detail-info .metadata {

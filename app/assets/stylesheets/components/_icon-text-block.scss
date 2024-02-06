@@ -13,7 +13,7 @@
     color: $main-highlight;
     font-size: #{$font_size_105 + 2};
     text-align: center;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
     line-height: #{$font_size_105 + 3};
   }
 
@@ -22,9 +22,9 @@
     font-size: $font_size_105;
     font-family: $font_san_serif;
     color: $black;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
     line-height: #{$font_size_105 + 4};
-    @include inline-block();
+    display: inline-block;
     vertical-align:top;
   }
 }

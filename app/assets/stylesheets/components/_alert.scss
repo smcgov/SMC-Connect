@@ -14,16 +14,18 @@
     padding-right: 10px;
     position: relative;
     text-align: center;
-    @include inline-block();
-    @include border-radius($border_radius_base);
-    @include single-box-shadow(0, 0, $border_radius_base, 0, $black);
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: $border_radius_base;
+    box-shadow: 0 0 $border_radius_base 0 $black;
 
     p {
       text-align: center;
       padding: 10px;
       font-weight: bold;
       font-family: $font_san_serif;
-      @include inline-block();
+      display: inline-block;
+      vertical-align: middle;
     }
 
     a {
@@ -39,14 +41,14 @@
   }
 
   .alert-close {
-    color: lighten($black, 50) !important; // IE Fallback
     color: rgba($white, .5) !important;
     border-bottom: none !important;
     margin-top: 5px;
     margin-bottom: 5px;
     min-width: 28px;
     min-height: 32px;
-    @include inline-block();
+    display: inline-block;
+    vertical-align: middle;
   }
 
   .alert-valid,

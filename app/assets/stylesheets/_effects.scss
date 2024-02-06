@@ -5,73 +5,8 @@
   visibility: hidden;
 }
 
-.transparent {
-  @include opacity(0);
-}
-
 //=============================================================================
 // Animation effects.
-// Fading styles
-.fade-in {
-  @include opacity(1);
-
-  z-index:9999 !important;
-  position:relative;
-
-  @include transition(opacity $animation-duration-base, z-index $animation-duration-base);
-}
-
-.fade-out {
-  @include opacity(0);
-
-  z-index:0 !important;
-  position:relative;
-
-  @include transition(opacity $animation-duration-base, z-index $animation-duration-base);
-}
-
-// delayed fading styles that trigger at a delay equal to 1/2 the duration of the fading styles
-.fade-in-delay {
-  @include opacity(1);
-
-  z-index:9998 !important;
-  position:relative;
-
-  @include transition(opacity $animation-duration-base, z-index $animation-duration-base);
-  @include transition-delay($animation-duration-fast);
-}
-
-.fade-out-delay {
-  @include opacity(0);
-
-  z-index:-9998 !important;
-  position:relative;
-
-  @include transition(opacity $animation-duration-base, z-index $animation-duration-base);
-  @include transition-delay($animation-duration-fast);
-}
-
-.flip {
-  @include rotateY(180deg);
-  @include transition(transform $animation-duration-base);
-  @include backface-visibility( hidden );
-}
-
-.unflip {
-  @include rotateY(0deg);
-  @include transition(transform $animation-duration-base);
-  @include backface-visibility( hidden );
-}
-
-.blur {
-  @include filter(blur(4px));
-  @include transition(filter $animation-duration-base);
-}
-
-.unblur {
-  @include filter(blur(0));
-  @include transition(filter $animation-duration-base);
-}
 
 .slide-up {
   z-index:-1 !important;

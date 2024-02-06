@@ -17,13 +17,13 @@
     width: 300px;
     background: $popup-bg;
     overflow-y: auto;
-    @include single-box-shadow(0, 0, 10px, 0, rgba($black, .4));
-    @include border-radius(10px);
+    box-shadow: 0 0 10px 0 rgba($black, .4);
+    border-radius: 10px;
 
     > div:last-child {
       padding: 20px;
       height: 100%;
-      @include box-sizing(border-box);
+      box-sizing: border-box;
 
       // Adds footer horizontal rule
       > footer {
@@ -65,12 +65,12 @@
       left: 4px;
       width: 18px;
       height: 18px;
-      @include rotate(-135deg);
+      transform: rotate(-135deg);
       border-bottom: 1px solid #CCCCCC;
       border-right: 1px solid #CCCCCC;
       background: none repeat scroll 0 0 #FFFFFF;
       display: block;
-      @include single-box-shadow(1px, 1px, 1px, 0, rgba($black, .2));
+      box-shadow: 1px 1px 1px 0 rgba($black, .2);
     }
   }
 
@@ -132,7 +132,7 @@
     width: 228px;
     display: block;
     border: 1px solid rgba($greyscale_dark, .4);
-    @include border-radius(3px);
+    border-radius: 3px;
   }
 
   button {
