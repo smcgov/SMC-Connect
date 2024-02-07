@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/monfresh/kaminari.git
-  revision: 994f2f8f96b2dfdecd6e9716383361f494021cf5
+  revision: 68f90cec4ee8efbc353225fd8b1d61ecf4723563
   branch: mb-fix-total-count-1013y
   specs:
     kaminari-core (1.2.2)
