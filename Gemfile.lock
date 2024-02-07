@@ -100,7 +100,7 @@ GEM
     execjs (2.7.0)
     faraday (0.17.6)
       multipart-post (>= 1.2, < 3)
-    faraday-http-cache (2.5.0)
+    faraday-http-cache (2.5.1)
       faraday (>= 0.8)
     ffi (1.15.5)
     figaro (1.2.0)
