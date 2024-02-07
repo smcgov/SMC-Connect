@@ -12,11 +12,10 @@
   .popup {
     min-width: 150px;
 
-      @include border-radius(5px 5px 5px 0);
+      border-radius: 5px 5px 5px 0;
       background: $white;
-      border: 1px solid $greyscale_midtone; // IE fallback
       border: 1px solid rgba($black, .4);
-      @include single-box-shadow( 0, 0, 10px, 0, rgba( $black, 0.4 ) );
+      box-shadow: 0 0 10px 0 rgba($black, 0.4);
       color: $black;
       position: absolute;
       top: 0;

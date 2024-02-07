@@ -2,22 +2,22 @@
 
 // Color functions for adjusting shade, tint, and opacity of a color.
 @function darkest($color, $opacity:'') {
-  @if type-of($opacity) == number{@return rgba(shade($color, 50), $opacity)}
-  @return shade($color, 50);
+  @if type-of($opacity) == number{@return rgba(mix(black, $color, 50), $opacity)}
+  @return mix(black, $color, 50);
 }
 @function dark($color, $opacity:'') {
-  @if type-of($opacity) == number{@return rgba(shade($color, 25), $opacity)}
-  @return shade($color, 25);
+  @if type-of($opacity) == number{@return rgba(mix(black, $color, 25), $opacity)}
+  @return mix(black, $color, 25);
 }
 @function midtone($color, $opacity:'') {
   @if type-of($opacity) == number{@return rgba($color, $opacity)}
   @return $color;
 }
 @function light($color, $opacity:'') {
-  @if type-of($opacity) == number{@return rgba(tint($color, 25), $opacity)}
-  @return tint($color, 25);
+  @if type-of($opacity) == number{@return rgba(mix(white, $color, 25), $opacity)}
+  @return mix(white, $color, 25);
 }
 @function lightest($color, $opacity:'') {
-  @if type-of($opacity) == number{@return rgba(tint($color, 50), $opacity)}
-  @return tint($color, 50);
+  @if type-of($opacity) == number{@return rgba(mix(white, $color, 50), $opacity)}
+  @return mix(white, $color, 50);
 }

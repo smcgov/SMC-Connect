@@ -5,7 +5,7 @@
   border: 2px solid $terminology-border;
   padding: 30px;
   margin: 20px;
-  @include border-radius(4px);
+  border-radius: 4px;
   font-family: $font_san_serif;
 
   > p {

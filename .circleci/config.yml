@@ -4,13 +4,13 @@
 #
 version: 2.1
 orbs:
-  browser-tools: circleci/browser-tools@1.4.5
-  node: circleci/node@5.1.0
+  browser-tools: circleci/browser-tools@1.4.6
+  node: circleci/node@5.2.0
 jobs:
   build:
     docker:
       # Specify the Ruby version you desire here
-      - image: cimg/ruby:3.1.4-browsers
+      - image: cimg/ruby:3.2-browsers
         environment:
           RAILS_ENV: test
           CC_TEST_REPORTER_ID: 710013d07b72a132b08947be1b89a606f45e5ff0fb21c1ca519fe612bd93605e
