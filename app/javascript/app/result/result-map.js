@@ -1,9 +1,9 @@
 // Manages search results view Google Map.
-import markerDataLoader from 'app/util/map/marker-data-loader';
-import googleMaps from 'app/util/map/google/map-loader';
-import plugins from 'app/util/map/google/plugins-loader';
-import mapRenderer from 'app/util/map/google/map-renderer';
-import MapSizeControl from 'app/util/map/MapSizeControl';
+import markerDataLoader from './../util/map/marker-data-loader';
+import googleMaps from './../util/map/google/map-loader';
+import plugins from './../util/map/google/plugins-loader';
+import mapRenderer from './../util/map/google/map-renderer';
+import MapSizeControl from './../util/map/MapSizeControl';
 
 // Whether the Google Map APIs and plugins have successfully loaded.
 var _mapStackReady = false;

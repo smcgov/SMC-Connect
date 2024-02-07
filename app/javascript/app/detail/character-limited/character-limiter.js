@@ -1,6 +1,6 @@
 // Finds elements that have the 'character-limited' class assigned to them
 // and adds a new CharacterLimited instance to those elements.
-import CharacterLimited from 'app/detail/character-limited/CharacterLimited';
+import CharacterLimited from './CharacterLimited';
 
 // 'Constants'
 // How many characters to show.

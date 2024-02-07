@@ -1,5 +1,5 @@
 // Manages behavior of popups.
-import DefaultPopup from 'app/popup/DefaultPopup';
+import DefaultPopup from './DefaultPopup';
 
 // Store the last popup shown so that it can be hidden when
 // a new popup is shown.

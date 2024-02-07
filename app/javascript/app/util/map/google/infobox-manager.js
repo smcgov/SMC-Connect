@@ -1,5 +1,5 @@
 // Manages search results view Google Map.
-import BitMask from 'app/util/BitMask';
+import BitMask from './../../BitMask';
 
 // Module instance with map DOM and google.maps.Map instance references.
 var _mapDOM;

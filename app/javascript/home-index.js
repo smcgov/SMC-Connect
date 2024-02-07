@@ -1,5 +1,5 @@
 // Manages home page script initialization.
-import geo from 'app/util/geolocation/geolocate-action';
+import geo from './app/util/geolocation/geolocate-action';
 
 // Initialize the geolocation button on the homepage.
 // locateAction is the callback function for when the

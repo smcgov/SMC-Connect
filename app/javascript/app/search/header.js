@@ -1,5 +1,5 @@
 // Handles creating a fixed search header when scrolling.
-import util from 'app/util/util';
+import util from './../util/util';
 
 var _header;
 var _offsetY;

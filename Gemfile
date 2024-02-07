@@ -2,11 +2,13 @@ source 'https://rubygems.org'
 
 ruby File.read('.ruby-version').strip
 gem 'actionmailer', '~> 6.1.5'
+# gem 'cssbundling-rails'
 gem 'faraday', '~> 0.8'
 gem 'faraday-http-cache', '~> 2.0'
 gem 'figaro'
 gem 'font-awesome-rails'
 gem 'haml-rails'
+gem 'jsbundling-rails'
 gem 'kaminari-actionview', '~> 1.2.2'
 gem 'kaminari-core', git: 'https://github.com/monfresh/kaminari.git', branch: 'mb-fix-total-count-1013y'
 gem 'mail', '~> 2.8.0.rc1'
@@ -20,9 +22,8 @@ gem 'redis-rack-cache', git: 'https://github.com/monfresh/redis-rack-cache.git',
 gem 'sassc-rails', '~> 2.1'
 gem 'skylight'
 gem 'sorted_set', '~> 1.0.3'
-gem 'sprockets', '~> 3.7.1'
-gem 'uglifier'
-gem 'webpacker', '~> 5.2'
+gem 'sprockets-rails'
+gem "terser", "~> 1.2"
 
 # dev and debugging tools
 group :development do

@@ -1,9 +1,6 @@
 require 'active_support/core_ext/integer/time'
 
 Rails.application.configure do
-  # Verifies that versions and hashed value of the package contents in the project's package.json
-  config.webpacker.check_yarn_integrity = false
-
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Thanks to the "rack-rewrite" gem, the code in lines 38-53 will redirect all
@@ -68,7 +65,7 @@ Rails.application.configure do
   }
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
-  # yet still be able to expire them through the digest params.
+  # yet still be able to expire them through the digest params. Default is true.
   config.assets.digest = true
 
   config.action_controller.perform_caching = true
@@ -126,8 +123,9 @@ Rails.application.configure do
   config.consider_all_requests_local = false
 
   # Compress JavaScripts and CSS.
-  config.assets.js_compressor = :uglifier
-  # NOTE: If the sass-rails gem is included it will automatically
+  config.assets.js_compressor = :terser
+
+  # NOTE: If the sassc-rails gem is included it will automatically
   # be used for CSS compression if no css_compressor is specified.
   config.assets.css_compressor = :sass
 

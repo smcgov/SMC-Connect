@@ -48,7 +48,19 @@
 @import "effects";
 
 // Stand-alone UI elements such as buttons.
-@import "components/*";
+@import "components/alert";
+@import "components/annotated-text-block";
+@import "components/button";
+@import "components/checkbox-search";
+@import "components/icon-text-block";
+@import "components/input-search";
+@import "components/organization_detail";
+@import "components/pagination";
+@import "components/phone";
+@import "components/popup";
+@import "components/schedules";
+@import "components/term_popup";
+@import "components/terminology_box";
 
 // Styles that use images from the asset pipeline (which needs to be an ERB).
 @import "assets";

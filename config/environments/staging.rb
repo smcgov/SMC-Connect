@@ -80,7 +80,7 @@ Rails.application.configure do
   config.consider_all_requests_local = false
 
   # Compress JavaScripts and CSS.
-  config.assets.js_compressor  = :uglifier
+  config.assets.js_compressor  = :terser
   # NOTE: If the sass-rails gem is included it will automatically
   # be used for CSS compression if no css_compressor is specified.
   config.assets.css_compressor = :sass

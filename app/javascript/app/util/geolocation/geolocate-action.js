@@ -1,7 +1,7 @@
 // Manages geolocation action, which can be associated with a button.
-import geo from 'app/util/geolocation/geolocator';
-import alerts from 'app/alerts';
-import googleMaps from 'app/util/map/google/map-loader';
+import geo from './geolocator';
+import alerts from './../../alerts';
+import googleMaps from './../map/google/map-loader';
 
 // Locate current geolocation button.
 var _locateTarget;

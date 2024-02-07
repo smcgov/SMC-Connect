@@ -23,8 +23,6 @@ $primary-darkest: mix(black, $primary, 50);
 $primary-light: mix(white, $primary, 25);
 $primary-lightest: mix(white, $primary, 50);
 
-@debug "the function call to $primary-darkest yields: #{$primary-darkest}";
-
 // Accents.
 $accentA-base: rgb(209,249,148);
 $accentA-light: mix(white, $accentA-base, 25);
