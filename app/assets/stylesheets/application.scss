@@ -17,63 +17,64 @@
 /* ==========================================================================
    Compass imports
    ========================================================================== */
-@import "reset";
-@import "typography/units";
-@import "vertical_rhythm";
-
-/* ==========================================================================
-   Vendor imports
-   ========================================================================== */
-
-// The font icons used throughout the app.
-@import "font-awesome";
+@use "reset";
 
 /* ==========================================================================
    Main app imports
    ========================================================================== */
 
 // Settings used for customizing values across the site, such as colors.
-@import "variables";
+// @use "variables";
 
 // Custom functions are like mixins (see below) but they don't set CSS
 // properties directly.
-@import "functions";
+// @use "functions";
 
 // Mixins are custom functions that abbreviate generating CSS rules.
-@import "mixins";
+// @use "mixins";
 
 // Effects are things like opacity, display, and position changes.
 // Anything that affects a component's appearance along a scale or
 // in a binary fashion.
-@import "effects";
+@use "effects";
 
 // Stand-alone UI elements such as buttons.
-@import "components/alert";
-@import "components/annotated-text-block";
-@import "components/button";
-@import "components/checkbox-search";
-@import "components/icon-text-block";
-@import "components/input-search";
-@import "components/organization_detail";
-@import "components/pagination";
-@import "components/phone";
-@import "components/popup";
-@import "components/schedules";
-@import "components/term_popup";
-@import "components/terminology_box";
-
-// Styles that use images from the asset pipeline (which needs to be an ERB).
-@import "assets";
+@use "components/alert";
+@use "components/annotated-text-block";
+@use "components/button";
+@use "components/checkbox-search";
+@use "components/icon-text-block";
+@use "components/input-search";
+@use "components/organization_detail";
+@use "components/pagination";
+@use "components/phone";
+@use "components/popup";
+@use "components/schedules";
+@use "components/term_popup";
+@use "components/terminology_box";
 
 // General styles that bring the app together.
-@import "base";
+@use "base";
 
 /* ==========================================================================
    Media type imports
    ========================================================================== */
 
 // Style overrides for handling different screen sizes using media queries.
-@import "responsive";
+@use "responsive";
 
 // Style overrides for handling the app's display when printed.
-@import "print";
+@use "print";
+
+// Styles that use images from the asset pipeline (which needs to be an ERB).
+@use "assets";
+
+/* ==========================================================================
+   Vendor imports
+   ========================================================================== */
+
+// The font icons used throughout the app.
+@use 'font-awesome' with ($fa-font-path: 'font-awesome');
+
+@import "https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700";
+@import "https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700";

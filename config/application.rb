@@ -3,7 +3,6 @@ require_relative 'boot'
 # Pick the frameworks you want:
 require 'action_controller/railtie'
 require 'action_mailer/railtie'
-require 'sprockets/railtie'
 
 SETTINGS = YAML.safe_load_file(File.expand_path('settings.yml', __dir__))
 SETTINGS.merge! SETTINGS.fetch(Rails.env, {})

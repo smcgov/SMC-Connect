@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
@@ -32,7 +34,7 @@
           }
 
           &:hover {
-            background: mix(black, $accentA-light, 5);
+            background: mix(black, $accentA-light, 5%);
 
             > span {
               color: $button-small-color;

@@ -63,6 +63,10 @@ jobs:
             chmod +x ./cc-test-reporter
 
       - run:
+          name: Build CSS
+          command: bundle exec rails dartsass:build
+
+      - run:
           name: Run Tests
           command: |
             mkdir /tmp/test-results

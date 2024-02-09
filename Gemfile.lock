@@ -18,35 +18,37 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionmailer (6.1.7.6)
-      actionpack (= 6.1.7.6)
-      actionview (= 6.1.7.6)
-      activejob (= 6.1.7.6)
-      activesupport (= 6.1.7.6)
+    actionmailer (7.0.8)
+      actionpack (= 7.0.8)
+      actionview (= 7.0.8)
+      activejob (= 7.0.8)
+      activesupport (= 7.0.8)
       mail (~> 2.5, >= 2.5.4)
+      net-imap
+      net-pop
+      net-smtp
       rails-dom-testing (~> 2.0)
-    actionpack (6.1.7.6)
-      actionview (= 6.1.7.6)
-      activesupport (= 6.1.7.6)
-      rack (~> 2.0, >= 2.0.9)
+    actionpack (7.0.8)
+      actionview (= 7.0.8)
+      activesupport (= 7.0.8)
+      rack (~> 2.0, >= 2.2.4)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.2.0)
-    actionview (6.1.7.6)
-      activesupport (= 6.1.7.6)
+    actionview (7.0.8)
+      activesupport (= 7.0.8)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activejob (6.1.7.6)
-      activesupport (= 6.1.7.6)
+    activejob (7.0.8)
+      activesupport (= 7.0.8)
       globalid (>= 0.3.6)
-    activesupport (6.1.7.6)
+    activesupport (7.0.8)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-      zeitwerk (~> 2.3)
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
@@ -77,6 +79,9 @@ GEM
       bigdecimal
       rexml
     crass (1.0.6)
+    dartsass-rails (0.5.0)
+      railties (>= 6.0.0)
+      sass-embedded (~> 1.63)
     date (3.3.4)
     dead_end (4.0.0)
     derailed (0.1.0)
@@ -136,12 +141,13 @@ GEM
     figaro (1.2.0)
       thor (>= 0.14.0, < 2)
     flamegraph (0.9.5)
-    font-awesome-rails (4.7.0.8)
-      railties (>= 3.2, < 8.0)
+    font-awesome-sass (6.5.1)
+      sassc (~> 2.0)
     get_process_mem (0.2.7)
       ffi (~> 1.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    google-protobuf (3.25.2)
     haml (6.3.0)
       temple (>= 0.8.2)
       thor
@@ -210,6 +216,11 @@ GEM
     parser (3.3.0.5)
       ast (~> 2.4.1)
       racc
+    propshaft (0.8.0)
+      actionpack (>= 7.0.0)
+      activesupport (>= 7.0.0)
+      rack
+      railties (>= 7.0.0)
     public_suffix (5.0.4)
     puma (6.4.2)
       nio4r (~> 2.0)
@@ -233,12 +244,13 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
-    railties (6.1.7.6)
-      actionpack (= 6.1.7.6)
-      activesupport (= 6.1.7.6)
+    railties (7.0.8)
+      actionpack (= 7.0.8)
+      activesupport (= 7.0.8)
       method_source
       rake (>= 12.2)
       thor (~> 1.0)
+      zeitwerk (~> 2.5)
     rainbow (3.1.1)
     rake (13.1.0)
     rbtree (0.4.5)
@@ -292,14 +304,11 @@ GEM
     ruby-progressbar (1.13.0)
     ruby-statistics (3.0.0)
     rubyzip (2.3.2)
+    sass-embedded (1.70.0)
+      google-protobuf (~> 3.25)
+      rake (>= 13.0.0)
     sassc (2.4.0)
       ffi (~> 1.9)
-    sassc-rails (2.1.2)
-      railties (>= 4.0.0)
-      sassc (>= 2.0)
-      sprockets (> 3.0)
-      sprockets-rails
-      tilt
     sawyer (0.8.2)
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
@@ -319,13 +328,6 @@ GEM
     sorted_set (1.0.3)
       rbtree
       set (~> 1.0)
-    sprockets (4.2.1)
-      concurrent-ruby (~> 1.0)
-      rack (>= 2.2.4, < 4)
-    sprockets-rails (3.4.2)
-      actionpack (>= 5.2)
-      activesupport (>= 5.2)
-      sprockets (>= 3.0.0)
     stackprof (0.2.26)
     sysexits (1.2.0)
     temple (0.10.3)
@@ -352,17 +354,18 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionmailer (~> 6.1.5)
+  actionmailer (~> 7.0.8)
   better_errors (~> 2.9.1)
   bummr
   capybara
+  dartsass-rails
   derailed
   email_spec
   faraday (~> 0.8)
   faraday-http-cache (~> 2.0)
   figaro
   flamegraph
-  font-awesome-rails
+  font-awesome-sass
   haml-rails
   haml_lint
   jsbundling-rails
@@ -371,24 +374,23 @@ DEPENDENCIES
   letter_opener
   mail (~> 2.8.0.rc1)
   ohanakapa (~> 1.1.1)
+  propshaft
   puma
   rack-cache (~> 1.13)
   rack-mini-profiler
   rack-rewrite (~> 1.5.0)
   rails-controller-testing
-  railties (~> 6.1.5)
+  railties (~> 7.0.8)
   recaptcha
   redis-rack-cache!
   reek
   rspec-rails (~> 6.1)
   rubocop
   rubocop-rails
-  sassc-rails (~> 2.1)
   selenium-webdriver
   simplecov (= 0.17.1)
   skylight
   sorted_set (~> 1.0.3)
-  sprockets-rails
   stackprof
   terser (~> 1.2)
   vcr
