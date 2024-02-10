@@ -21,7 +21,6 @@
     "eslint-plugin-import": "^2.2.0"
   },
   "scripts": {
-    "lint": "eslint",
-    "build": "webpack --config webpack.config.js"
+    "lint": "eslint"
   }
 }
