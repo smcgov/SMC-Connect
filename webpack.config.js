@@ -42,7 +42,7 @@ module.exports = {
   },
   resolve: {
     // Add additional file types
-    extensions: ['.js', '.jsx', '.scss', '.css'],
+    extensions: ['.js', '.jsx'],
   },
   output: {
     filename: "[name].js",
