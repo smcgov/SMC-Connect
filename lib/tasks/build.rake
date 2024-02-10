@@ -1,9 +1,9 @@
 module Jsbundling
   module Tasks
-    extend self
+    module_function
 
     def build_command
-      "node_modules/.bin/webpack --config webpack.config.js"
+      'node_modules/.bin/webpack --config webpack.config.js'
     end
   end
 end

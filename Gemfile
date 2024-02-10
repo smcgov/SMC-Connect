@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby File.read('.ruby-version').strip
 gem 'actionmailer', '~> 7.0.8'
-gem "dartsass-rails"
+gem 'dartsass-rails'
 gem 'faraday', '~> 0.8'
 gem 'faraday-http-cache', '~> 2.0'
 gem 'figaro'
@@ -13,7 +13,7 @@ gem 'kaminari-actionview', '~> 1.2.2'
 gem 'kaminari-core', git: 'https://github.com/monfresh/kaminari.git', branch: 'mb-fix-total-count-1013y'
 gem 'mail', '~> 2.8.0.rc1'
 gem 'ohanakapa', '~> 1.1.1'
-gem "propshaft"
+gem 'propshaft'
 gem 'puma'
 gem 'rack-cache', '~> 1.13'
 gem 'rack-rewrite', '~> 1.5.0'
@@ -22,7 +22,7 @@ gem 'recaptcha'
 gem 'redis-rack-cache', git: 'https://github.com/monfresh/redis-rack-cache.git', branch: 'readthis-compatibility'
 gem 'skylight'
 gem 'sorted_set', '~> 1.0.3'
-gem "terser", "~> 1.2"
+gem 'terser', '~> 1.2'
 
 # dev and debugging tools
 group :development do

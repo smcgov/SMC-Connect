@@ -9,6 +9,7 @@ AllCops:
   Exclude:
     - 'bin/**/*'
     - 'node_modules/**/*'
+    - 'config/initializers/new_framework_defaults_7_0.rb'
   TargetRubyVersion: 3.1
   UseCache: true
   NewCops: enable
