@@ -1,3 +1,7 @@
+@use "variables" as *;
+@use "vertical_rhythm" as *;
+@use "functions" as *;
+
 // Mixins are custom functions that abbreviate generating CSS rules.
 
 // Type size mixin provides mapping from human-readable font sizing labeling

@@ -41,6 +41,7 @@
 .redcar/
 /config/config.yml
 /config/database.yml
+/public/assets/*
 /public/cache
 /public/stylesheets/compiled
 /public/system/*
@@ -67,3 +68,6 @@ yarn-debug.log*
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+/app/assets/builds/*
+!/app/assets/builds/.keep

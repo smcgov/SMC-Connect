@@ -1,0 +1,17 @@
+// Styles that use images from the asset pipeline.
+
+#list-view,
+#detail-info {
+  .arts{ background: url('markers/arts_marker_small.png') no-repeat; }
+  .clinics{ background: url('markers/clinics_marker_small.png') no-repeat; }
+  .education{ background: url('markers/education_marker_small.png') no-repeat; }
+  .entertainment{ background: url('markers/entertainment_marker_small.png') no-repeat; }
+  .farmers-markets{ background: url('markers/farmers_markets_marker_small.png') no-repeat; }
+  .government{ background: url('markers/government_marker_small.png') no-repeat; }
+  .human-services{ background: url('markers/human_services_marker_small.png') no-repeat; }
+  .libraries{ background: url('markers/libraries_marker_small.png') no-repeat; }
+  .museums{ background: url('markers/museums_marker_small.png') no-repeat; }
+  .parks{ background: url('markers/parks_marker_small.png') no-repeat; }
+  .sports{ background: url('markers/sports_marker_small.png') no-repeat; }
+  .other{ background: url('markers/other_marker_small.png') no-repeat; }
+}

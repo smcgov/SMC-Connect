@@ -18,23 +18,21 @@ $white: rgb(255,255,255);
 
 // Primary.
 $primary: rgb(137,209,226);
-$primary-dark: mix(black, $primary, 25);
-$primary-darkest: mix(black, $primary, 50);
-$primary-light: mix(white, $primary, 25);
-$primary-lightest: mix(white, $primary, 50);
-
-@debug "the function call to $primary-darkest yields: #{$primary-darkest}";
+$primary-dark: mix(black, $primary, 25%);
+$primary-darkest: mix(black, $primary, 50%);
+$primary-light: mix(white, $primary, 25%);
+$primary-lightest: mix(white, $primary, 50%);
 
 // Accents.
 $accentA-base: rgb(209,249,148);
-$accentA-light: mix(white, $accentA-base, 25);
-$accentA-dark: mix(black, $accentA-base, 50);
+$accentA-light: mix(white, $accentA-base, 25%);
+$accentA-dark: mix(black, $accentA-base, 50%);
 $accentB: rgb(255,200,56);
 
 // Complements.
 $complement-base: rgb(242,144,191);
-$complementA: mix(black, $complement-base, 50);
-$complementB: mix(white, $complement-base, 50);
+$complementA: mix(black, $complement-base, 50%);
+$complementB: mix(white, $complement-base, 50%);
 
 // Notification colors.
 $alert-error-base: rgb(255,10,50);
@@ -104,10 +102,10 @@ $button-popup-color:                rgba($black,.5);
 $button-popup-hover-color:          $complementA;
 $button-popup-fa-color:             $primary-darkest;
 $button-popup-bg:                   $accentA-light;
-$button-popup-hover-bg:             mix(black, $accentA-light,5);
+$button-popup-hover-bg:             mix(black, $accentA-light, 5%);
 
 $button-popup-disabled-color:       $greyscale_light;
-$button-popup-disabled-bg:          mix(white, $greyscale_light, 60);
+$button-popup-disabled-bg:          mix(white, $greyscale_light, 60%);
 
 
 // Buttons.
@@ -116,12 +114,12 @@ $button-color:                rgba($black,.5);
 $button-hover-color:          $complementA;
 $button-fa-color:             $primary-darkest;
 $button-bg:                   $accentA-light;
-$button-hover-bg:             mix(black, $accentA-light,5);
+$button-hover-bg:             mix(black, $accentA-light, 5%);
 
 $button-disabled-color:       $greyscale_light;
-$button-disabled-bg:          mix(white, $greyscale_light, 60);
+$button-disabled-bg:          mix(white, $greyscale_light, 60%);
 
-$button-small-color:         mix(white, $black, 25);
+$button-small-color:         mix(white, $black, 25%);
 $button-small-fa-color:      $primary-darkest;
 $button-small-hover-color:   $complementA;
 $button-small-bg:            none;
@@ -146,11 +144,11 @@ $search-bg:                         $primary;
 // Sidebar.
 $search-sidebar-bg:                 $primary-lightest;
 $search-border-color:               $primary;
-$search-text-color:                 mix(white, $black, 25);
-$search-accent-color:               mix(black, $primary, 50);
+$search-text-color:                 mix(white, $black, 25%);
+$search-accent-color:               mix(black, $primary, 50%);
 $search-accent-hover:               $text-accent-hover-color;
 $search-button-color:               $complementA;
-$search-button-hover-color:         mix(black, $complement-base, 25);
+$search-button-hover-color:         mix(black, $complement-base, 25%);
 $search-button-hover-background:    $primary-light;
 $search-button-fa-hover-color:      $complementA;
 
@@ -171,7 +169,7 @@ $pagination-hover-bg:           $complementB;
 $pagination-border:             $complementB;
 
 $pagination-active-color:       $white;
-$pagination-active-bg:          mix(white, $complement-base, 25);
+$pagination-active-bg:          mix(white, $complement-base, 25%);
 
 $pagination-disabled-color:     $greyscale_dark;
 $pagination-disabled-bg:        rgba($complementB, 0.1);
@@ -179,7 +177,7 @@ $pagination-disabled-bg:        rgba($complementB, 0.1);
 $pagination-next-color:         $white;
 $pagination-next-hover-color:   $white;
 $pagination-next-bg:            $primary-dark;
-$pagination-next-hover-bg:      mix(white, $complement-base, 25);
+$pagination-next-hover-bg:      mix(white, $complement-base, 25%);
 
 $pagination-highlight:          $black;
 

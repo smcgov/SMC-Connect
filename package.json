@@ -3,22 +3,22 @@
   "description": "Find community services in San Mateo County",
   "engines": {
     "yarn": "1.x",
-    "node": "16.x"
+    "node": "20.x"
   },
   "dependencies": {
-    "@rails/webpacker": "5.4.3",
     "core-js": "^2.0.0",
+    "file-loader": "^6.2.0",
     "google-maps-infobox": "^2.0.0",
-    "rails-erb-loader": "^5.2.1",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12"
+    "rails-erb-loader": "^5.5.2",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-remove-empty-scripts": "^1.0.4"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.2.0",
-    "webpack-dev-server": "^3"
+    "eslint-plugin-import": "^2.2.0"
   },
   "scripts": {
     "lint": "eslint"

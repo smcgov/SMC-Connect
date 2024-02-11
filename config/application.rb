@@ -3,7 +3,6 @@ require_relative 'boot'
 # Pick the frameworks you want:
 require 'action_controller/railtie'
 require 'action_mailer/railtie'
-require 'sprockets/railtie'
 
 SETTINGS = YAML.safe_load_file(File.expand_path('settings.yml', __dir__))
 SETTINGS.merge! SETTINGS.fetch(Rails.env, {})
@@ -15,7 +14,7 @@ Bundler.require(*Rails.groups)
 
 module OhanaWebSearch
   class Application < Rails::Application
-    config.load_defaults 6.0
+    config.load_defaults 6.1
     # Don't generate RSpec tests for views and helpers.
     config.generators do |generator|
       generator.test_framework :rspec
@@ -36,5 +35,8 @@ module OhanaWebSearch
 
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Don't generate system test files.
+    config.generators.system_tests = nil
   end
 end

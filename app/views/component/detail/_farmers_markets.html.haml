@@ -1,7 +1,7 @@
 %div
   - if location.key?(:payments) || location.key?(:market_match)
     %section.payments-accepted
-      %i.fa.fa-money
+      %i.fa.fa-regular.fa-money-bill-1
       %h1 Payment methods accepted:
       %ul
         - if location[:payments].present?

@@ -1,8 +1,8 @@
 // Handles search filter functionality.
-import TextInput from 'app/search/filter/TextInput';
-import CheckboxSubtractive from 'app/search/filter/CheckboxSubtractive';
-import geo from 'app/util/geolocation/geolocate-action';
-import alert from 'app/alerts';
+import TextInput from './TextInput';
+import CheckboxSubtractive from './CheckboxSubtractive';
+import geo from './../../util/geolocation/geolocate-action';
+import alert from './../../alerts';
 
 // The search filters.
 var _keyword;

@@ -1,5 +1,5 @@
 // Handles freeform text input search filters.
-import eventObserver from 'app/util/EventObserver';
+import eventObserver from './../../util/EventObserver';
 
 function create(id) {
   return new TextInput(id);

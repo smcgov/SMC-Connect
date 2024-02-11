@@ -1,5 +1,5 @@
 // Manages interactivity of a button for interacting with the map size.
-import eventObserver from 'app/util/EventObserver';
+import eventObserver from './../EventObserver';
 
 // @param selector [String] DOM selector for the map size control button.
 // @return [Object] A MapSizeControl instance.

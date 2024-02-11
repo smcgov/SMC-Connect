@@ -1,6 +1,6 @@
 // Used for creating a popup that appears when the designated link is clicked.
-import util from 'app/util/util';
-import eventObserver from 'app/util/EventObserver';
+import util from './../util/util';
+import eventObserver from './../util/EventObserver';
 
 // Create a DefaultPopup instance.
 // @return [Object] The DefaultPopup instance.

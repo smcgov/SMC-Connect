@@ -1,3 +1,6 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
 // Global alert messages that float on top of all other content.
 .alert-container {
   width: 100%;

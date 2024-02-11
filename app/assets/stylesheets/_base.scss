@@ -1,3 +1,8 @@
+@use "variables" as *;
+@use "vertical_rhythm" as *;
+@use "mixins" as *;
+@use "functions" as *;
+
 // Establish baseline for vertical rhythm
 @include establish-baseline();
 
@@ -502,7 +507,7 @@ ul {
             border-left: 6px solid $listitem-search-border;
           }
           > li:nth-child(odd) {
-            border-left: 6px solid mix(white, $listitem-search-border, 25);
+            border-left: 6px solid mix(white, $listitem-search-border, 25%);
           }
         }
       }
@@ -522,7 +527,7 @@ ul {
           border-left: 6px solid $listitem-search-important-border !important;
         }
         > li:nth-child(odd) {
-          border-left: 6px solid mix(white, $listitem-search-important-border, 25) !important;
+          border-left: 6px solid mix(white, $listitem-search-important-border, 25%) !important;
         }
       }
     }

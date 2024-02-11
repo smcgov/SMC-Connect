@@ -1,5 +1,5 @@
 // Used for asynchronously loading Google Maps APIs.
-import OverlappingMarkerSpiderfier from 'app/util/map/google/oms.min';
+import OverlappingMarkerSpiderfier from './oms.min';
 import InfoBox from 'google-maps-infobox';
 
 // Reference to plugin modules.

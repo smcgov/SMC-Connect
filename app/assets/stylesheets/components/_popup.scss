@@ -1,3 +1,6 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
 // Popups are the About/Feedback popups in the upper-right.
 #popups {
   position: absolute;
