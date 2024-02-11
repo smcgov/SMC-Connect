@@ -9,7 +9,7 @@ class MapSummary
 
     return '' if total_map_markers == total_results
 
-    " <i class='fa fa-map-marker'></i> <em>" \
+    " <i class='fa fa-location-dot'></i> <em>" \
     "<strong>#{total_map_markers}</strong>/#{total_results} " \
     "located on map</em>".html_safe
   end
