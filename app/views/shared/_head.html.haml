@@ -32,7 +32,5 @@
 = stylesheet_link_tag 'application', media: 'all'
 
 = javascript_include_tag 'https://plausible.io/js/plausible.js', defer: true, 'data-domain': 'smc-connect.org'
-- if Rails.env.production? && ENV['GOOGLE_ANALYTICS_ID'].present?
-  = render 'shared/google_analytics/page_tracking'
 
 = yield :canonical

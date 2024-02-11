@@ -14,7 +14,7 @@ $ script/setup_heroku -a your_app_name -o your_api_endpoint
 ```
 `your_api_endpoint` is the URL to your instance of Ohana API, such as `https://ohana-api-demo.herokuapp.com/api`. `your_app_name` is your Heroku app's name. Read the [script](https://github.com/smcgov/SMC-Connect/blob/master/script/setup_heroku) for more details about what it will install.
 
-The script only sets required environment variables. To set optional environment variables on Heroku, such as `GOOGLE_ANALYTICS_ID`, you'll need to set them manually. Read through `application.example.yml` to learn about all the optional variables you can set, and read the Heroku documentation to learn how to [set Heroku configuration variables](https://devcenter.heroku.com/articles/config-vars).
+The script only sets required environment variables. To set optional environment variables on Heroku, you'll need to set them manually. Read through `application.example.yml` to learn about all the optional variables you can set, and read the Heroku documentation to learn how to [set Heroku configuration variables](https://devcenter.heroku.com/articles/config-vars).
 
 By default, the script assumes you will be using a `*.herokuapp.com` domain name. If you will be using a custom domain name, you will need to set the `CANONICAL_URL` variable manually. Read `application.example.yml` for more details.
 

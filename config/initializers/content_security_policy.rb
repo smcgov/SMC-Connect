@@ -10,7 +10,6 @@ Rails.application.configure do
     policy.font_src :self, :https, :data
     policy.img_src(
       :self,
-      'www.google-analytics.com',
       'www.google.com',
       'www.gstatic.com',
       :https,
@@ -20,7 +19,6 @@ Rails.application.configure do
     policy.script_src(
       :self,
       'maps.googleapis.com',
-      'www.google-analytics.com',
       'www.google.com',
       'www.gstatic.com',
       'plausible.io',
