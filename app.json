@@ -12,12 +12,6 @@
     "ENABLE_HTTPS": {
       "required": true
     },
-    "GOOGLE_ANALYTICS_DOMAIN": {
-      "required": true
-    },
-    "GOOGLE_ANALYTICS_ID": {
-      "required": true
-    },
     "OHANA_API_ENDPOINT": {
       "required": true
     },

@@ -15,9 +15,6 @@
       %main.main= yield
       = render 'shared/footer'
 
-    - if Rails.env.production? && ENV['GOOGLE_ANALYTICS_ID'].present?
-      = render 'shared/google_analytics/event_tracking'
-
     = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV.fetch('GOOGLE_MAPS_API_KEY', nil)}", nonce: true
     = javascript_include_tag 'application'
     = javascript_include_tag "#{controller_name}-#{action_name}"
