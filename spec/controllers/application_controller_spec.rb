@@ -62,12 +62,12 @@ describe ApplicationController do
         to include('Sorry, that page does not exist. Please try a new search.')
     end
 
-    it 'redirects to previous page if a referer exists' do
+    it 'redirects to root if a referer exists' do
       request.env['HTTP_REFERER'] = 'http://localhost:3000/about'
 
       get :index
 
-      expect(response).to redirect_to 'http://localhost:3000/about'
+      expect(response).to redirect_to root_path
     end
   end
 
@@ -89,12 +89,12 @@ describe ApplicationController do
         to include('That search was improperly formatted. Please try a new search.')
     end
 
-    it 'redirects to previous page if a referer exists' do
+    it 'redirects to root if a referer exists' do
       request.env['HTTP_REFERER'] = 'http://localhost:3000/about'
 
       get :index
 
-      expect(response).to redirect_to 'http://localhost:3000/about'
+      expect(response).to redirect_to root_path
     end
   end
 end
