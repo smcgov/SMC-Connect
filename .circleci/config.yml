@@ -23,7 +23,7 @@ jobs:
     steps:
       - node/install:
           install-yarn: true
-          node-version: '20.9.0'
+          node-version: '20.14.0'
       - run: node --version
       - checkout
       - browser-tools/install-chromedriver
