@@ -49,8 +49,8 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    addressable (2.8.6)
-      public_suffix (>= 2.0.2, < 6.0)
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
     ast (2.4.2)
     base64 (0.2.0)
     benchmark-ips (2.10.0)
@@ -72,6 +72,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    childprocess (5.0.0)
     coderay (1.1.3)
     concurrent-ruby (1.3.3)
     connection_pool (2.2.2)
@@ -79,7 +80,7 @@ GEM
       bigdecimal
       rexml
     crass (1.0.6)
-    dartsass-rails (0.5.0)
+    dartsass-rails (0.5.1)
       railties (>= 6.0.0)
       sass-embedded (~> 1.63)
     date (3.3.4)
@@ -127,9 +128,9 @@ GEM
       dry-inflector (~> 1.0)
       dry-logic (~> 1.4)
       zeitwerk (~> 2.6)
-    email_spec (2.2.2)
+    email_spec (2.3.0)
       htmlentities (~> 4.3.3)
-      launchy (~> 2.1)
+      launchy (>= 2.1, < 4.0)
       mail (~> 2.7)
     erubi (1.13.0)
     execjs (2.9.1)
@@ -147,7 +148,9 @@ GEM
       ffi (~> 1.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    google-protobuf (3.25.2)
+    google-protobuf (4.27.2)
+      bigdecimal
+      rake (>= 13)
     haml (6.3.0)
       temple (>= 0.8.2)
       thor
@@ -170,15 +173,16 @@ GEM
     htmlentities (4.3.4)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
-    jsbundling-rails (1.3.0)
+    jsbundling-rails (1.3.1)
       railties (>= 6.0.0)
     json (2.7.2)
     kaminari-actionview (1.2.2)
       actionview
       kaminari-core (= 1.2.2)
     language_server-protocol (3.17.0.3)
-    launchy (2.5.2)
+    launchy (3.0.1)
       addressable (~> 2.8)
+      childprocess (~> 5.0)
     letter_opener (1.10.0)
       launchy (>= 2.2, < 4)
     logger (1.6.0)
@@ -198,7 +202,7 @@ GEM
     mini_portile2 (2.8.7)
     minitest (5.24.1)
     multipart-post (2.3.0)
-    net-imap (0.4.13)
+    net-imap (0.4.14)
       date
       net-protocol
     net-pop (0.1.2)
@@ -208,13 +212,13 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.0)
-    nokogiri (1.16.6)
+    nokogiri (1.16.7)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     ohanakapa (1.1.3)
       sawyer (~> 0.8)
     parallel (1.25.1)
-    parser (3.3.3.0)
+    parser (3.3.4.0)
       ast (~> 2.4.1)
       racc
     propshaft (0.9.0)
@@ -222,10 +226,10 @@ GEM
       activesupport (>= 7.0.0)
       rack
       railties (>= 7.0.0)
-    public_suffix (5.1.1)
+    public_suffix (6.0.1)
     puma (6.4.2)
       nio4r (~> 2.0)
-    racc (1.8.0)
+    racc (1.8.1)
     rack (2.2.9)
     rack-cache (1.17.0)
       rack (>= 0.4)
@@ -254,7 +258,6 @@ GEM
       zeitwerk (~> 2.5)
     rainbow (3.1.1)
     rake (13.2.1)
-    rbtree (0.4.5)
     readthis (2.2.0)
       connection_pool (~> 2.1)
       redis (>= 3.0, < 5.0)
@@ -266,7 +269,7 @@ GEM
       rainbow (>= 2.0, < 4.0)
       rexml (~> 3.1)
     regexp_parser (2.9.2)
-    rexml (3.3.1)
+    rexml (3.3.2)
       strscan
     rspec-core (3.13.0)
       rspec-support (~> 3.13.0)
@@ -285,13 +288,13 @@ GEM
       rspec-mocks (~> 3.13)
       rspec-support (~> 3.13)
     rspec-support (3.13.1)
-    rubocop (1.64.1)
+    rubocop (1.65.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 1.8, < 3.0)
+      regexp_parser (>= 2.4, < 3.0)
       rexml (>= 3.2.5, < 4.0)
       rubocop-ast (>= 1.31.1, < 2.0)
       ruby-progressbar (~> 1.7)
@@ -306,21 +309,20 @@ GEM
     ruby-progressbar (1.13.0)
     ruby-statistics (3.0.0)
     rubyzip (2.3.2)
-    sass-embedded (1.70.0)
-      google-protobuf (~> 3.25)
-      rake (>= 13.0.0)
+    sass-embedded (1.77.8)
+      google-protobuf (~> 4.26)
+      rake (>= 13)
     sassc (2.4.0)
       ffi (~> 1.9)
     sawyer (0.8.2)
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
-    selenium-webdriver (4.22.0)
+    selenium-webdriver (4.23.0)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    set (1.0.2)
     simplecov (0.17.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
@@ -328,9 +330,6 @@ GEM
     simplecov-html (0.10.2)
     skylight (6.0.4)
       activesupport (>= 5.2.0)
-    sorted_set (1.0.3)
-      rbtree
-      set (~> 1.0)
     stackprof (0.2.26)
     strscan (3.1.0)
     sysexits (1.2.0)
@@ -348,11 +347,11 @@ GEM
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
-    websocket (1.2.10)
+    websocket (1.2.11)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     yard (0.9.36)
-    zeitwerk (2.6.16)
+    zeitwerk (2.6.17)
 
 PLATFORMS
   ruby
@@ -394,7 +393,6 @@ DEPENDENCIES
   selenium-webdriver
   simplecov (= 0.17.1)
   skylight
-  sorted_set (~> 1.0.3)
   stackprof
   terser (~> 1.2)
   vcr
@@ -402,7 +400,7 @@ DEPENDENCIES
   yard
 
 RUBY VERSION
-   ruby 3.2.4p170
+   ruby 3.2.5p208
 
 BUNDLED WITH
-   2.5.10
+   2.5.17

@@ -21,7 +21,6 @@ gem 'railties', '~> 7.0.8'
 gem 'recaptcha'
 gem 'redis-rack-cache', git: 'https://github.com/monfresh/redis-rack-cache.git', branch: 'readthis-compatibility'
 gem 'skylight'
-gem 'sorted_set', '~> 1.0.3'
 gem 'terser', '~> 1.2'
 
 # dev and debugging tools
