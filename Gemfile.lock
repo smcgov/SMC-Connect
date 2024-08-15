@@ -258,7 +258,6 @@ GEM
       zeitwerk (~> 2.5)
     rainbow (3.1.1)
     rake (13.2.1)
-    rbtree (0.4.5)
     readthis (2.2.0)
       connection_pool (~> 2.1)
       redis (>= 3.0, < 5.0)
@@ -324,7 +323,6 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    set (1.0.2)
     simplecov (0.17.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
@@ -332,9 +330,6 @@ GEM
     simplecov-html (0.10.2)
     skylight (6.0.4)
       activesupport (>= 5.2.0)
-    sorted_set (1.0.3)
-      rbtree
-      set (~> 1.0)
     stackprof (0.2.26)
     strscan (3.1.0)
     sysexits (1.2.0)
@@ -398,7 +393,6 @@ DEPENDENCIES
   selenium-webdriver
   simplecov (= 0.17.1)
   skylight
-  sorted_set (~> 1.0.3)
   stackprof
   terser (~> 1.2)
   vcr
@@ -406,7 +400,7 @@ DEPENDENCIES
   yard
 
 RUBY VERSION
-   ruby 3.2.4p170
+   ruby 3.2.5p208
 
 BUNDLED WITH
    2.5.10
