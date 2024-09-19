@@ -148,7 +148,7 @@ GEM
       ffi (~> 1.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    google-protobuf (4.27.2)
+    google-protobuf (4.27.5)
       bigdecimal
       rake (>= 13)
     haml (6.3.0)
