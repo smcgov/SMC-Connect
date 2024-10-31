@@ -269,8 +269,7 @@ GEM
       rainbow (>= 2.0, < 4.0)
       rexml (~> 3.1)
     regexp_parser (2.9.2)
-    rexml (3.3.6)
-      strscan
+    rexml (3.3.9)
     rspec-core (3.13.0)
       rspec-support (~> 3.13.0)
     rspec-expectations (3.13.1)
@@ -331,7 +330,6 @@ GEM
     skylight (6.0.4)
       activesupport (>= 5.2.0)
     stackprof (0.2.26)
-    strscan (3.1.0)
     sysexits (1.2.0)
     temple (0.10.3)
     terser (1.2.3)
