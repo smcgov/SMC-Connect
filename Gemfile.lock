@@ -221,7 +221,7 @@ GEM
     parser (3.3.6.0)
       ast (~> 2.4.1)
       racc
-    propshaft (0.9.1)
+    propshaft (1.1.0)
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
       rack
@@ -351,7 +351,7 @@ GEM
     xpath (3.2.0)
       nokogiri (~> 1.8)
     yard (0.9.36)
-    zeitwerk (2.6.17)
+    zeitwerk (2.7.1)
 
 PLATFORMS
   ruby
